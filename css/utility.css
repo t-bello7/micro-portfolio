@@ -3,46 +3,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
-    /*color values*/
-    --clr-gray: #3C3A39;
-    --clr-dark: #1C1A19;
-    --clr-light: #ffffff;
-    --clr-primary-1: #FF6B00;
-    --clr-primary-2: #FFF5E1;
-
-    --ff-roboto: "Roboto", sans-serif;
-    --ff-crete : "Crete Round", serif;
-    --ff-poppins: "Poppins", sans-serif;
+  /* color values */
+  --clr-gray: #3c3a39;
+  --clr-dark: #1c1a19;
+  --clr-light: #fff;
+  --clr-primary-1: #ff6b00;
+  --clr-primary-2: #fff5e1;
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-crete: "Crete Round", serif;
+  --ff-poppins: "Poppins", sans-serif;
 }
 
-.bg-gray { background-color: var(--clr-gray);}
-.bg-dark { background-color: var(--clr-dark);}
-.bg-light { background-color: var(--clr-light);}
-.bg-primary-1 { background-color: var(--clr-primary-1);}
-.bg-primary-2 { background-color: var(--clr-primary-2);}
+.bg-gray { background-color: var(--clr-gray); }
+.bg-dark { background-color: var(--clr-dark); }
+.bg-light { background-color: var(--clr-light); }
+.bg-primary-1 { background-color: var(--clr-primary-1); }
+.bg-primary-2 { background-color: var(--clr-primary-2); }
 
-.text--dark { color: var(--clr-dark);}
-.text-gray { color: var(--clr-gray);}
-.text-light { color: var(--clr-light);}
-.text-primary-1 { color: var(--clr-primary-1);}
-.text-primary-2 { color: var(--clr-primary-2);}
+.text--dark { color: var(--clr-dark); }
+.text-gray { color: var(--clr-gray); }
+.text-light { color: var(--clr-light); }
+.text-primary-1 { color: var(--clr-primary-1); }
+.text-primary-2 { color: var(--clr-primary-2); }
 
-
-.ff-roboto { font-family: var(--ff-roboto) ;}
-.ff-crete { font-family: var(--ff-crete) ;}
-.ff-poppins { font-family: var(--ff-poppins) ;}
+.ff-roboto { font-family: var(--ff-roboto); }
+.ff-crete { font-family: var(--ff-crete); }
+.ff-poppins { font-family: var(--ff-poppins); }
 
 .line-height-1 { line-height: 3rem; }
-.line-height-2 { line-height: 2rem;} 
-
+.line-height-2 { line-height: 2rem; }
 
 .flex {
-    display: flex
+  display: flex;
 }
 
 .container > * {
-    max-width: 400px;
-    margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 /* .flow  > * {
@@ -50,5 +47,5 @@
 } */
 
 .mg-1 {
-    margin-block: 1rem;
+  margin-block: 1rem;
 }

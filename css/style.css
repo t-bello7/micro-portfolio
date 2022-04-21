@@ -1,31 +1,31 @@
 .header {
-    height: 2.5em;
-    justify-content: space-between;
-    align-items: center;
+  height: 2.5em;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .btn-icon {
-    background: transparent;
-    border: none;
+  background: transparent;
+  border: none;
 }
-.home{
-    height: 100vh;
-    background-image: url("../assets/img/header-mobile.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    
 
+.home {
+  height: 100vh;
+  background-image: url("../assets/img/header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
+
 .home > span {
-    display: block;
-}
-.home >.contact-link {
-    gap: 0.5em;
-    justify-content: flex-start;
+  display: block;
 }
 
+.home > .contact-link {
+  gap: 0.5em;
+  justify-content: flex-start;
+}
 
 .btn-contact {
-    background: transparent;
-    border: none;
+  background: transparent;
+  border: none;
 }
-
