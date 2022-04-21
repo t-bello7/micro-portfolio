@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root {
     /*color values*/
     --clr-gray: #3C3A39;
@@ -6,10 +10,9 @@
     --clr-primary-1: #FF6B00;
     --clr-primary-2: #FFF5E1;
 
-    --ff-roboto: "Roboto";
-    --ff-crete : "Crete Round";
-    --ff-poppins: "Poppins";
-
+    --ff-roboto: "Roboto", sans-serif;
+    --ff-crete : "Crete Round", serif;
+    --ff-poppins: "Poppins", sans-serif;
 }
 
 .bg-gray { background-color: var(--clr-gray);}
@@ -29,6 +32,8 @@
 .ff-crete { font-family: var(--ff-crete) ;}
 .ff-poppins { font-family: var(--ff-poppins) ;}
 
+.line-height-1 { line-height: 3rem; }
+.line-height-2 { line-height: 2rem;} 
 
 
 .flex {
@@ -38,4 +43,12 @@
 .container > * {
     max-width: 300px;
     margin: 0 auto;
+}
+
+/* .flow  > * {
+
+} */
+
+.mg-1 {
+    margin-block: 1rem;
 }
