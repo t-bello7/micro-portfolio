@@ -12,9 +12,13 @@
     background-image: url("../assets/img/header-mobile.png");
     background-repeat: no-repeat;
     background-position: right;
-}
+    
 
-.contact-link {
+}
+.home > span {
+    display: block;
+}
+.home >.contact-link {
     gap: 0.5em;
     justify-content: flex-start;
 }
@@ -24,3 +28,4 @@
     background: transparent;
     border: none;
 }
+
