@@ -26,6 +26,7 @@
 ### Setup
 - Clone this project 
 `clone link`
+
 ### Install
 - After succesfully cloning the project, change working direction to the root of the project and run the command below in your terminal
 ` yarn install`
@@ -36,7 +37,8 @@ npx stylelint "**/*.{css,scss}"
 npx eslint .
 <!-- ### Deployment -->
 
-
+## Resources
+- https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=0%3A1
 
 ## Authors
 
