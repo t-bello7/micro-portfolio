@@ -3,9 +3,20 @@
     justify-content: space-between;
     align-items: center;
 }
- .home{
-     height: 100vh;
-     background-image: url("../assets/img/header-mobile.png");
-     background-repeat: no-repeat;
-     background-position: right;
- }
+
+.home{
+    height: 100vh;
+    background-image: url("../assets/img/header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.contact-link {
+    gap: 0.5em;
+    justify-content: flex-start;
+}
+
+.btn-contact {
+    background: transparent;
+    border: none;
+}

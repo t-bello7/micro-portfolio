@@ -11,21 +11,23 @@
     <title>Micro-Portfolio</title>
 </head>
 <body>
-    <header class="container bg-gray header flex">
-        <span>John Doe</span>
-        <i class="fa-solid fa-bars"></i>
+    <header class="container bg-gray">
+        <div class="flex header">
+            <span class="">John Doe</span>
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
     <main class=" container home bg-dark">
         <h1>Hey There. I'm Tomi</h1>
         <!-- <span>I'm a Software Developer</span> -->
         <p>I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestitate to contact me.</p>
-        <div class="flex"> 
-            <button class="btn-contact"> <img src="assets/img/github.png" alt=""></button>
-            <button class="btn-contact"> <img src="assets/img/linkedin.png" alt=""></button>
-            <button class="btn-contact"> <img src="assets/img/thumbs.png" alt=""></button>
-            <button class="btn-contact"> <img src="assets/img/twitter.png" alt=""></button>
-            <button class="btn-contact"> <img src="assets/img/medium.png" alt=""></button>
-        </div>
+        <ul class="flex contact-link "> 
+           <li> <a href="https://github.com/t-bello7" class="btn-contact"><img src="assets/img/github.png" alt=""> </a>  </li>
+           <li> <a href="#"  class="btn-contact"> <img src="assets/img/linkedin.png" alt=""></a> </li> 
+           <li> <a href="#"  class="btn-contact"> <img src="assets/img/thumbs.png" alt=""></a> </li> 
+           <li> <a href="#"  class="btn-contact"> <img src="assets/img/twitter.png" alt=""></a> </li> 
+           <li> <a href="#"  class="btn-contact"> <img src="assets/img/medium.png" alt=""></a> </li> 
+        </ul>
     </main>
 </body>
 </html>
