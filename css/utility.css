@@ -38,13 +38,9 @@
 }
 
 .container > * {
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
 }
-
-/* .flow  > * {
-
-} */
 
 .mg-1 {
   margin-block: 1rem;

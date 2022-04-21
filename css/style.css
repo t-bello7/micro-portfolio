@@ -5,8 +5,9 @@
 }
 
 .btn-icon {
-  background: transparent;
+  background: url('../assets/img/menu.png') no-repeat;
   border: none;
+  padding: 20px 20px 5px 0;
 }
 
 .home {
@@ -21,11 +22,31 @@
 }
 
 .home > .contact-link {
-  gap: 0.5em;
+  gap: 1em;
   justify-content: flex-start;
 }
 
-.btn-contact {
-  background: transparent;
-  border: none;
+.btn-contact.github {
+  background: url('../assets/img/github.png') no-repeat;
+  padding: 0 20px 5px 0;
+}
+
+.btn-contact.twitter {
+  background: url('../assets/img/twitter.png') no-repeat;
+  padding: 0 20px 5px 0;
+}
+
+.btn-contact.medium {
+  background: url('../assets/img/medium.png') no-repeat;
+  padding: 0 20px 5px 0;
+}
+
+.btn-contact.linkedin {
+  background: url('../assets/img/linkedin.png') no-repeat;
+  padding: 0 20px 5px 0;
+}
+
+.btn-contact.thumbs {
+  background: url('../assets/img/thumbs.png') no-repeat;
+  padding: 0 20px 5px 0;
 }
