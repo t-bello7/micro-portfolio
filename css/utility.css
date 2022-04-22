@@ -54,3 +54,7 @@
 .mg-1 {
   margin-block: 1rem;
 }
+
+.grid {
+  display: grid;
+}
