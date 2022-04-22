@@ -14,7 +14,11 @@
   height: 100vh;
   background-image: url("../assets/img/header-mobile.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: bottom right ;
+}
+
+.home > :first-child {
+  padding-top: 50%;
 }
 
 .home > span {
