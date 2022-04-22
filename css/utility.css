@@ -10,7 +10,7 @@
   --clr-primary-1: #ff6b00;
   --clr-primary-2: #fff5e1;
 
-  /* font-family*/
+  /* font-family */
   --ff-roboto: "Roboto", sans-serif;
   --ff-crete: "Crete Round", serif;
   --ff-poppins: "Poppins", sans-serif;
@@ -36,8 +36,8 @@
 .ff-crete { font-family: var(--ff-crete); }
 .ff-poppins { font-family: var(--ff-poppins); }
 
-.fw-400 { font-weight: var(--fs-400);}
-.fs-56  { font-weight: var(--fs-56);}
+.fw-400 { font-weight: var(--fs-400); }
+.fs-56 { font-weight: var(--fs-56); }
 
 .line-height-1 { line-height: 3rem; }
 .line-height-2 { line-height: 2rem; }
