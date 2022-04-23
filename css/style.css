@@ -11,7 +11,7 @@
 }
 
 .home {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../assets/img/header-mobile.png");
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -53,4 +53,41 @@
 .btn-contact.thumbs {
   background: url('../assets/img/thumbs.png') no-repeat;
   padding: 0 20px 5px 0;
+}
+
+.work-section > :first-child {
+  border-bottom: 1px solid var(--clr-gray-1);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.tag > * {
+  padding: var(--gap);
+  border: 1px solid var(--clr-gray-2);
+}
+
+.btn {
+  background-color: var(--clr-primary-1);
+  color: var(--clr-light);
+  border: none;
+  padding: var(--gap);
+}
+
+.btn-project{
+  position: relative;
+  top: 12.5%;
+  left: -4%;
+}
+
+.project-container {
+  flex-direction: column;
+}
+.project {
+  background-image: url("../assets/img/project-img.png");
+  padding: 6rem 2rem 2rem 1rem;
+}
+
+.tag-project > * {
+  border: none;
+  background: rgba(255, 255, 255, 0.24)
 }

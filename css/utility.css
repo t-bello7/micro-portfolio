@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&display=swap');
 
 :root {
   /* color values */
   --clr-gray: #3c3a39;
+  --clr-gray-1: #212121;
+  --clr-gray-2: #8993A4;
   --clr-dark: #1c1a19;
-  --clr-light: #fff;
+  --clr-light: #ffffff;
   --clr-primary-1: #ff6b00;
   --clr-primary-2: #fff5e1;
 
@@ -14,10 +17,12 @@
   --ff-roboto: "Roboto", sans-serif;
   --ff-crete: "Crete Round", serif;
   --ff-poppins: "Poppins", sans-serif;
+  --ff-inter: "Inter', sans-serif";
 
   /* font-size */
   --fs-400: 25rem;
   --fs-56: 3.5rem;
+  --gap: 1rem;
 }
 
 .bg-gray { background-color: var(--clr-gray); }
@@ -35,6 +40,7 @@
 .ff-roboto { font-family: var(--ff-roboto); }
 .ff-crete { font-family: var(--ff-crete); }
 .ff-poppins { font-family: var(--ff-poppins); }
+.ff-inter { font-family: var(--ff-inter);}
 
 .fw-400 { font-weight: var(--fs-400); }
 .fs-56 { font-weight: var(--fs-56); }
@@ -44,6 +50,7 @@
 
 .flex {
   display: flex;
+  gap: var(--gap);
 }
 
 .container > * {
@@ -53,6 +60,10 @@
 
 .mg-1 {
   margin-block: 1rem;
+}
+
+.mg-8 {
+  margin-block: 8rem;
 }
 
 .grid {
