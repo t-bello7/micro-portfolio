@@ -5,7 +5,7 @@
 }
 
 html {
-    overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 ul,
@@ -51,4 +51,5 @@ select {
 li, a {
     text-decoration: none;
     list-style-type: none;
+    color: inherit;
 }
