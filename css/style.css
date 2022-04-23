@@ -75,8 +75,8 @@
 
 .btn-project{
   position: relative;
-  top: 12.5%;
-  left: -4%;
+  width: 100%;
+  top: 1rem;
 }
 
 .project-container {
@@ -84,7 +84,8 @@
 }
 .project {
   background-image: url("../assets/img/project-img.png");
-  padding: 6rem 2rem 2rem 1rem;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
 }
 
 .tag-project > * {
@@ -96,9 +97,28 @@
   height: 30rem;
   background: url('../assets/img/about-me-mobile.png') no-repeat;
   background-position: bottom right;
-  padding: 6rem 0 0 0;
+  padding-top: 6rem;
+  border-bottom: 1px solid var(--clr-light);
 }
 
-.about > :first-child {
-  text-align: center;
+
+.skill {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
 }
+
+.skill-icon{
+  display: inline-block;
+  margin-right: var(--gap) ;
+  width: 18px;
+  height: 18px;
+  background-color: var(--clr-primary-1);
+}
+.skill-icon-kite{
+  transform: rotate(45deg);
+}
+.skill-icon-circle {
+  border-radius: 50%;
+}
+

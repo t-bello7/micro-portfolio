@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&display=swap');
+@font-face {
+  font-family: 'InaiMathi';
+  src: url(../assets/font/InaiMathi-Regular.ttf);
+}
 
 :root {
   /* color values */
@@ -17,7 +21,8 @@
   --ff-roboto: "Roboto", sans-serif;
   --ff-crete: "Crete Round", serif;
   --ff-poppins: "Poppins", sans-serif;
-  --ff-inter: "Inter', sans-serif";
+  --ff-inter: "Inter", sans-serif;
+  --ff-inai: "InaiMathi", sans-serif;
 
   /* font-size */
   --fs-400: 25rem;
@@ -41,6 +46,7 @@
 .ff-crete { font-family: var(--ff-crete); }
 .ff-poppins { font-family: var(--ff-poppins); }
 .ff-inter { font-family: var(--ff-inter);}
+.ff-inai { font-family: var(--ff-inai);}
 
 .fw-400 { font-weight: var(--fs-400); }
 .fs-56 { font-weight: var(--fs-56); }
@@ -68,4 +74,12 @@
 
 .grid {
   display: grid;
+}
+
+.center {
+  text-align: center;
+}
+
+.mg-inline {
+  margin-inline: 2rem;
 }
