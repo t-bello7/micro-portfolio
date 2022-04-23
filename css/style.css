@@ -12,8 +12,7 @@
 
 .home {
   height: 100vh;
-  background-image: url("../assets/img/header-mobile.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/img/header-mobile.png") no-repeat;
   background-position: bottom right;
 }
 
@@ -53,4 +52,15 @@
 .btn-contact.thumbs {
   background: url('../assets/img/thumbs.png') no-repeat;
   padding: 0 20px 5px 0;
+}
+
+.about {
+  height: 30rem;
+  background: url('../assets/img/about-me-mobile.png') no-repeat;
+  background-position: bottom right;
+  padding: 6rem 0 0 0;
+}
+
+.about > :first-child {
+  text-align: center;
 }
