@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&display=swap');
+@font-face {
+  font-family: 'InaiMathi';
+  src: url(../assets/font/InaiMathi-Regular.ttf);
+}
 
 @font-face {
   font-family: 'InaiMathi';
