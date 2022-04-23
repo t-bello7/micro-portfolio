@@ -61,13 +61,18 @@
   text-align: center;
 }
 
-.tag {
-  flex-wrap: wrap;
-}
-
 .tag > * {
   padding: var(--gap);
   border: 1px solid var(--clr-gray-2);
+}
+
+.tag-feature {
+  flex-wrap: wrap;
+}
+
+.tag-project > * {
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
 }
 
 .btn {
@@ -97,11 +102,6 @@
   background-image: url("../assets/img/project-img.png");
   padding-top: 6rem;
   padding-bottom: 1rem;
-}
-
-.tag-project > * {
-  border: none;
-  background: rgba(255, 255, 255, 0.24);
 }
 
 .about {
