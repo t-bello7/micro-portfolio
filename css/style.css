@@ -57,12 +57,13 @@
 
 .work-section > :first-child {
   border-bottom: 1px solid var(--clr-gray-1);
-  padding: 2rem 0;
-  text-align: center;
+  width: 327px;
+  font-size: 40px;
+  height: 83px;
 }
 
 .tag > * {
-  padding: var(--gap);
+  padding: 10px 12px;
   border: 1px solid var(--clr-gray-2);
 }
 
