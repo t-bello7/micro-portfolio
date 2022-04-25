@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: scroll;
+}
+
 ul,
 ol,
 body,
@@ -47,4 +51,5 @@ select {
 li, a {
     text-decoration: none;
     list-style-type: none;
+    color: inherit;
 }

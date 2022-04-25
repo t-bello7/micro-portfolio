@@ -11,7 +11,7 @@
 }
 
 .home {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../assets/img/header-mobile.png");
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -53,4 +53,84 @@
 .btn-contact.thumbs {
   background: url('../assets/img/thumbs.png') no-repeat;
   padding: 0 20px 5px 0;
+}
+
+.work-section > :first-child {
+  border-bottom: 1px solid var(--clr-gray-1);
+  width: 327px;
+  font-size: 40px;
+  height: 83px;
+}
+
+.tag > * {
+  padding: 10px 12px;
+  border: 1px solid var(--clr-gray-2);
+}
+
+.tag-feature {
+  flex-wrap: wrap;
+}
+
+.tag-project > * {
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.btn {
+  background-color: var(--clr-primary-1);
+  color: var(--clr-light);
+  border: none;
+  padding: var(--gap);
+}
+
+.btn-project {
+  position: relative;
+  width: 100%;
+  top: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--clr-light);
+  color: var(--clr-primary-1);
+  border: 1px solid var(--clr-primary-1);
+}
+
+.project-container {
+  flex-direction: column;
+}
+
+.project {
+  background-image: url("../assets/img/project-img.png");
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+}
+
+.about {
+  height: 30rem;
+  background: url('../assets/img/about-me-mobile.png') no-repeat;
+  background-position: bottom right;
+  padding-top: 6rem;
+  border-bottom: 1px solid var(--clr-light);
+}
+
+.skill {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+}
+
+.skill-icon {
+  display: inline-block;
+  margin-right: var(--gap);
+  width: 18px;
+  height: 18px;
+  background-color: var(--clr-primary-1);
+}
+
+.skill-icon-kite {
+  transform: rotate(45deg);
+}
+
+.skill-icon-circle {
+  border-radius: 50%;
 }
