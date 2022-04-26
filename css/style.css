@@ -135,9 +135,19 @@
   border-radius: 50%;
 }
 
+.contact-form{
+  margin-bottom: 0;
+}
 .contact-form h2 {
   font-size: 32px;
   color: var(--clr-neutral);
+}
+
+.contact-form hr {
+  position: absolute;
+  width: 100vw;
+  margin: 0;
+  left: 0;
 }
 
 .contact-form__input {
@@ -157,4 +167,9 @@
 .contact{
   flex-direction: column;
   align-items: center;
+}
+
+.social-media {
+  justify-content: center;
+  gap: 2rem;
 }

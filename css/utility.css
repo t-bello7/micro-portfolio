@@ -37,6 +37,9 @@
   --fs-400: 25rem;
   --fs-56: 3.5rem;
   --gap: 1rem;
+
+  /*Container size */
+  --mobile-w: 327px;
 }
 
 .bg-gray { background-color: var(--clr-gray); }
@@ -70,7 +73,7 @@
 }
 
 .container > * {
-  max-width: 327px;
+  max-width: var(--mobile-w);
   margin: 0 auto;
 }
 
@@ -82,6 +85,9 @@
   margin-block: 2rem;
 }
 
+.mg-4 {
+  margin-block: 4rem;
+}
 .mg-8 {
   margin-block: 7.5rem;
 }
