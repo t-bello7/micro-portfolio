@@ -30,10 +30,10 @@
   justify-content: flex-start;
 }
 
-.btn-contact{
+.btn-contact {
   padding: 0 20px 5px 0;
-
 }
+
 .btn-contact.github {
   background: url('../assets/img/github.png') no-repeat;
 }
@@ -134,9 +134,10 @@
   border-radius: 50%;
 }
 
-.contact-form{
+.contact-form {
   margin-bottom: 0;
 }
+
 .contact-form h2 {
   font-size: 32px;
   color: var(--clr-neutral);
@@ -159,11 +160,10 @@
   border: none;
   padding: 1rem;
   color: var(--clr-gray);
-  background-image: url('../assets/img/textarea-icon.png') no-repeat;
   background-size: contain;
 }
 
-.contact{
+.contact {
   flex-direction: column;
   align-items: center;
 }
@@ -176,7 +176,6 @@
 .btn-contact.medium-dark {
   background: url('../assets/img/mediumdark.png') no-repeat;
 }
-
 
 .btn-contact.linkedin-dark {
   background: url('../assets/img/linkedindark.png') no-repeat;
