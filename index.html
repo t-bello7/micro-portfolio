@@ -157,24 +157,25 @@
         </ul>
       </div>
     </section>
-    <footer>
-      <div class="contact-form">
-        <h2>
+    <footer class="container">
+      <div class=" mg-8 contact-form">
+        <h2 class="center ff-inter">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h2>
-        <form action="">
-          <input type="text" placeholder="Full name" required maxlength="30" />
-          <input type="email" placeholder="Email address" required />
+        <form class="mg-2 flex contact" action="https://formspree.io/f/mwkywooe">
+          <input class="mg-1 contact-form__input ff-inter" type="text" placeholder="Full name" required maxlength="30" />
+          <input class="mg-1 contact-form__input ff-inter "type="email" placeholder="Email address" required />
           <textarea
+            class="mg-1 contact-form__textarea bg-neutral-1"
             name="description"
             id="description"
-            cols="30"
+            cols="27"
             rows="10"
             maxlength="500"
             placeholder="Enter text here"
           ></textarea>
-          <button type="submit">Get in touch</button>
+          <button class="center btn" type="submit">Get in touch</button>
         </form>
       </div>
     </footer>

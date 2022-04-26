@@ -22,6 +22,9 @@
   --clr-light: #fff;
   --clr-primary-1: #ff6b00;
   --clr-primary-2: #fff5e1;
+  --clr-neutral: #172B4D;
+  --clr-neutral-1: #FBF8F7;
+;
 
   /* font-family */
   --ff-roboto: "Roboto", sans-serif;
@@ -41,6 +44,7 @@
 .bg-light { background-color: var(--clr-light); }
 .bg-primary-1 { background-color: var(--clr-primary-1); }
 .bg-primary-2 { background-color: var(--clr-primary-2); }
+.bg-neutral-1 { background-color: var(--clr-neutral-1);}
 
 .text--dark { color: var(--clr-dark); }
 .text-gray { color: var(--clr-gray); }
@@ -72,6 +76,10 @@
 
 .mg-1 {
   margin-block: 1rem;
+}
+
+.mg-2 {
+  margin-block: 2rem;
 }
 
 .mg-8 {

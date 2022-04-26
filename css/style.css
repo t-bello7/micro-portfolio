@@ -134,3 +134,27 @@
 .skill-icon-circle {
   border-radius: 50%;
 }
+
+.contact-form h2 {
+  font-size: 32px;
+  color: var(--clr-neutral);
+}
+
+.contact-form__input {
+  padding: 14px;
+  border: none;
+  border-bottom: 1px solid var(--clr-gray-2);
+}
+
+.contact-form__textarea {
+  border: none;
+  padding: 1rem;
+  color: var(--clr-gray);
+  background-image: url('../assets/img/textarea-icon.png') no-repeat;
+  background-size: contain;
+}
+
+.contact{
+  flex-direction: column;
+  align-items: center;
+}
