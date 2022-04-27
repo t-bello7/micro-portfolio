@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .menu{
   display: none;
 }
@@ -21,7 +22,7 @@
 }
 
 .home > :first-child {
-  padding-top: 50%;
+  padding-top: 10%;
 }
 
 .home > span {
