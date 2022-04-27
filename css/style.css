@@ -60,6 +60,10 @@
   font-size: 40px;
   height: 83px;
 }
+.tag-float > * {
+  float: left;
+  margin-right: 12px;
+}
 
 .tag > * {
   padding: 10px 12px;
