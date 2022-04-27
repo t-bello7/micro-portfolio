@@ -39,6 +39,7 @@
 
   /* Container size */
   --mobile-w: 327px;
+  --desktop-w:  1000px;
 }
 
 .bg-gray { background-color: var(--clr-gray); }
@@ -102,4 +103,12 @@
 
 .mg-inline {
   margin-inline: 2rem;
+}
+
+
+@media (min-width: 768px) {
+  .container > * {
+    max-width: var(--desktop-w);
+  }
+  
 }

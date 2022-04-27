@@ -3,6 +3,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.menu{
+  display: none;
+}
 
 .btn-icon {
   background: url('../assets/img/menu.png') no-repeat;
@@ -135,6 +138,7 @@
 }
 
 .contact-form {
+  flex-direction: column;
   margin-bottom: 0;
 }
 
@@ -191,4 +195,32 @@
 
 .btn-contact.twitter-dark {
   background: url('../assets/img/twitterdark.png') no-repeat;
+}
+
+
+@media (min-width: 768px ) {
+
+  .menu-btn{
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  
+  .mail{
+    background: url('../assets/img/mail.png') no-repeat;
+  }
+  .project-container {
+    flex-direction: row;
+
+  }
+ 
+  .skill {
+    flex-direction: row;
+    background-color: blueviolet;
+  }
+
+  .contact-form {
+    flex-direction: row;
+}
 }

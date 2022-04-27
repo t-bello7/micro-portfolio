@@ -14,7 +14,13 @@
       <div class="flex header">
         <a href="#" class="text-light">John Doe</a>
         <nav>
-          <button class="btn-icon" type="button"></button>
+          <button class="btn-icon menu-btn" type="button"></button>
+          <ul class="flex menu text-light">
+            <li><a href="#"> Portfolio </a></li>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> Contact </a></li>
+            <li><a href="#" class="btn-contact mail"> </a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -112,18 +118,22 @@
         </div>
       </div>
     </section>
-    <section class="bg-dark container">
-      <div class="about">
-        <h2 class="text-primary-1 ff-crete">About Me</h2>
-        <p class="mg-1 ff-inter text-light">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <button class="btn" type="button">Get my Resume</button>
-      </div>
-      <div class="flex skill">
+
+    <section class="about container bg-dark ">
+      <h2 class="text-primary-1 ff-crete">About Me</h2>
+      <p class="mg-1 ff-inter text-light">
+        Hello I’m a software developer! I can help you build a product ,
+        feature or website Look through some of my work and experience! If you
+        like what you see and have a project you need coded, don’t hestiate to
+        contact me.
+      </p>
+      <!-- <button class="btn" type="button">Get my Resume</button> -->
+    </section>
+
+    <hr>
+
+    <section class="flex skill bg-dark">
+      <div>
         <h3 class="text-light ff-inai">
           <span class="skill-icon"></span> Language
         </h3>
@@ -133,6 +143,8 @@
           <li class="text-light mg-1"><a href="#"> HTML </a></li>
           <li class="text-light mg-1"><a href="#"> CSS </a></li>
         </ul>
+      </div>
+      <div>
         <h3 class="text-light ff-inai">
           <span class="skill-icon skill-icon-kite"></span> Frameworks
         </h3>
@@ -143,6 +155,8 @@
           <li class="text-light mg-1"><a href="#">CapyBara</a></li>
           <li class="text-light mg-1"><a href="#"> Selenium </a></li>
         </ul>
+      </div>
+      <div>
         <h3 class="text-light ff-inai">
           <span class="skill-icon skill-icon-circle"></span> Skills
         </h3>
@@ -157,8 +171,9 @@
         </ul>
       </div>
     </section>
+
     <footer class="container"> 
-      <div class="contact-form mg-8 ">
+      <div class="contact-form mg-8 flex">
         <h2 class="center ff-inter">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
@@ -178,15 +193,15 @@
           ></textarea>
           <button class="center btn" type="submit">Get in touch</button>
         </form>
-        <hr>
-        <ul class="social-media flex mg-4">
-          <li><a href="#" class="btn-contact github-dark"> </a></li>
-          <li><a href="#" class="btn-contact medium-dark"> </a></li>
-          <li><a href="#" class="btn-contact thumbs-dark"> </a></li>
-          <li><a href="#" class="btn-contact twitter-dark"> </a></li>
-          <li><a href="#" class="btn-contact linkedin-dark"> </a></li>
-        </ul>
       </div>
+        <hr>
+      <ul class="social-media flex mg-4">
+        <li><a href="#" class="btn-contact github-dark"> </a></li>
+        <li><a href="#" class="btn-contact medium-dark"> </a></li>
+        <li><a href="#" class="btn-contact thumbs-dark"> </a></li>
+        <li><a href="#" class="btn-contact twitter-dark"> </a></li>
+        <li><a href="#" class="btn-contact linkedin-dark"> </a></li>
+      </ul>
     </footer>
   </body>
 </html>
