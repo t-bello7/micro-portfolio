@@ -247,18 +247,38 @@ footer hr {
     flex-direction: column;
     grid-row: 1;
   }
+
+  .work-section{
+    background-color: blue;
+  }
+
   .work-header {
     flex-direction: row;
   }
-  .project-container {
-    flex-direction: row;
 
+  .featured {
+    background-color: blue;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
   }
+
+  .project-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+  }
+
   .about{
     background-image: url("../assets/img/about-me-desktop.png");
   }
+
+  .about-bio{
+    width: calc(100vw/2)
+  }
   .skill {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
   }
 
   .contact-form {
