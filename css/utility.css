@@ -121,6 +121,8 @@
 @media (min-width: 768px) {
   .container > * {
     max-width: var(--desktop-w);
+    margin-inline: 2rem;
+    padding-inline: 1rem ; 
   }
   
 }
