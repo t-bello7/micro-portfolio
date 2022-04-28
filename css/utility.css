@@ -39,7 +39,7 @@
 
   /* Container size */
   --mobile-w: 327px;
-  --desktop-w:  1000px;
+  --desktop-w:  1000vw;
 }
 
 .bg-gray { background-color: var(--clr-gray); }
