@@ -109,11 +109,16 @@
 }
 
 .about {
-  height: 30rem;
-  background: url('../assets/img/about-me-mobile.png') no-repeat;
-  background-position: bottom right;
-  padding-top: 6rem;
-  border-bottom: 1px solid var(--clr-light);
+  min-height: 100vh;
+  background-image: url("../assets/img/about-me-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right top 25%;
+}
+
+.about > :first-child > h2 {
+  width: 327px;
+  font-size: 72px;
+  height: 88px;
 }
 
 .skill {
@@ -148,11 +153,8 @@
   color: var(--clr-neutral);
 }
 
-.contact-form hr {
-  position: absolute;
+footer hr {
   width: 100vw;
-  margin: 0;
-  left: 0;
 }
 
 .contact-form__input {
@@ -218,7 +220,6 @@
  
   .skill {
     flex-direction: row;
-    background-color: blueviolet;
   }
 
   .contact-form {

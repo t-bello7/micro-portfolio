@@ -92,13 +92,19 @@
 .mg-8 {
   margin-block: 7.5rem;
 }
-
+.pd-10 {
+  padding-block: 10rem;
+}
 .grid {
   display: grid;
 }
 
 .center {
   text-align: center;
+}
+
+.block{
+  display: block;
 }
 
 .mg-inline {
