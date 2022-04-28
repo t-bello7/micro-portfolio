@@ -77,6 +77,12 @@
   margin: 0 auto;
 }
 
+.grid-container{
+  text-align: center;
+  display: grid;
+  place-items: center;
+  padding-inline: 1rem;
+}
 .mg-1 {
   margin-block: 1rem;
 }

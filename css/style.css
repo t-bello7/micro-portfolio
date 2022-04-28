@@ -25,10 +25,6 @@
   padding-top: 10%;
 }
 
-.home > span {
-  display: block;
-}
-
 .home > .contact-link {
   gap: 1em;
   justify-content: flex-start;
@@ -217,10 +213,30 @@ footer hr {
   .mail{
     background: url('../assets/img/mail.png') no-repeat;
   }
+
   .home {
     background-image: url("../assets/img/header-desktop.png");
+    grid-template-columns: 100px 1fr 1fr;
+  }
+  .home > .bio{
+    text-align: start;
+    align-self: auto;
   }
 
+  .home > .bio > h1{
+    font-size: 72px;
+    line-height: 82px;
+  }
+  
+  .home > .bio > span {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .home .contact-link{
+    flex-direction: column;
+    grid-row: 1;
+  }
   .project-container {
     flex-direction: row;
 
