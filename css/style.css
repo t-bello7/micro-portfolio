@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.menu{
+.menu {
   display: none;
 }
 
@@ -58,13 +58,21 @@
   flex-direction: column;
 }
 
-.work-section > :first-child  > h2{
+.contact-form > h2 {
+  font-size: 32px;
+  color: var(--clr-neutral);
+}
+
+.work-section > :first-child > h2 {
   width: 327px;
   font-size: 40px;
 }
 
-.work-section  hr{
- 
+footer hr {
+  width: 100vw;
+}
+
+.work-section hr {
   width: 100%;
   align-self: center;
 }
@@ -133,10 +141,11 @@
   padding-top: 6rem;
 }
 
-.skill > * > h3{
-  font-size:  32px;
+.skill > * > h3 {
+  font-size: 32px;
   line-height: 44px;
 }
+
 .skill-icon {
   display: inline-block;
   margin-right: var(--gap);
@@ -156,15 +165,6 @@
 .contact-form {
   flex-direction: column;
   margin-bottom: 0;
-}
-
-.contact-form h2 {
-  font-size: 32px;
-  color: var(--clr-neutral);
-}
-
-footer hr {
-  width: 100vw;
 }
 
 .contact-form__input {
@@ -210,17 +210,16 @@ footer hr {
   background: url('../assets/img/twitterdark.png') no-repeat;
 }
 
-
-@media (min-width: 768px ) {
-
-  .menu-btn{
+@media (min-width: 768px) {
+  .menu-btn {
     display: none;
   }
+
   .menu {
     display: flex;
   }
-  
-  .mail{
+
+  .mail {
     background: url('../assets/img/mail.png') no-repeat;
   }
 
@@ -228,30 +227,30 @@ footer hr {
     background-image: url("../assets/img/header-desktop.png");
     grid-template-columns: 100px 1fr 1fr;
   }
-  .home > .bio{
+
+  .home > .bio {
     text-align: start;
     align-self: auto;
   }
 
-  .home > .bio > h1{
+  .home > .bio > h1 {
     font-size: 72px;
     line-height: 82px;
   }
-  
+
   .home > .bio > span {
     font-size: 32px;
     line-height: 44px;
   }
 
-  .home .contact-link{
+  .home .contact-link {
     flex-direction: column;
     grid-row: 1;
   }
 
-  .work-section > :first-child  > h2{
-    width: calc(100vw/2);
+  .work-section > :first-child > h2 {
+    width: calc(100vw / 2);
   }
- 
 
   .work-header {
     flex-direction: row;
@@ -267,25 +266,23 @@ footer hr {
     gap: var(--gap);
   }
 
-  .about{
+  .about {
     background-image: url("../assets/img/about-me-desktop.png");
   }
 
-  .about-bio{
-    width: calc(100vw/2);
+  .about-bio {
+    width: calc(100vw / 2);
   }
-  
+
   .skill {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-
   }
 
   .contact-form {
     flex-direction: row;
-}
-
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024.343px) {
