@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.menu {
+  display: none;
+}
+
 .btn-icon {
   background: url('../assets/img/menu.png') no-repeat;
   border: none;
@@ -18,11 +22,7 @@
 }
 
 .home > :first-child {
-  padding-top: 50%;
-}
-
-.home > span {
-  display: block;
+  padding-top: 10%;
 }
 
 .home > .contact-link {
@@ -54,11 +54,27 @@
   background: url('../assets/img/thumbs.png') no-repeat;
 }
 
-.work-section > :first-child {
-  border-bottom: 1px solid var(--clr-gray-1);
+.work-header {
+  flex-direction: column;
+}
+
+.contact-form > h2 {
+  font-size: 32px;
+  color: var(--clr-neutral);
+}
+
+.work-section > :first-child > h2 {
   width: 327px;
   font-size: 40px;
-  height: 83px;
+}
+
+footer hr {
+  width: 100vw;
+}
+
+.work-section hr {
+  width: 100%;
+  align-self: center;
 }
 
 .tag > * {
@@ -96,26 +112,38 @@
 
 .project-container {
   flex-direction: column;
+  margin-bottom: 4rem;
 }
 
 .project {
   background-image: url("../assets/img/project-img.png");
   padding-top: 6rem;
   padding-bottom: 1rem;
+  width: 327px;
 }
 
 .about {
-  height: 30rem;
-  background: url('../assets/img/about-me-mobile.png') no-repeat;
-  background-position: bottom right;
-  padding-top: 6rem;
-  border-bottom: 1px solid var(--clr-light);
+  min-height: 100vh;
+  background-image: url("../assets/img/about-me-mobile.png");
+  background-repeat: no-repeat;
+  background-position: right top 30%;
+}
+
+.about > :first-child > h2 {
+  width: 327px;
+  font-size: 72px;
+  height: 88px;
 }
 
 .skill {
   flex-direction: column;
   align-items: center;
   padding-top: 6rem;
+}
+
+.skill > * > h3 {
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .skill-icon {
@@ -135,19 +163,8 @@
 }
 
 .contact-form {
-  margin-bottom: 0;
-}
-
-.contact-form h2 {
-  font-size: 32px;
-  color: var(--clr-neutral);
-}
-
-.contact-form hr {
-  position: absolute;
-  width: 100vw;
-  margin: 0;
-  left: 0;
+  flex-direction: column;
+  margin-bottom: 4rem;
 }
 
 .contact-form__input {
@@ -191,4 +208,97 @@
 
 .btn-contact.twitter-dark {
   background: url('../assets/img/twitterdark.png') no-repeat;
+}
+
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .mail {
+    background: url('../assets/img/mail.png') no-repeat;
+  }
+
+  .home {
+    background-image: url("../assets/img/header-desktop.png");
+    grid-template-columns: 100px 1fr 1fr;
+  }
+
+  .home > .bio {
+    text-align: start;
+    align-self: auto;
+  }
+
+  .home > .bio > h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .home > .bio > span {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .home .contact-link {
+    flex-direction: column;
+    grid-row: 1;
+  }
+
+  .work-section > :first-child > h2 {
+    width: calc(100vw / 2);
+  }
+
+  .work-header {
+    flex-direction: row;
+  }
+
+  .featured {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+  }
+
+  .project-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+  }
+
+  .about {
+    background-image: url("../assets/img/about-me-desktop.png");
+  }
+
+  .about-bio {
+    width: calc(100vw / 2);
+  }
+
+  .skill {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-form {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .contact-form > .contact {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(100vw / 2);
+    align-items: stretch;
+  }
+
+  .contact-form > .contact > button {
+    align-self: start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024.343px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
