@@ -164,7 +164,7 @@ footer hr {
 
 .contact-form {
   flex-direction: column;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
 }
 
 .contact-form__input {
@@ -282,6 +282,18 @@ footer hr {
 
   .contact-form {
     flex-direction: row;
+    align-items: start;
+  }
+
+  .contact-form > .contact {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: calc(100vw / 2);
+    align-items: stretch;
+  }
+
+  .contact-form > .contact > button {
+    align-self: start;
   }
 }
 
