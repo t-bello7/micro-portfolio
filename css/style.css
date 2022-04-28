@@ -112,7 +112,7 @@
   min-height: 100vh;
   background-image: url("../assets/img/about-me-mobile.png");
   background-repeat: no-repeat;
-  background-position: right top 25%;
+  background-position: right top 30%;
 }
 
 .about > :first-child > h2 {
@@ -127,6 +127,10 @@
   padding-top: 6rem;
 }
 
+.skill > * > h3{
+  font-size:  32px;
+  line-height: 44px;
+}
 .skill-icon {
   display: inline-block;
   margin-right: var(--gap);
@@ -213,11 +217,17 @@ footer hr {
   .mail{
     background: url('../assets/img/mail.png') no-repeat;
   }
+  .home {
+    background-image: url("../assets/img/header-desktop.png");
+  }
+
   .project-container {
     flex-direction: row;
 
   }
- 
+  .about{
+    background-image: url("../assets/img/about-me-desktop.png");
+  }
   .skill {
     flex-direction: row;
   }
