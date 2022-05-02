@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://t-bello7.github.io/micro-portfolio/)
 
 
 ## Getting Started
