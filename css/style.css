@@ -9,7 +9,7 @@
 }
 
 .btn-icon {
-  background: url('../assets/img/menu.png') no-repeat;
+  background: url("../assets/img/menu.png") no-repeat;
   border: none;
   padding: 20px 20px 5px 0;
 }
@@ -35,23 +35,23 @@
 }
 
 .btn-contact.github {
-  background: url('../assets/img/github.png') no-repeat;
+  background: url("../assets/img/github.png") no-repeat;
 }
 
 .btn-contact.twitter {
-  background: url('../assets/img/twitter.png') no-repeat;
+  background: url("../assets/img/twitter.png") no-repeat;
 }
 
 .btn-contact.medium {
-  background: url('../assets/img/medium.png') no-repeat;
+  background: url("../assets/img/medium.png") no-repeat;
 }
 
 .btn-contact.linkedin {
-  background: url('../assets/img/linkedin.png') no-repeat;
+  background: url("../assets/img/linkedin.png") no-repeat;
 }
 
 .btn-contact.thumbs {
-  background: url('../assets/img/thumbs.png') no-repeat;
+  background: url("../assets/img/thumbs.png") no-repeat;
 }
 
 .work-header {
@@ -162,6 +162,10 @@ footer hr {
   border-radius: 50%;
 }
 
+label {
+  visibility: hidden;
+}
+
 .contact-form {
   flex-direction: column;
   margin-bottom: 4rem;
@@ -191,23 +195,23 @@ footer hr {
 }
 
 .btn-contact.medium-dark {
-  background: url('../assets/img/mediumdark.png') no-repeat;
+  background: url("../assets/img/mediumdark.png") no-repeat;
 }
 
 .btn-contact.linkedin-dark {
-  background: url('../assets/img/linkedindark.png') no-repeat;
+  background: url("../assets/img/linkedindark.png") no-repeat;
 }
 
 .btn-contact.thumbs-dark {
-  background: url('../assets/img/angelistdark.png') no-repeat;
+  background: url("../assets/img/angelistdark.png") no-repeat;
 }
 
 .btn-contact.github-dark {
-  background: url('../assets/img/githubdark.png') no-repeat;
+  background: url("../assets/img/githubdark.png") no-repeat;
 }
 
 .btn-contact.twitter-dark {
-  background: url('../assets/img/twitterdark.png') no-repeat;
+  background: url("../assets/img/twitterdark.png") no-repeat;
 }
 
 @media (min-width: 768px) {
@@ -220,7 +224,7 @@ footer hr {
   }
 
   .mail {
-    background: url('../assets/img/mail.png') no-repeat;
+    background: url("../assets/img/mail.png") no-repeat;
   }
 
   .home {
