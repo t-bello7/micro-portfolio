@@ -22,6 +22,7 @@
   --clr-light: #fff;
   --clr-primary-1: #943e00;
   --clr-primary-2: #fff5e1;
+  --clr-primary-3: #ff6b00;
   --clr-neutral: #172b4d;
   --clr-neutral-1: #fbf8f7;
 
@@ -54,6 +55,7 @@
 .text-light { color: var(--clr-light); }
 .text-primary-1 { color: var(--clr-primary-1); }
 .text-primary-2 { color: var(--clr-primary-2); }
+.text-primary-3 { color: var(--clr-primary-3);}
 
 .ff-roboto { font-family: var(--ff-roboto); }
 .ff-crete { font-family: var(--ff-crete); }
