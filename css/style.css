@@ -94,8 +94,9 @@ footer hr {
 .btn {
   background-color: var(--clr-primary-1);
   color: var(--clr-light);
-  border: none;
+  border: 1px solid var(--clr-primary-1);
   padding: var(--gap);
+  transition: background-color 250ms ease-in;
 }
 
 .btn-project {
@@ -107,7 +108,6 @@ footer hr {
 .btn:hover {
   background-color: var(--clr-light);
   color: var(--clr-primary-1);
-  border: 1px solid var(--clr-primary-1);
 }
 
 .project-container {
@@ -177,11 +177,18 @@ label {
   border-bottom: 1px solid var(--clr-gray-2);
 }
 
+.contact-form__input:focus {
+  outline: 1px solid var(--clr-gray-2);
+}
+
 .contact-form__textarea {
-  border: none;
   padding: 1rem;
   color: var(--clr-gray);
   background-size: contain;
+}
+
+.contact-form__textarea:focus {
+  outline: 1px solid var(--clr-gray-2);
 }
 
 .contact {
