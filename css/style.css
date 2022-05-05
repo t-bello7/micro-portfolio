@@ -97,7 +97,6 @@ footer hr {
   border: 1px solid var(--clr-primary-1);
   padding: var(--gap);
   transition: background-color 250ms ease-in;
-
 }
 
 .btn-project {
