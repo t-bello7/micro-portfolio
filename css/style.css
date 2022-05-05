@@ -177,11 +177,18 @@ label {
   border-bottom: 1px solid var(--clr-gray-2);
 }
 
+.contact-form__input:focus {
+  outline: 1px solid var(--clr-gray-2);
+}
+
 .contact-form__textarea {
-  border: none;
   padding: 1rem;
   color: var(--clr-gray);
   background-size: contain;
+}
+
+.contact-form__textarea:focus {
+  outline: 1px solid var(--clr-gray-2);
 }
 
 .contact {
