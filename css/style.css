@@ -94,8 +94,10 @@ footer hr {
 .btn {
   background-color: var(--clr-primary-1);
   color: var(--clr-light);
-  border: none;
+  border: 1px solid var(--clr-primary-1);
   padding: var(--gap);
+  transition: background-color 250ms ease-in;
+
 }
 
 .btn-project {
@@ -107,7 +109,6 @@ footer hr {
 .btn:hover {
   background-color: var(--clr-light);
   color: var(--clr-primary-1);
-  border: 1px solid var(--clr-primary-1);
 }
 
 .project-container {
