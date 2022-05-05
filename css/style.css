@@ -122,6 +122,12 @@ footer hr {
   width: 327px;
 }
 
+.project .bg-text {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
 .about {
   min-height: 100vh;
   background-image: url("../assets/img/about-me-mobile.png");
@@ -160,10 +166,6 @@ footer hr {
 
 .skill-icon-circle {
   border-radius: 50%;
-}
-
-label {
-  visibility: hidden;
 }
 
 .contact-form {

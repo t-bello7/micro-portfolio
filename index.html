@@ -17,15 +17,15 @@
           <button class="btn-icon menu-btn" type="button" aria-label="menu button"> </button>
           <ul class="flex menu text-light">
             <li><a href="#portfolio"> Portfolio </a></li>
-            <li><a href="/"> Home </a></li>
+            <li><a href="#home"> Home </a></li>
             <li><a href="#contact"> Contact </a></li>
-            <li><a href="mailto:bello4aus@gmail.com" class="btn-contact mail"> </a></li>
+            <li><a href="mailto:bello4aus@gmail.com" class="btn-contact mail"><span class="sr-only">Bello Mail</span> </a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="grid-container home bg-dark">
+    <main id="home" class="grid-container home bg-dark">
       <div class="bio">
         <h1 class="text-primary-1 ff-crete line-height-1">
           Hey There. <br />
@@ -41,11 +41,11 @@
         </p>
       </div>
       <ul class="flex contact-link mg-1">
-        <li><a href="https://github.com/t-bello7" class="btn-contact github"> <span class="sr-only">Bello Github Profile</span> </a></li>
-        <li><a href="https://medium.com/@bellotomi" class="btn-contact medium"> <span class="sr-only">Bello Medium Profile</span></a></li>
-        <li><a href="https://angel.co/u/tbello" class="btn-contact thumbs"> <span class="sr-only">Bello Angel List Profile</span> </a></li>
-        <li><a href="https://twitter.com/__tbello" class="btn-contact twitter"> <span class="sr-only">Bello Twitter Profile</span> </a></li>
-        <li><a href="https://www.linkedin.com/in/tbello7/" class="btn-contact linkedin"> <span class="sr-only">Bello linkedins Profile</span> </a></li>
+        <li><a href="https://github.com/t-bello7" class="btn-contact github"> <span class="sr-only bg-light">Bello Github Profile</span> </a></li>
+        <li><a href="https://medium.com/@bellotomi" class="btn-contact medium"> <span class="sr-only bg-light">Bello Medium Profile</span></a></li>
+        <li><a href="https://angel.co/u/tbello" class="btn-contact thumbs"> <span class="sr-only bg-light">Bello Angel List Profile</span> </a></li>
+        <li><a href="https://twitter.com/__tbello" class="btn-contact twitter"> <span class="sr-only bg-light">Bello Twitter Profile</span> </a></li>
+        <li><a href="https://www.linkedin.com/in/tbello7/" class="btn-contact linkedin"> <span class="sr-only bg-light">Bello linkedins Profile</span> </a></li>
       </ul>
     </main>
 
@@ -55,7 +55,7 @@
         <hr />
       </div>
       <div class="featured grid">
-        <img src="assets/img/img-placeholder-desktop.png" alt="" />
+        <img src="assets/img/img-placeholder-desktop.png" alt="featured-project-image" />
         <div>
           <h3 class="mg-1 ff-crete">Multi-Post Stories</h3>
           <p class="ff-inter">
@@ -74,8 +74,8 @@
       </div>
       <div class="grid project-container">
         <div class="mg-1 text-light project">
-          <h2 class="mg-inline">Profesional Art Printing Data</h2>
-          <p class="mg-1 mg-inline">
+          <h2 class="mg-inline bg-text">Profesional Art Printing Data</h2>
+          <p class="mg-1 mg-inline bg-text">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
           </p>
@@ -87,8 +87,8 @@
           <button class="btn btn-project" type="button">See Project</button>
         </div>
         <div class="mg-1 text-light project">
-          <h2 class="mg-inline">Profesional Art Printing Data</h2>
-          <p class="mg-1 mg-inline">
+          <h2 class="mg-inline bg-text">Profesional Art Printing Data</h2>
+          <p class="mg-1 mg-inline bg-text">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
           </p>
@@ -100,8 +100,8 @@
           <button class="btn btn-project" type="button">See Project</button>
         </div>
         <div class="mg-1 text-light project">
-          <h2 class="mg-inline">Profesional Art Printing Data</h2>
-          <p class="mg-1 mg-inline">
+          <h2 class="mg-inline bg-text">Profesional Art Printing Data</h2>
+          <p class="mg-1 mg-inline bg-text">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
           </p>
@@ -113,8 +113,8 @@
           <button class="btn btn-project" type="button">See Project</button>
         </div>
         <div class="mg-1 text-light project">
-          <h2 class="mg-inline">Profesional Art Printing Data</h2>
-          <p class="mg-1 mg-inline">
+          <h2 class="mg-inline bg-text">Profesional Art Printing Data</h2>
+          <p class="mg-1 mg-inline bg-text">
             A daily selection of privately personalized reads; no accounts or
             sign-ups required. has been the industry's standard
           </p>
@@ -188,7 +188,7 @@
           action="https://formspree.io/f/mwkywooe"
           method="post"
         >
-          <label for="name">Username</label>
+          <label class="sr-only" for="name">Username</label>
           <input
             id="name"
             class="contact-form__input ff-inter"
@@ -197,7 +197,7 @@
             maxlength="30"
             required
           />
-          <label for="email">Email</label>
+          <label class="sr-only" for="email">Email</label>
           <input
             id="email"
             class="mg-1 contact-form__input ff-inter"
@@ -205,7 +205,7 @@
             placeholder="Email address"
             required
           />
-          <label for="description">Message</label>
+          <label class="sr-only" for="description">Message</label>
           <textarea
             class="mg-1 contact-form__textarea bg-neutral-1"
             name="description"
