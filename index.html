@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/utility.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/utility.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Micro-Portfolio</title>
   </head>
   <body>
@@ -14,14 +14,16 @@
       <div class="flex header">
         <a href="/" class="text-light"> <span class="sr-only">  Bello Tomi Portfolio</span> Bello Tomi</a>
         <nav>
-          <button class="btn-icon menu-btn" type="button" aria-label="menu button"> </button>
-          <ul class="flex menu text-light">
+          <button id="menu-btn" class="menu-btn" type="button" aria-label="menu button"> </button>
+          <ul id="mobile-menu" class="flex menu text-light">
+            <li><button id="close-btn" class="close-btn" type="button" aria-label="menu button"> </button></li>
             <li><a href="#portfolio"> Portfolio </a></li>
-            <li><a href="#home"> Home </a></li>
+            <li><a href="#about"> About </a></li>
             <li><a href="#contact"> Contact </a></li>
             <li><a href="mailto:bello4aus@gmail.com" class="btn-contact mail"><span class="sr-only">Bello Mail</span> </a></li>
           </ul>
         </nav>
+
       </div>
     </header>
 
@@ -128,7 +130,7 @@
       </div>
     </section>
 
-    <section class="bg-dark container about">
+    <section id="about" class="bg-dark container about">
       <div class="pd-10 about-bio">
         <h2 class="text-primary-3 ff-crete">About Me</h2>
         <p class="mg-1 ff-inter text-light">
@@ -229,5 +231,7 @@
         <li><a href="https://www.linkedin.com/in/tbello7/" class="btn-contact linkedin-dark"><span class="sr-only">Bello Linkedin Profile</span> </a></li>
       </ul>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

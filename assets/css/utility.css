@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: 'InaiMathi';
-  src: url(../assets/font/InaiMathi-Regular.ttf);
+  src: url(./font/InaiMathi-Regular.ttf);
 }
 
 @font-face {
   font-family: 'InaiMathi';
-  src: url(../assets/font/InaiMathi-Regular.ttf);
+  src: url(./font/InaiMathi-Regular.ttf);
 }
 
 :root {
@@ -18,6 +18,7 @@
   --clr-gray: #3c3a39;
   --clr-gray-1: #212121;
   --clr-gray-2: #8993a4;
+  --clr-gray-3: #6f6c6b;
   --clr-dark: #1c1a19;
   --clr-light: #fff;
   --clr-primary-1: #943e00;
