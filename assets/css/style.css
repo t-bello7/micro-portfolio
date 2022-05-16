@@ -7,15 +7,27 @@
 .menu {
   position: absolute;
   background-color: var(--clr-gray);
-  top:0;
-  left: 100%;
+  top: 0;
+  right: 100%;
   width: 100%;
   height: 100vh;
   flex-direction: column;
 }
 
-.visible{
+.visible {
   left: 0;
+  padding-inline: 2rem;
+}
+
+.visible > * {
+  padding: 1rem;
+  border-bottom: 1px solid var(--clr-gray-3);
+  font-size: 2rem;
+  font-family: var(--ff-inter);
+}
+
+.visible :nth-child(5) {
+  display: none;
 }
 
 .menu-btn {
@@ -28,6 +40,8 @@
   background: url("../img/cls-btn.png") no-repeat;
   border: none;
   padding: 20px 20px 5px 0;
+  margin-left: 90%;
+  margin-top: 1rem;
 }
 
 .home {
@@ -239,9 +253,6 @@ footer hr {
   background: url("../img/twitterdark.png") no-repeat;
 }
 
-
-
-
 @media (min-width: 768px) and (max-width: 1024.343px) {
   .project-container {
     grid-template-columns: repeat(2, 1fr);
@@ -255,7 +266,14 @@ footer hr {
 
   .menu {
     display: flex;
-    position: block;
+    position: static;
+    flex-direction: row;
+    background: none;
+    height: inherit;
+  }
+
+  .close-btn {
+    display: none;
   }
 
   .mail {
