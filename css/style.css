@@ -9,7 +9,7 @@
 }
 
 .btn-icon {
-  background: url('../assets/img/menu.png') no-repeat;
+  background: url("../assets/img/menu.png") no-repeat;
   border: none;
   padding: 20px 20px 5px 0;
 }
@@ -35,23 +35,23 @@
 }
 
 .btn-contact.github {
-  background: url('../assets/img/github.png') no-repeat;
+  background: url("../assets/img/github.png") no-repeat;
 }
 
 .btn-contact.twitter {
-  background: url('../assets/img/twitter.png') no-repeat;
+  background: url("../assets/img/twitter.png") no-repeat;
 }
 
 .btn-contact.medium {
-  background: url('../assets/img/medium.png') no-repeat;
+  background: url("../assets/img/medium.png") no-repeat;
 }
 
 .btn-contact.linkedin {
-  background: url('../assets/img/linkedin.png') no-repeat;
+  background: url("../assets/img/linkedin.png") no-repeat;
 }
 
 .btn-contact.thumbs {
-  background: url('../assets/img/thumbs.png') no-repeat;
+  background: url("../assets/img/thumbs.png") no-repeat;
 }
 
 .work-header {
@@ -94,8 +94,9 @@ footer hr {
 .btn {
   background-color: var(--clr-primary-1);
   color: var(--clr-light);
-  border: none;
+  border: 1px solid var(--clr-primary-1);
   padding: var(--gap);
+  transition: background-color 250ms ease-in;
 }
 
 .btn-project {
@@ -107,7 +108,6 @@ footer hr {
 .btn:hover {
   background-color: var(--clr-light);
   color: var(--clr-primary-1);
-  border: 1px solid var(--clr-primary-1);
 }
 
 .project-container {
@@ -120,6 +120,12 @@ footer hr {
   padding-top: 6rem;
   padding-bottom: 1rem;
   width: 327px;
+}
+
+.project .bg-text {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
 
 .about {
@@ -173,11 +179,18 @@ footer hr {
   border-bottom: 1px solid var(--clr-gray-2);
 }
 
+.contact-form__input:focus {
+  outline: 1px solid var(--clr-gray-2);
+}
+
 .contact-form__textarea {
-  border: none;
   padding: 1rem;
   color: var(--clr-gray);
   background-size: contain;
+}
+
+.contact-form__textarea:focus {
+  outline: 1px solid var(--clr-gray-2);
 }
 
 .contact {
@@ -191,23 +204,23 @@ footer hr {
 }
 
 .btn-contact.medium-dark {
-  background: url('../assets/img/mediumdark.png') no-repeat;
+  background: url("../assets/img/mediumdark.png") no-repeat;
 }
 
 .btn-contact.linkedin-dark {
-  background: url('../assets/img/linkedindark.png') no-repeat;
+  background: url("../assets/img/linkedindark.png") no-repeat;
 }
 
 .btn-contact.thumbs-dark {
-  background: url('../assets/img/angelistdark.png') no-repeat;
+  background: url("../assets/img/angelistdark.png") no-repeat;
 }
 
 .btn-contact.github-dark {
-  background: url('../assets/img/githubdark.png') no-repeat;
+  background: url("../assets/img/githubdark.png") no-repeat;
 }
 
 .btn-contact.twitter-dark {
-  background: url('../assets/img/twitterdark.png') no-repeat;
+  background: url("../assets/img/twitterdark.png") no-repeat;
 }
 
 @media (min-width: 768px) {
@@ -220,7 +233,7 @@ footer hr {
   }
 
   .mail {
-    background: url('../assets/img/mail.png') no-repeat;
+    background: url("../assets/img/mail.png") no-repeat;
   }
 
   .home {

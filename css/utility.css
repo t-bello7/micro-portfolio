@@ -20,8 +20,9 @@
   --clr-gray-2: #8993a4;
   --clr-dark: #1c1a19;
   --clr-light: #fff;
-  --clr-primary-1: #ff6b00;
+  --clr-primary-1: #943e00;
   --clr-primary-2: #fff5e1;
+  --clr-primary-3: #ff6b00;
   --clr-neutral: #172b4d;
   --clr-neutral-1: #fbf8f7;
 
@@ -54,6 +55,7 @@
 .text-light { color: var(--clr-light); }
 .text-primary-1 { color: var(--clr-primary-1); }
 .text-primary-2 { color: var(--clr-primary-2); }
+.text-primary-3 { color: var(--clr-primary-3); }
 
 .ff-roboto { font-family: var(--ff-roboto); }
 .ff-crete { font-family: var(--ff-crete); }
@@ -70,6 +72,18 @@
 .flex {
   display: flex;
   gap: var(--gap);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .container > * {
