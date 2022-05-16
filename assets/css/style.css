@@ -26,8 +26,8 @@
   font-family: var(--ff-inter);
 }
 
-.visible :nth-child(5) {
-  display: none;
+.visible :nth-child(5), :first-child {
+  border-bottom: none;
 }
 
 .menu-btn {
