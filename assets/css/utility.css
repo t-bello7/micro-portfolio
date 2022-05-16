@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: 'InaiMathi';
-  src: url(../assets/font/InaiMathi-Regular.ttf);
+  src: url(./font/InaiMathi-Regular.ttf);
 }
 
 @font-face {
   font-family: 'InaiMathi';
-  src: url(../assets/font/InaiMathi-Regular.ttf);
+  src: url(./font/InaiMathi-Regular.ttf);
 }
 
 :root {
