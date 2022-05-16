@@ -255,6 +255,7 @@ footer hr {
 
   .menu {
     display: flex;
+    position: block;
   }
 
   .mail {
