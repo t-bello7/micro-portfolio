@@ -162,6 +162,13 @@ footer hr {
   z-index: 2;
 }
 
+.modal {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .about {
   min-height: 100vh;
   background-image: url("../img/about-me-mobile.png");
