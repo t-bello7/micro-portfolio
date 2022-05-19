@@ -377,10 +377,6 @@ footer hr {
     place-items: end;
   }
 
-  .modal > .modal-content:last-child {
-    flex: 1 1 auto;
-  }
-
   .modal > .modal-content > img {
     width: 60%;
   }
