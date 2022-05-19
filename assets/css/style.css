@@ -162,7 +162,7 @@ footer hr {
   z-index: 2;
 }
 
-.modal {  
+.modal {
   display: none;
   position: fixed;
   background-color: var(--clr-light);
@@ -178,7 +178,7 @@ footer hr {
   transform: translate(-50%, -50%);
 }
 
-.modal > *{
+.modal > * {
   max-width: 80%;
   margin: 0 auto;
 }
@@ -193,6 +193,7 @@ footer hr {
   justify-content: start;
   margin-block: 2rem;
 }
+
 .modal > .modal-content {
   margin-block: 2rem;
   flex-direction: column;
@@ -356,7 +357,7 @@ footer hr {
   .work-header {
     flex-direction: row;
     grid-area: work-header;
-    gap: var(--gap); 
+    gap: var(--gap);
   }
 
   .featured {
@@ -373,21 +374,21 @@ footer hr {
     flex-direction: row;
     place-items: end;
   }
-  
-  .project:hover > :not(.btn-project){
+
+  .project:hover > :not(.btn-project) {
     display: none;
   }
 
-  .project:hover > .btn-project{
+  .project:hover > .btn-project {
     display: block;
     bottom: 0;
     border: none;
   }
 
-  .work-section{
-    grid-template-areas: "work-header work-header work-header"
-                          "work-featured work-featured work-featured"                         
-      ;
+  .work-section {
+    grid-template-areas:
+      "work-header work-header work-header"
+      "work-featured work-featured work-featured";
   }
 
   .work-section > :first-child > h2 {

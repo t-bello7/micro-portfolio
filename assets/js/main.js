@@ -1,57 +1,57 @@
 const openBtn = document.querySelector('#menu-btn');
 const mobileMenu = document.querySelector('#mobile-menu');
 const closeBtn = document.querySelector('#close-btn');
-const projectContainer = document.querySelector('.work-section')
+const projectContainer = document.querySelector('.work-section');
 const works = [
-    {
-        id: 001,
-        featured: true,
-        img_dir: `assets/img/img-placeholder-desktop.png`,
-        header: `Multi-Post Stories`,
-        description: `A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
-        tags: [ 'css', 'html' ,'bootstrap', 'ruby'],
-        content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`
-    },
-    {
-        id: 002,
-        img_dir: `/assets/img/modal-image.png`,
-        header: `Profesional Art Printing Data`,
-        description: ` A daily selection of privately personalized reads; no accounts or
+  {
+    id: '001',
+    featured: true,
+    img_dir: 'assets/img/img-placeholder-desktop.png',
+    header: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    tags: ['css', 'html', 'bootstrap', 'ruby'],
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  },
+  {
+    id: '002',
+    img_dir: '/assets/img/modal-image.png',
+    header: 'Profesional Art Printing Data',
+    description: ` A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
-        tags: ['html', 'bootstrap', 'Ruby'],
-         content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`
-    },
-    {
-        id: 003,
-        img_dir: `/assets/img/project-img.png`,
-        header: `Profesional Art Printing Data`,
-        description: ` A daily selection of privately personalized reads; no accounts or
+    tags: ['html', 'bootstrap', 'Ruby'],
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  },
+  {
+    id: '003',
+    img_dir: '/assets/img/project-img.png',
+    header: 'Profesional Art Printing Data',
+    description: ` A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
-        tags: ['html', 'bootstrap', 'Ruby'],
-         content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`
+    tags: ['html', 'bootstrap', 'Ruby'],
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
 
-    },
-    {
-        id: 004,
-        img_dir: `/assets/img/project-img.png`,
-        header: `Profesional Art Printing Data`,
-        description: ` A daily selection of privately personalized reads; no accounts or
+  },
+  {
+    id: '004',
+    img_dir: '/assets/img/project-img.png',
+    header: 'Profesional Art Printing Data',
+    description: ` A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
-        tags: ['html', 'bootstrap', 'Ruby'],
-         content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`
+    tags: ['html', 'bootstrap', 'Ruby'],
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
 
-    },
-    {
-        id: 005,
-        img_dir:`/assets/img/project-img.png` ,
-        header: `Profesional Art Printing Data`,
-        description: ` A daily selection of privately personalized reads; no accounts or
+  },
+  {
+    id: '005',
+    img_dir: '/assets/img/project-img.png',
+    header: 'Profesional Art Printing Data',
+    description: ` A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
-        tags: ['html', 'bootstrap', 'Ruby'],
-         content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`
+    tags: ['html', 'bootstrap', 'Ruby'],
+    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
 
-    }
-]
+  },
+];
 
 openBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('visible');
@@ -61,12 +61,10 @@ closeBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('visible');
 });
 
-
-
-let renderDocuments = (arr, container) => {
-    arr.forEach(element => {
-        if (element.featured == true) {
-          container.innerHTML += `
+const renderDocuments = (arr, container) => {
+  arr.forEach((element) => {
+    if (element.featured === true) {
+      container.innerHTML += `
           <div class="featured flex">
             <img src="${element.img_dir}" alt="featured-img" />
             <div>
@@ -105,9 +103,9 @@ let renderDocuments = (arr, container) => {
             </div>
           </div>
         </div>
-        `
-        }
-        else (
+        `;
+    } else {
+      (
         container.innerHTML += `
         <div class="mg-2 text-light project">
           <h2 class="mg-inline bg-text">${element.header}</h2>
@@ -144,32 +142,29 @@ let renderDocuments = (arr, container) => {
             </div>
           </div>
       </div>
-        `)
-    }); 
-
-}
+        `);
+    }
+  });
+};
 renderDocuments(works, projectContainer);
 
-projectContainer.addEventListener('click', e => {
+projectContainer.addEventListener('click', (e) => {
   e.preventDefault();
 
   const modalBtn = e.target.closest('.open-btn');
 
   if (!modalBtn) return;
 
-  const modal_featurd = modalBtn.parentNode.parentNode
-
   let modal = modalBtn.parentNode.nextElementSibling;
 
-  if (modal == null){
-    console.log('hey')
+  if (modal == null) {
     modal = modalBtn.parentNode.parentNode.nextElementSibling;
   }
 
   modal.classList.add('is-open');
   const closeBtn = modal.querySelector('#close-btn');
 
-  closeBtn.addEventListener('click', () =>{
+  closeBtn.addEventListener('click', () => {
     modal.classList.remove('is-open');
-  })
-})
+  });
+});
