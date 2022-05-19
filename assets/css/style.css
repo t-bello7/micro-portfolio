@@ -144,9 +144,8 @@ footer hr {
   color: var(--clr-primary-1);
 }
 
-.project-container {
+.featured {
   flex-direction: column;
-  margin-bottom: 4rem;
 }
 
 .project {
@@ -154,6 +153,7 @@ footer hr {
   padding-top: 6rem;
   padding-bottom: 1rem;
   width: 327px;
+  height: 360px;
 }
 
 .project .bg-text {
@@ -162,13 +162,50 @@ footer hr {
   z-index: 2;
 }
 
-.modal {
-  display: block;
-  position: absolute;
+.modal {  
+  display: none;
+  position: fixed;
+  background-color: var(--clr-light);
+  color: var(--clr-gray-2);
+  height: 95vh;
+  z-index: 10;
+  width: 80%;
+  max-width: 100%;
+  padding: 2rem;
+  overflow-y: scroll;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+.modal > *{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.modal > .modal-header {
+  place-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.modal > .tag-featured {
+  justify-content: start;
+  margin-block: 2rem;
+}
+.modal > .modal-content {
+  margin-block: 2rem;
+  flex-direction: column;
+}
+
+.modal > .buttons {
+  justify-content: space-evenly;
+}
+
+.is-open {
+  display: block;
+}
+
 .about {
   min-height: 100vh;
   background-image: url("../img/about-me-mobile.png");
@@ -316,22 +353,45 @@ footer hr {
     grid-row: 1;
   }
 
-  .work-section > :first-child > h2 {
-    width: calc(100vw / 2);
-  }
-
   .work-header {
     flex-direction: row;
+    grid-area: work-header;
+    gap: var(--gap); 
   }
 
   .featured {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--gap);
+    flex-direction: row;
+    grid-area: work-featured;
   }
 
-  .project-container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap);
+  .project > .btn-project {
+    display: none;
+  }
+
+  .modal > .modal-content {
+    margin-block: 2rem;
+    flex-direction: row;
+    place-items: end;
+  }
+  
+  .project:hover > :not(.btn-project){
+    display: none;
+  }
+
+  .project:hover > .btn-project{
+    display: block;
+    bottom: 0;
+    border: none;
+  }
+
+  .work-section{
+    grid-template-areas: "work-header work-header work-header"
+                          "work-featured work-featured work-featured"                         
+      ;
+  }
+
+  .work-section > :first-child > h2 {
+    width: calc(100vw / 2);
   }
 
   .about {

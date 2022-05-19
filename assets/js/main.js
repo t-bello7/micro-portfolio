@@ -1,10 +1,11 @@
 const openBtn = document.querySelector('#menu-btn');
 const mobileMenu = document.querySelector('#mobile-menu');
 const closeBtn = document.querySelector('#close-btn');
-const projectContainer = document.querySelector('.project-container')
+const projectContainer = document.querySelector('.work-section')
 const works = [
     {
         id: 001,
+        featured: true,
         img_dir: `assets/img/img-placeholder-desktop.png`,
         header: `Multi-Post Stories`,
         description: `A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.`,
@@ -61,10 +62,54 @@ closeBtn.addEventListener('click', () => {
 });
 
 
+
 let renderDocuments = (arr, container) => {
     arr.forEach(element => {
+        if (element.featured == true) {
+          container.innerHTML += `
+          <div class="featured flex">
+            <img src="${element.img_dir}" alt="featured-img" />
+            <div>
+              <h3 class="mg-1 ff-crete">${element.header}</h3>
+              <p class="ff-inter">
+                ${element.description}
+              </p>
+              <ul class="tag tag-feature mg-1 ff-inter flex">
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">  ${element.tags[0]}  </a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">  ${element.tags[1]}  </a></li>
+                <li><a href="https://getbootstrap.com/">  ${element.tags[2]}  </a></li>
+                <li><a href="https://www.ruby-lang.org/en/"> ${element.tags[3]}  </a></li>
+              </ul>
+              <button class="btn open-btn"  data-id=${element.id} type="button">See Project</button>
+            </div>
+        </div>
+        <div class = "modal"> 
+          <div class = "modal-header flex">
+            <h3 class="mg-1 ff-crete">${element.header}</h3>
+            <img id="close-btn" src="./assets/img/close-icon.png" alt="close-icon">
+          </div>
+
+          <ul class="mg-2 mg-inline flex tag tag-featured">
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"> ${element.tags[0]} </a></li>
+            <li><a href="https://getbootstrap.com/">  ${element.tags[1]} </a></li>
+            <li><a href="https://www.ruby-lang.org/en/">  ${element.tags[2]} </a></li>
+          </ul>
+          <div class="flex modal-content">
+            <img class="mg-2" src="${element.img_dir}" alt="modal-image">
+            <div>
+              <p class="ff-inter">${element.content}</p>
+              <div class = " buttons mg-2 flex">
+                <button class="btn flex" type="button">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
+                <button class="btn flex" type="button">See Source <img src="./assets/img/github.png" alt="github"> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        `
+        }
+        else (
         container.innerHTML += `
-        <div class="mg-1 text-light project">
+        <div class="mg-2 text-light project">
           <h2 class="mg-inline bg-text">${element.header}</h2>
           <p class="mg-1 mg-inline bg-text">
                 ${element.description}
@@ -74,32 +119,57 @@ let renderDocuments = (arr, container) => {
             <li><a href="https://getbootstrap.com/">  ${element.tags[1]} </a></li>
             <li><a href="https://www.ruby-lang.org/en/">  ${element.tags[2]} </a></li>
           </ul>
-          <button class="btn btn-project" type="button">See Project</button>
+          <button class="btn btn-project open-btn" data-id=${element.id} type="button">See Project</button>
         </div>
         <div class = "modal"> 
-        <div class = "modal-header">
-        <h3 class="mg-1 ff-crete">${element.header}</h3>
-        <img src="./assets/img/close-icon.png" alt="close-icon">
-        </div>
-        
-        <ul class="mg-1 mg-inline flex tag tag-project">
-          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"> ${element.tags[0]} </a></li>
-          <li><a href="https://getbootstrap.com/">  ${element.tags[1]} </a></li>
-          <li><a href="https://www.ruby-lang.org/en/">  ${element.tags[2]} </a></li>
-      </ul>
-      <img src="${element.img_dir}" alt="modal-image">
-      <p class="ff-inter">
-        ${element.content}
-      </p>
-      <div class = "flex">
-      <button class="btn" type="button">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon">
-      </button>
-      <button class="btn" type="button">See Source <img src="./assets/img/github.png" alt="github">
-      </button>
+          <div class = "modal-header flex">
+            <h3 class="ff-crete">${element.header}</h3>
+            <img id="close-btn" src="./assets/img/close-icon.png" alt="close-icon">
+          </div>
+
+          <ul class="mg-4 flex tag tag-featured">
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"> ${element.tags[0]} </a></li>
+            <li><a href="https://getbootstrap.com/">  ${element.tags[1]} </a></li>
+            <li><a href="https://www.ruby-lang.org/en/">  ${element.tags[2]} </a></li>
+          </ul>
+
+          <div class="flex modal-content">
+            <img class="mg-2" src="${element.img_dir}" alt="modal-image">
+            <div class="">
+              <p class="ff-inter">${element.content}</p>
+              <div class = " buttons mg-2 flex">
+                <button class="btn flex" type="button">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
+                <button class="btn flex" type="button">See Source <img src="./assets/img/github.png" alt="github"> </button>
+              </div>
+            </div>
+          </div>
       </div>
-        </div>
-        `
+        `)
     }); 
 
 }
 renderDocuments(works, projectContainer);
+
+projectContainer.addEventListener('click', e => {
+  e.preventDefault();
+
+  const modalBtn = e.target.closest('.open-btn');
+
+  if (!modalBtn) return;
+
+  const modal_featurd = modalBtn.parentNode.parentNode
+
+  let modal = modalBtn.parentNode.nextElementSibling;
+
+  if (modal == null){
+    console.log('hey')
+    modal = modalBtn.parentNode.parentNode.nextElementSibling;
+  }
+
+  modal.classList.add('is-open');
+  const closeBtn = modal.querySelector('#close-btn');
+
+  closeBtn.addEventListener('click', () =>{
+    modal.classList.remove('is-open');
+  })
+})
