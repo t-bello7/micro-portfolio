@@ -170,8 +170,7 @@ footer hr {
   height: 95vh;
   z-index: 10;
   width: 80%;
-  max-width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   overflow-y: scroll;
   left: 50%;
   top: 50%;
@@ -179,7 +178,7 @@ footer hr {
 }
 
 .modal > * {
-  max-width: 80%;
+  max-width: 95%;
   margin: 0 auto;
 }
 
@@ -195,12 +194,16 @@ footer hr {
 }
 
 .modal > .modal-content {
-  margin-block: 2rem;
   flex-direction: column;
 }
 
 .modal > .buttons {
   justify-content: space-evenly;
+}
+
+.btn-modal {
+  padding: 1em;
+  font-size: 12px;
 }
 
 .is-open {
@@ -370,9 +373,16 @@ footer hr {
   }
 
   .modal > .modal-content {
-    margin-block: 2rem;
     flex-direction: row;
     place-items: end;
+  }
+
+  .modal > .modal-content:last-child {
+    flex: 1 1 auto;
+  }
+
+  .modal > .modal-content > img {
+    width: 60%;
   }
 
   .project:hover > :not(.btn-project) {

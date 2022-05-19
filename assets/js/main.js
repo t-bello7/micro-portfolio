@@ -97,8 +97,8 @@ const renderDocuments = (arr, container) => {
             <div>
               <p class="ff-inter">${element.content}</p>
               <div class = " buttons mg-2 flex">
-                <button class="btn flex" type="button">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
-                <button class="btn flex" type="button">See Source <img src="./assets/img/github.png" alt="github"> </button>
+                <button class="btn flex btn-modal" type="button">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
+                <button class="btn flex btn-modal" type="button">See Source <img src="./assets/img/github.png" alt="github"> </button>
               </div>
             </div>
           </div>
@@ -136,8 +136,8 @@ const renderDocuments = (arr, container) => {
             <div class="">
               <p class="ff-inter">${element.content}</p>
               <div class = " buttons mg-2 flex">
-                <button class="btn flex" type="button">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
-                <button class="btn flex" type="button">See Source <img src="./assets/img/github.png" alt="github"> </button>
+                <button class="btn flex btn-modal" type="button">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
+                <button class="btn flex btn-modal" type="button">See Source <img src="./assets/img/github.png" alt="github"> </button>
               </div>
             </div>
           </div>
