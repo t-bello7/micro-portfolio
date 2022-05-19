@@ -6,7 +6,7 @@ const works = [
   {
     id: '001',
     featured: true,
-    img_dir: 'assets/img/img-placeholder-desktop.png',
+    img_dir: './assets/img/img-placeholder-desktop.png',
     header: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     tags: ['css', 'html', 'bootstrap', 'ruby'],
@@ -14,7 +14,7 @@ const works = [
   },
   {
     id: '002',
-    img_dir: '/assets/img/modal-image.png',
+    img_dir: './assets/img/modal-image.png',
     header: 'Profesional Art Printing Data',
     description: ` A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
@@ -23,7 +23,7 @@ const works = [
   },
   {
     id: '003',
-    img_dir: '/assets/img/project-img.png',
+    img_dir: './assets/img/project-img.png',
     header: 'Profesional Art Printing Data',
     description: ` A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
@@ -33,7 +33,7 @@ const works = [
   },
   {
     id: '004',
-    img_dir: '/assets/img/project-img.png',
+    img_dir: './assets/img/project-img.png',
     header: 'Profesional Art Printing Data',
     description: ` A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
@@ -43,7 +43,7 @@ const works = [
   },
   {
     id: '005',
-    img_dir: '/assets/img/project-img.png',
+    img_dir: './assets/img/project-img.png',
     header: 'Profesional Art Printing Data',
     description: ` A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
