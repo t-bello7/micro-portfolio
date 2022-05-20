@@ -64,21 +64,18 @@ closeBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('visible');
 });
 
+contactForm.addEventListener('submit', (e) => {
+  const errorMsgs = [];
 
-contactForm.addEventListener('submit', e =>{
-
-  let errorMsgs = [];
-  
-  if ( emailInput.value !== emailInput.value.toLowerCase()){
-    errorMsgs.push('Your email should be in lower case')
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    errorMsgs.push('Your email should be in lower case');
   }
 
-  if (errorMsgs.length > 0){
-    e.preventDefault()
-    errorMsg.innerText = errorMsgs.join('')
+  if (errorMsgs.length > 0) {
+    e.preventDefault();
+    errorMsg.innerText = errorMsgs.join('');
   }
-
-})
+});
 const renderDocuments = (arr, container) => {
   arr.forEach((element) => {
     if (element.featured === true) {
