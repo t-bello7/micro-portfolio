@@ -65,44 +65,40 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('visible');
 });
-let contactDict = {}
+let contactDict = {};
 
-if(JSON.parse(localStorage.getItem("contactDict")) === null) {
+if (JSON.parse(localStorage.getItem('contactDict')) === null) {
   contactDict = {
-    name: "",
-    email: "",
-    description: ""
-  }
-}else{
-  contactDict =  JSON.parse(localStorage.getItem("contactDict"))
+    name: '',
+    email: '',
+    description: '',
+  };
+} else {
+  contactDict = JSON.parse(localStorage.getItem('contactDict'));
 }
 
-nameInput.addEventListener('change', (e)=>{
-  contactDict.name = e.target.value
-  localStorage.setItem("contactDict", JSON.stringify(contactDict)); 
-})
+nameInput.addEventListener('change', (e) => {
+  contactDict.name = e.target.value;
+  localStorage.setItem('contactDict', JSON.stringify(contactDict));
+});
 
-emailInput.addEventListener('change', (e)=>{
-  contactDict.email = e.target.value
-  localStorage.setItem("contactDict", JSON.stringify(contactDict));
-})
+emailInput.addEventListener('change', (e) => {
+  contactDict.email = e.target.value;
+  localStorage.setItem('contactDict', JSON.stringify(contactDict));
+});
 
-descInput.addEventListener('change', (e)=>{
-  contactDict.description = e.target.value
-  localStorage.setItem("contactDict", JSON.stringify(contactDict));
-})
+descInput.addEventListener('change', (e) => {
+  contactDict.description = e.target.value;
+  localStorage.setItem('contactDict', JSON.stringify(contactDict));
+});
 
-nameInput.value = JSON.parse(localStorage.getItem("contactDict")).name
-emailInput.value = JSON.parse(localStorage.getItem("contactDict")).email
-descInput.value = JSON.parse(localStorage.getItem("contactDict")).description
-
+nameInput.value = JSON.parse(localStorage.getItem('contactDict')).name;
+emailInput.value = JSON.parse(localStorage.getItem('contactDict')).email;
+descInput.value = JSON.parse(localStorage.getItem('contactDict')).description;
 
 contactForm.addEventListener('submit', (e) => {
   const errorMsgs = [];
 
-  let name = contactForm.querySelector("#name");
-  
-  console.log(name)
   if (emailInput.value !== emailInput.value.toLowerCase()) {
     errorMsgs.push('Your email should be in lower case');
   }
