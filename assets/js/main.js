@@ -3,7 +3,9 @@ const mobileMenu = document.querySelector('#mobile-menu');
 const closeBtn = document.querySelector('#close-btn');
 const contactForm = document.querySelector('#contact-form');
 const errorMsg = document.querySelector('.error-msg');
+const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
+const descInput = document.querySelector('#description');
 const projectContainer = document.querySelector('.work-section');
 const works = [
   {
@@ -64,9 +66,42 @@ closeBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('visible');
 });
 
+//if getItem contactDict is null >>
+// {
+//   let contactDict = {
+//     name: "",
+//     email: "",
+//     description: ""
+//   }
+// }
+// else{ contactDict =  JSON.parse(localStorage.getItem("contactDict"))
+
+nameInput.addEventListener('change', (e)=>{
+  contactDict.name = e.target.value
+  localStorage.setItem("contactDict", JSON.stringify(contactDict)); 
+})
+
+emailInput.addEventListener('change', (e)=>{
+  contactDict.email = e.target.value
+  localStorage.setItem("contactDict", JSON.stringify(contactDict));
+})
+
+descInput.addEventListener('change', (e)=>{
+  contactDict.description = e.target.value
+  localStorage.setItem("contactDict", JSON.stringify(contactDict));
+})
+
+nameInput.value = JSON.parse(localStorage.getItem("contactDict")).name
+emailInput.value = JSON.parse(localStorage.getItem("contactDict")).email
+descInput.value = JSON.parse(localStorage.getItem("contactDict")).description
+
+
 contactForm.addEventListener('submit', (e) => {
   const errorMsgs = [];
 
+  let name = contactForm.querySelector("#name");
+  
+  console.log(name)
   if (emailInput.value !== emailInput.value.toLowerCase()) {
     errorMsgs.push('Your email should be in lower case');
   }
