@@ -1,6 +1,9 @@
 const openBtn = document.querySelector('#menu-btn');
 const mobileMenu = document.querySelector('#mobile-menu');
 const closeBtn = document.querySelector('#close-btn');
+const contactForm = document.querySelector('#contact-form');
+const errorMsg = document.querySelector('.error-msg');
+const emailInput = document.querySelector('#email');
 const projectContainer = document.querySelector('.work-section');
 const works = [
   {
@@ -61,6 +64,18 @@ closeBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('visible');
 });
 
+contactForm.addEventListener('submit', (e) => {
+  const errorMsgs = [];
+
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    errorMsgs.push('Your email should be in lower case');
+  }
+
+  if (errorMsgs.length > 0) {
+    e.preventDefault();
+    errorMsg.innerText = errorMsgs.join('');
+  }
+});
 const renderDocuments = (arr, container) => {
   arr.forEach((element) => {
     if (element.featured === true) {

@@ -115,6 +115,7 @@
           to chat please get in touch.
         </h2>
         <form
+          id="contact-form"
           class="flex contact"
           action="https://formspree.io/f/mwkywooe"
           method="post"
@@ -122,6 +123,7 @@
           <label class="sr-only" for="name">Username</label>
           <input
             id="name"
+            name="name"
             class="contact-form__input ff-inter"
             type="text"
             placeholder="Full name"
@@ -131,6 +133,7 @@
           <label class="sr-only" for="email">Email</label>
           <input
             id="email"
+            name="email"
             class="mg-1 contact-form__input ff-inter"
             type="email"
             placeholder="Email address"
@@ -147,6 +150,10 @@
             placeholder="Enter text here"
             required
           ></textarea>
+
+          <div class="error-msg center ff-inter">
+
+          </div>
           <button class="center btn" type="submit">Get in touch</button>
         </form>
       </div>
