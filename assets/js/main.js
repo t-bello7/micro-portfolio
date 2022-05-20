@@ -65,16 +65,16 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('visible');
 });
+let contactDict = {}
 
-if (JSON.parse(localStorage.getItem("contactDict")) === null)
-{
-  let contactDict = {
+if(JSON.parse(localStorage.getItem("contactDict")) === null) {
+  contactDict = {
     name: "",
     email: "",
     description: ""
   }
 }else{
-  let contactDict =  JSON.parse(localStorage.getItem("contactDict"))
+  contactDict =  JSON.parse(localStorage.getItem("contactDict"))
 }
 
 nameInput.addEventListener('change', (e)=>{
