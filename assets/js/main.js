@@ -1,12 +1,12 @@
-const openBtn = document.querySelector('#menu-btn');
+const openBtn = document.querySelectorAll('#menu-btn');
 const mobileMenu = document.querySelector('#mobile-menu');
-const closeBtn = document.querySelector('#close-btn');
+const closeBtn = document.querySelectorAll('#close-btn');
 const contactForm = document.querySelector('#contact-form');
-const errorMsg = document.querySelector('.error-msg');
+const errorMsg = document.querySelectorAll('.error-msg');
 const nameInput = document.querySelector('#name');
-const emailInput = document.querySelector('#email');
+const emailInput = document.querySelectorAll('#email');
 const descInput = document.querySelector('#description');
-const projectContainer = document.querySelector('.work-section');
+const projectContainer = document.querySelectorAll('.work-section');
 const works = [
   {
     id: '001',
