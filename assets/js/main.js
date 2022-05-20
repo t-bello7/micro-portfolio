@@ -75,6 +75,9 @@ if (JSON.parse(localStorage.getItem('contactDict')) === null) {
   };
 } else {
   contactDict = JSON.parse(localStorage.getItem('contactDict'));
+  descInput.value = JSON.parse(localStorage.getItem('contactDict')).description;
+  nameInput.value = JSON.parse(localStorage.getItem('contactDict')).name;
+  emailInput.value = JSON.parse(localStorage.getItem('contactDict')).email;
 }
 
 nameInput.addEventListener('change', (e) => {
@@ -91,10 +94,6 @@ descInput.addEventListener('change', (e) => {
   contactDict.description = e.target.value;
   localStorage.setItem('contactDict', JSON.stringify(contactDict));
 });
-
-nameInput.value = JSON.parse(localStorage.getItem('contactDict')).name;
-emailInput.value = JSON.parse(localStorage.getItem('contactDict')).email;
-descInput.value = JSON.parse(localStorage.getItem('contactDict')).description;
 
 contactForm.addEventListener('submit', (e) => {
   const errorMsgs = [];
