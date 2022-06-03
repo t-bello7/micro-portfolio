@@ -11,50 +11,58 @@ const works = [
   {
     id: '001',
     featured: true,
+    private: true,
     img_dir: './assets/img/img-placeholder-desktop.png',
-    header: 'Multi-Post Stories',
+    header: 'Ecommerce Dashboard',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    tags: ['css', 'html', 'bootstrap', 'ruby'],
+    tags: ['CSS', 'ReactJS', 'MaterialUI','Javascript'],
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    liveLink: 'https://varsity-admin.netlify.app/',
+    source: '',
   },
   {
     id: '002',
     img_dir: './assets/img/modal-image.png',
-    header: 'Profesional Art Printing Data',
+    header: 'Finconnect',
     description: ` A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'Ruby'],
+    tags: ['Django', 'HTML', 'CSS', 'Python'],
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    liveLink: 'https://finconnect.herokuapp.com/',
+    source: 'https://github.com/t-bello7/finconnect'
   },
   {
     id: '003',
     img_dir: './assets/img/project-img.png',
-    header: 'Profesional Art Printing Data',
+    header: 'Creer',
     description: ` A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'Ruby'],
+    tags: ['DjangoRestFramework', 'PostgresSql', 'Python'],
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-
+    liveLink: 'https://creer-pjt-105.herokuapp.com/',
+    source: 'https://github.com/zuri-training/creer-be-pjt-105'
   },
   {
     id: '004',
     img_dir: './assets/img/project-img.png',
-    header: 'Profesional Art Printing Data',
-    description: ` A daily selection of privately personalized reads; no accounts or
+    header: 'Formula One FanPage',
+    description: ` privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'Ruby'],
+    tags: ['CSS', 'HTML', 'Javascript'],
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-
+    liveLink: 'https://t-bello7.github.io/micro-capstone-1/',
+    source: 'https://github.com/t-bello7/micro-capstone-1'
   },
   {
     id: '005',
     img_dir: './assets/img/project-img.png',
-    header: 'Profesional Art Printing Data',
+    header: 'Space travel',
     description: ` A daily selection of privately personalized reads; no accounts or
         sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'Ruby'],
+    tags: ['html', 'CSS', 'Javascript'],
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-
+    liveLink: 'https://t-bello7.github.io/space-travel/',
+    source: 'https://github.com/t-bello7/space-travel'
   },
 ];
 
