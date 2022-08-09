@@ -148,8 +148,17 @@ footer hr {
   flex-direction: column;
 }
 
+.featured > img {
+  width: 648px;
+}
+
 .project {
   background-image: url("../img/project-img.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: grey;
   padding-top: 6rem;
   padding-bottom: 1rem;
   width: 327px;
@@ -159,6 +168,7 @@ footer hr {
 .project .bg-text {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: drop-shadow(4px 4px 10px black);
   z-index: 2;
 }
 

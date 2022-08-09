@@ -11,50 +11,54 @@ const works = [
   {
     id: '001',
     featured: true,
-    img_dir: './assets/img/img-placeholder-desktop.png',
-    header: 'Multi-Post Stories',
+    private: true,
+    img_dir: './assets/img/varsity-img.png',
+    header: 'Ecommerce Dashboard',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    tags: ['css', 'html', 'bootstrap', 'ruby'],
+    tags: ['CSS', 'ReactJS', 'MaterialUI', 'Javascript'],
     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    liveLink: 'https://varsity-admin.netlify.app/',
+    source: '',
   },
   {
     id: '002',
-    img_dir: './assets/img/modal-image.png',
-    header: 'Profesional Art Printing Data',
-    description: ` A daily selection of privately personalized reads; no accounts or
-        sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'Ruby'],
-    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    img_dir: './assets/img/finconnect-img.png',
+    header: 'Finconnect',
+    description: 'A listing web application for financial services',
+    tags: ['Django', 'HTML', 'CSS', 'Python'],
+    content: ' a full-stack web application to list financial services allowing the company to have a better record of financial partners and a platform for customers to easily access these financial services',
+    liveLink: 'https://finconnect.herokuapp.com/',
+    source: 'https://github.com/t-bello7/finconnect',
   },
   {
     id: '003',
-    img_dir: './assets/img/project-img.png',
-    header: 'Profesional Art Printing Data',
-    description: ` A daily selection of privately personalized reads; no accounts or
-        sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'Ruby'],
-    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-
+    img_dir: './assets/img/todolist-img.png',
+    header: 'Minimal Todo List',
+    description: 'A minimal todo list application for keeping track of your tasks',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    content: 'A minimalist Todo list app that\'s everywhere you are. "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
+    liveLink: 'https://t-bello7.github.io/micro-todo/',
+    source: 'https://github.com/t-bello7/micro-todo',
   },
   {
     id: '004',
-    img_dir: './assets/img/project-img.png',
-    header: 'Profesional Art Printing Data',
-    description: ` A daily selection of privately personalized reads; no accounts or
-        sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'Ruby'],
-    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-
+    img_dir: './assets/img/formula-one.png',
+    header: 'Formula One FanPage',
+    description: 'A landing page for formula one fans',
+    tags: ['CSS', 'HTML', 'Javascript'],
+    content: 'A landing page for formula one fans',
+    liveLink: 'https://t-bello7.github.io/micro-capstone-1/',
+    source: 'https://github.com/t-bello7/micro-capstone-1',
   },
   {
     id: '005',
-    img_dir: './assets/img/project-img.png',
-    header: 'Profesional Art Printing Data',
-    description: ` A daily selection of privately personalized reads; no accounts or
-        sign-ups required. has been the industry's standard`,
-    tags: ['html', 'bootstrap', 'Ruby'],
-    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-
+    img_dir: './assets/img/space-img.png',
+    header: 'Space travel',
+    description: 'A landing page for space travel and tourism.',
+    tags: ['html', 'CSS', 'Javascript'],
+    content: 'In a distant future humans would going on tours to the vast space. Ever felt the like travelling space, this is a landing page for space travel and toursim.',
+    liveLink: 'https://t-bello7.github.io/space-travel/',
+    source: 'https://github.com/t-bello7/space-travel',
   },
 ];
 
@@ -107,6 +111,7 @@ contactForm.addEventListener('submit', (e) => {
     errorMsg.innerText = errorMsgs.join('');
   }
 });
+
 const renderDocuments = (arr, container) => {
   arr.forEach((element) => {
     if (element.featured === true) {
@@ -143,7 +148,7 @@ const renderDocuments = (arr, container) => {
             <div>
               <p class="ff-inter">${element.content}</p>
               <div class = " buttons mg-2 flex">
-                <button class="btn flex btn-modal" type="button">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
+                <button class="btn flex btn-modal" type="button" onclick="">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
                 <button class="btn flex btn-modal" type="button">See Source <img src="./assets/img/github.png" alt="github"> </button>
               </div>
             </div>
@@ -153,7 +158,7 @@ const renderDocuments = (arr, container) => {
     } else {
       (
         container.innerHTML += `
-        <div class="mg-2 text-light project">
+        <div style="background-image:url(${element.img_dir})" class="mg-2 text-light project">
           <h2 class="mg-inline bg-text">${element.header}</h2>
           <p class="mg-1 mg-inline bg-text">
                 ${element.description}
@@ -182,8 +187,8 @@ const renderDocuments = (arr, container) => {
             <div class="">
               <p class="ff-inter">${element.content}</p>
               <div class = " buttons mg-2 flex">
-                <button class="btn flex btn-modal" type="button">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
-                <button class="btn flex btn-modal" type="button">See Source <img src="./assets/img/github.png" alt="github"> </button>
+                <a class="btn flex btn-modal btn-live"  onclick="window.open('${element.liveLink}')" type="button">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </a>
+                <button class="btn flex btn-modal btn-source" onclick="window.open('${element.source}')">See Source <img src="./assets/img/github.png" alt="github"> </button>
               </div>
             </div>
           </div>
