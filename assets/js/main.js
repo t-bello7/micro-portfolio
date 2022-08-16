@@ -7,6 +7,8 @@ const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const descInput = document.querySelector('#description');
 const projectContainer = document.querySelector('.work-section');
+const bodyContainer = document.querySelector('.body-container');
+
 const works = [
   {
     id: '001',
@@ -117,7 +119,7 @@ const renderDocuments = (arr, container) => {
     if (element.featured === true) {
       container.innerHTML += `
           <div class="featured flex">
-            <img src="${element.img_dir}" alt="featured-img" />
+            <img  class="featured-img" src="${element.img_dir}" alt="featured-img" />
             <div>
               <h3 class="mg-1 ff-crete">${element.header}</h3>
               <p class="ff-inter">
@@ -132,7 +134,7 @@ const renderDocuments = (arr, container) => {
               <button class="btn open-btn"  data-id=${element.id} type="button">See Project</button>
             </div>
         </div>
-        <div class = "modal"> 
+        <div class = "modal" role="dialog"> 
           <div class = "modal-header flex">
             <h3 class="mg-1 ff-crete">${element.header}</h3>
             <img id="close-btn" src="./assets/img/close-icon.png" alt="close-icon">
@@ -170,7 +172,7 @@ const renderDocuments = (arr, container) => {
           </ul>
           <button class="btn btn-project open-btn" data-id=${element.id} type="button">See Project</button>
         </div>
-        <div class = "modal"> 
+        <div class = "modal" role="dialog"> 
           <div class = "modal-header flex">
             <h3 class="ff-crete">${element.header}</h3>
             <img id="close-btn" src="./assets/img/close-icon.png" alt="close-icon">
@@ -212,10 +214,14 @@ projectContainer.addEventListener('click', (e) => {
     modal = modalBtn.parentNode.parentNode.nextElementSibling;
   }
 
+  bodyContainer.classList.add('modalBlur');
+  projectContainer.classList.add('modalBlur');
   modal.classList.add('is-open');
   const closeBtn = modal.querySelector('#close-btn');
 
   closeBtn.addEventListener('click', () => {
     modal.classList.remove('is-open');
+    bodyContainer.classList.remove('modalBlur');
+    projectContainer.classList.remove('modalBlur');
   });
 });

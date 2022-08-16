@@ -148,8 +148,9 @@ footer hr {
   flex-direction: column;
 }
 
-.featured > img {
-  width: 648px;
+.featured > .featured-img {
+  height: 440px;
+  width: 200ch;
 }
 
 .project {
@@ -177,7 +178,7 @@ footer hr {
   position: fixed;
   background-color: var(--clr-light);
   color: var(--clr-gray-2);
-  height: 95vh;
+  height: 80vh;
   z-index: 10;
   width: 80%;
   padding: 1rem;
@@ -209,6 +210,12 @@ footer hr {
 
 .modal > .buttons {
   justify-content: space-evenly;
+}
+
+.body-container.modalBlur > *:not(.work-section),
+.work-section.modalBlur > *:not(.modal) {
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
 }
 
 .btn-modal {
@@ -388,7 +395,8 @@ footer hr {
   }
 
   .modal > .modal-content > img {
-    width: 60%;
+    width: 100ch;
+    height: 50vh;
   }
 
   .project:hover > :not(.btn-project) {
@@ -403,8 +411,8 @@ footer hr {
 
   .work-section {
     grid-template-areas:
-      "work-header work-header work-header"
-      "work-featured work-featured work-featured";
+      "work-header work-header"
+      "work-featured work-featured ";
   }
 
   .work-section > :first-child > h2 {
@@ -439,5 +447,13 @@ footer hr {
 
   .contact-form > .contact > button {
     align-self: start;
+  }
+}
+
+@media (min-width: 1060px) {
+  .work-section {
+    grid-template-areas:
+      "work-header work-header work-header"
+      "work-featured work-featured work-featured";
   }
 }
