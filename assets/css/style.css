@@ -40,12 +40,13 @@
   padding: 20px 20px 5px 0;
 }
 
-.close-btn {
-  background: url("../img/cls-btn.png") no-repeat;
-  border: none;
-  padding: 20px 20px 5px 0;
-  margin-left: 90%;
-  margin-top: 1rem;
+#close-btn {
+  cursor: pointer;
+}
+
+#close-btn:hover {
+  border: 1px solid var(--clr-primary-1);
+  padding: 0.4rem;
 }
 
 .home {
@@ -126,6 +127,7 @@ footer hr {
 }
 
 .btn {
+  cursor: pointer;
   background-color: var(--clr-primary-1);
   color: var(--clr-light);
   border: 1px solid var(--clr-primary-1);
@@ -148,8 +150,9 @@ footer hr {
   flex-direction: column;
 }
 
-.featured > img {
-  width: 648px;
+.featured > .featured-img {
+  height: 440px;
+  width: 200ch;
 }
 
 .project {
@@ -177,7 +180,7 @@ footer hr {
   position: fixed;
   background-color: var(--clr-light);
   color: var(--clr-gray-2);
-  height: 95vh;
+  height: 80vh;
   z-index: 10;
   width: 80%;
   padding: 1rem;
@@ -209,6 +212,18 @@ footer hr {
 
 .modal > .buttons {
   justify-content: space-evenly;
+}
+
+.body-container.modalBlur > *:not(.work-section),
+.work-section.modalBlur > *:not(.modal) {
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+}
+
+.disable-scroll {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .btn-modal {
@@ -388,7 +403,8 @@ footer hr {
   }
 
   .modal > .modal-content > img {
-    width: 60%;
+    width: 100ch;
+    height: 50vh;
   }
 
   .project:hover > :not(.btn-project) {
@@ -403,8 +419,8 @@ footer hr {
 
   .work-section {
     grid-template-areas:
-      "work-header work-header work-header"
-      "work-featured work-featured work-featured";
+      "work-header work-header"
+      "work-featured work-featured ";
   }
 
   .work-section > :first-child > h2 {
@@ -439,5 +455,13 @@ footer hr {
 
   .contact-form > .contact > button {
     align-self: start;
+  }
+}
+
+@media (min-width: 1060px) {
+  .work-section {
+    grid-template-areas:
+      "work-header work-header work-header"
+      "work-featured work-featured work-featured";
   }
 }
