@@ -14,13 +14,13 @@ const works = [
     id: '001',
     featured: true,
     private: true,
-    img_dir: './assets/img/varsity-img.png',
-    header: 'Ecommerce Dashboard',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    tags: ['CSS', 'ReactJS', 'MaterialUI', 'Javascript'],
-    content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    liveLink: 'https://varsity-admin.netlify.app/',
-    source: '',
+    img_dir: './assets/img/space-hub.png',
+    header: "Space Travellers' Hub",
+    description: "The Space Travellers' Hub consists of Rockets, Missions, and the My Profile section. The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
+    tags: ['Bootstrap5', 'ReactJS', 'Redux', 'React-Router'],
+    content: "The Space Travellers' Hub consists of Rockets, Missions, and the My Profile section. The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
+    liveLink: 'https://super-space-hub.netlify.app/',
+    source: 'https://github.com/t-bello7/Micro-Space-Hub',
   },
   {
     id: '002',
@@ -28,7 +28,7 @@ const works = [
     header: 'Finconnect',
     description: 'A listing web application for financial services',
     tags: ['Django', 'HTML', 'CSS', 'Python'],
-    content: ' a full-stack web application to list financial services allowing the company to have a better record of financial partners and a platform for customers to easily access these financial services',
+    content: ' A full-stack web application to list financial services allowing the company to have a better record of financial partners and a platform for customers to easily access these financial services',
     liveLink: 'https://finconnect.herokuapp.com/',
     source: 'https://github.com/t-bello7/finconnect',
   },
@@ -150,8 +150,8 @@ const renderDocuments = (arr, container) => {
             <div>
               <p class="ff-inter">${element.content}</p>
               <div class = " buttons mg-2 flex">
-                <button class="btn flex btn-modal" type="button" onclick="">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
-                <button class="btn flex btn-modal" type="button">See Source <img src="./assets/img/github.png" alt="github"> </button>
+                <button class="btn flex btn-modal btn-source" onclick="window.open('${element.liveLink}')">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
+                <button class="btn flex btn-modal btn-source" onclick="window.open('${element.source}')">See Source <img src="./assets/img/github.png" alt="github"> </button>
               </div>
             </div>
           </div>
@@ -215,6 +215,7 @@ projectContainer.addEventListener('click', (e) => {
   }
 
   bodyContainer.classList.add('modalBlur');
+  bodyContainer.classList.add('disable-scroll');
   projectContainer.classList.add('modalBlur');
   modal.classList.add('is-open');
   const closeBtn = modal.querySelector('#close-btn');
@@ -222,6 +223,7 @@ projectContainer.addEventListener('click', (e) => {
   closeBtn.addEventListener('click', () => {
     modal.classList.remove('is-open');
     bodyContainer.classList.remove('modalBlur');
+    bodyContainer.classList.remove('disable-scroll');
     projectContainer.classList.remove('modalBlur');
   });
 });
