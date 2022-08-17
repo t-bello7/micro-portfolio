@@ -40,12 +40,13 @@
   padding: 20px 20px 5px 0;
 }
 
-.close-btn {
-  background: url("../img/cls-btn.png") no-repeat;
-  border: none;
-  padding: 20px 20px 5px 0;
-  margin-left: 90%;
-  margin-top: 1rem;
+#close-btn {
+  cursor: pointer;
+}
+
+#close-btn:hover {
+  border: 1px solid var(--clr-primary-1);
+  padding: 0.4rem;
 }
 
 .home {
@@ -126,6 +127,7 @@ footer hr {
 }
 
 .btn {
+  cursor: pointer;
   background-color: var(--clr-primary-1);
   color: var(--clr-light);
   border: 1px solid var(--clr-primary-1);
@@ -216,6 +218,12 @@ footer hr {
 .work-section.modalBlur > *:not(.modal) {
   -webkit-filter: blur(8px);
   filter: blur(8px);
+}
+
+.disable-scroll {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .btn-modal {
