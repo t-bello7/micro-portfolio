@@ -40,6 +40,14 @@
   padding: 20px 20px 5px 0;
 }
 
+.close-btn {
+  background: url("../img/cls-btn.png") no-repeat;
+  border: none;
+  padding: 20px 20px 5px 0;
+  margin-left: 90%;
+  margin-top: 1rem;
+}
+
 #close-btn {
   cursor: pointer;
 }
