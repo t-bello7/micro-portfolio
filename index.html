@@ -134,7 +134,7 @@
         <form
           id="contact-form"
           class="flex contact"
-          action="https://formspree.io/f/mwkywooe"
+          onsubmit=" return setAction(this)"
           method="post"
         >
           <label class="sr-only" for="name">Username</label>
@@ -167,7 +167,10 @@
             placeholder="Enter text here"
             required
           ></textarea>
-
+          <label class="ohnohoney" for="coolname"></label>
+          <input class="ohnohoney" autocomplete="off" type="text" id="coolname" name="coolname" placeholder="Your name here">
+          <label class="ohnohoney" for="coolemail"></label>
+          <input class="ohnohoney" autocomplete="off" type="email" id="coolemail" name="coolemail" placeholder="Your e-mail here">
           <div class="error-msg center ff-inter">
 
           </div>
