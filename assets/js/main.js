@@ -227,3 +227,12 @@ projectContainer.addEventListener('click', (e) => {
     projectContainer.classList.remove('modalBlur');
   });
 });
+
+// eslint-disable-next-line no-unused-vars
+const setAction = (form) => {
+  form.action = 'https://formspree.io/f/mwkywooe';
+  if (form.coolname.value || form.coolemail.value) {
+    return false;
+  }
+  return true;
+};
