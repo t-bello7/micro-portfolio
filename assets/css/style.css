@@ -308,7 +308,7 @@ footer hr {
   outline: 1px solid var(--clr-gray-2);
 }
 
-.contact-form .ohnohoney {
+.contact-form .ohnohoney{
   opacity: 0;
   position: absolute;
   top: 0;
