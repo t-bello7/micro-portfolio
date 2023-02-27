@@ -8,187 +8,197 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/utility.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Bello Oluwatomisin Portfolio - Checkout projects created by me.</title>
   </head>
-  <body class="body-container">
-    <header class="container bg-gray">
-      <div class="flex header">
-        <a href="/" class="text-light"> <span class="sr-only">  Bello Tomi Portfolio</span>
-          <svg width="52" height="25" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 0c4 .1 7.3 3.3 7.3 7.1 0 2-1 4-2.4 5.2a7 7 0 0 1 2.4 5.2c0 4-3.4 7.2-7.6 7.2-1.3 0-3.3-.7-3.3-.7v.7H6.7V3.9H0V0h14.5Zm-.3 10.3A3.3 3.3 0 0 1 11 7.1C11 5.4 12.5 4 14.3 4c1.9 0 3.4 1.4 3.4 3.1 0 1.8-1.5 3.2-3.4 3.2Zm0 10.4a3.3 3.3 0 0 1-3.3-3.2c0-1.7 1.5-3.1 3.3-3.1 1.9 0 3.4 1.4 3.4 3.1 0 1.8-1.5 3.2-3.4 3.2Z" fill="#FF6B00"/>
-            <path fill="#fff" d="M0 1.8h14.2v.7H0zm8.6 22.8v-6.9h.6v7z"/>
-            <path d="M19.8 7.1c0 3-2.5 5.3-5.6 5.3a5.5 5.5 0 0 1-5.6-5.3c0-3 2.5-5.3 5.6-5.3 3.1 0 5.6 2.4 5.6 5.3Zm-10.4 0c0 2.5 2.1 4.6 4.8 4.6 2.6 0 4.8-2 4.8-4.6 0-2.5-2.2-4.5-4.8-4.5-2.7 0-4.8 2-4.8 4.5Z" fill="#fff"/>
-            <path d="M19.8 17.8c0 3-2.5 5.3-5.6 5.3a5.5 5.5 0 0 1-5.6-5.3c0-3 2.5-5.4 5.6-5.4 3.1 0 5.6 2.4 5.6 5.4Zm-10.4 0c0 2.5 2.1 4.5 4.8 4.5 2.6 0 4.8-2 4.8-4.5s-2.2-4.6-4.8-4.6c-2.7 0-4.8 2-4.8 4.6Z" fill="#fff"/>
-            <mask id="a" maskUnits="userSpaceOnUse" x="21.9" y="8.1" width="30" height="16" fill="#000">
-              <path fill="#fff" d="M21.9 8.1h30v16h-30z"/>
-              <path d="M36 9.1v14.5h-1.7V9h1.6Zm3.9 0v14.5h-1.7V9H40Z"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M46.6 23.8c-1 0-1.8-.3-2.6-.7a4.7 4.7 0 0 1-1.7-2c-.4-.8-.6-1.8-.6-3 0-1 .2-2 .6-2.9.4-.8 1-1.5 1.7-2 .8-.4 1.6-.6 2.6-.6s1.9.2 2.6.7c.7.4 1.3 1.1 1.7 2a6.5 6.5 0 0 1 0 5.9c-.4.8-1 1.4-1.7 1.9-.7.4-1.6.7-2.6.7Zm1.9-2c-.5.3-1.1.5-1.9.5-.7 0-1.3-.2-1.8-.6-.5-.4-.9-.9-1-1.5a5.8 5.8 0 0 1 0-4 2 2 0 0 1 1-1.5c.5-.4 1-.6 1.8-.6a2.9 2.9 0 0 1 2.9 2.1 5.7 5.7 0 0 1 0 4 4 4 0 0 1-1 1.5Z"/>
-              <path d="M25.2 23a5.5 5.5 0 0 0 4.7.4 3 3 0 0 0 1.5-1c.4-.3.7-.8.9-1.4l-1.6-.4-.6 1-1 .5-1.1.2c-.7 0-1.3-.2-1.8-.5a3 3 0 0 1-1.2-1.2 4 4 0 0 1-.4-1.9H24v-1.4h.5c0-.5.1-1 .4-1.5.2-.5.6-1 1-1.2a3 3 0 0 1 1.8-.5 2.8 2.8 0 0 1 2.6 1.6c.2.4.4 1 .4 1.6h-6.2v1.4h7.9V18a7 7 0 0 0-.4-2.6c-.3-.6-.7-1.2-1.1-1.6l-1.5-1-1.7-.2a4.6 4.6 0 0 0-4.3 2.7c-.4.8-.6 1.8-.6 3 0 1 .2 2 .6 2.8.4.9 1 1.5 1.7 2Z"/>
-            </mask>
-            <path d="M36 9.1v14.5h-1.7V9h1.6Zm3.9 0v14.5h-1.7V9H40Z" fill="#FF6B00"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M46.6 23.8c-1 0-1.8-.3-2.6-.7a4.7 4.7 0 0 1-1.7-2c-.4-.8-.6-1.8-.6-3 0-1 .2-2 .6-2.9.4-.8 1-1.5 1.7-2 .8-.4 1.6-.6 2.6-.6s1.9.2 2.6.7c.7.4 1.3 1.1 1.7 2a6.5 6.5 0 0 1 0 5.9c-.4.8-1 1.4-1.7 1.9-.7.4-1.6.7-2.6.7Zm1.9-2c-.5.3-1.1.5-1.9.5-.7 0-1.3-.2-1.8-.6-.5-.4-.9-.9-1-1.5a5.8 5.8 0 0 1 0-4 2 2 0 0 1 1-1.5c.5-.4 1-.6 1.8-.6a2.9 2.9 0 0 1 2.9 2.1 5.7 5.7 0 0 1 0 4 4 4 0 0 1-1 1.5Z" fill="#FF6B00"/>
-            <path d="M25.2 23a5.5 5.5 0 0 0 4.7.4 3 3 0 0 0 1.5-1c.4-.3.7-.8.9-1.4l-1.6-.4-.6 1-1 .5-1.1.2c-.7 0-1.3-.2-1.8-.5a3 3 0 0 1-1.2-1.2 4 4 0 0 1-.4-1.9H24v-1.4h.5c0-.5.1-1 .4-1.5.2-.5.6-1 1-1.2a3 3 0 0 1 1.8-.5 2.8 2.8 0 0 1 2.6 1.6c.2.4.4 1 .4 1.6h-6.2v1.4h7.9V18a7 7 0 0 0-.4-2.6c-.3-.6-.7-1.2-1.1-1.6l-1.5-1-1.7-.2a4.6 4.6 0 0 0-4.3 2.7c-.4.8-.6 1.8-.6 3 0 1 .2 2 .6 2.8.4.9 1 1.5 1.7 2Z" fill="#FF6B00"/>
-            <path d="M24.7 18.7h-.3.3Zm.5 4.4v.2-.2Zm-1.7-2-.2.2.2-.2Zm0-5.8-.2-.1h.2Zm1.7-2 .2.2-.2-.2Zm4.3-.4v-.3.3Zm1.5.9-.2.2.2-.2Zm1 1.6h.3-.2Zm.5 3.3v.3h.2v-.3h-.2Zm-8.4 0h-.3v.3h.3v-.3Zm0-1.4V17h-.3v.3h.3Zm6.7 0v.2h.2v-.2h-.2Zm-.4-1.7-.2.1h.2Zm-1-1.1-.2.2.2-.2Zm-3.3 0 .1.3-.1-.2ZM25 15.9h-.3.3Zm0 4.8h-.3.3Zm1.2 1.2-.2.3.2-.3Zm3 .3v.3-.3Zm.9-.6.2.2-.2-.2Zm.6-1v-.2h-.2v.2h.2Zm1.6.5.3.1V21l-.2-.1-.1.2Zm-.9 1.5.2.2-.2-.2Zm-1.4 1v.2-.3ZM36 9h.2v-.3h-.3V9Zm0 14.5v.2h.2v-.2h-.3Zm-1.7 0H34v.2h.3v-.2Zm0-14.5v-.3H34V9h.3Zm5.6 0h.3v-.3h-.3V9Zm0 14.5v.2h.3v-.2h-.3Zm-1.7 0H38v.2h.2v-.2Zm0-14.5v-.3H38V9h.2ZM44 23l-.1.2.1-.2Zm-1.7-2-.2.1h.2Zm0-5.9h-.2.2Zm1.7-2V13l.1.3Zm5.2 0-.1.3.1-.2Zm1.7 2-.2.2.2-.2Zm0 6-.2-.2.2.1ZM49.2 23l-.1-.3.1.3Zm-.7-1.4-.2-.2.2.2Zm1-1.5.3.1h-.3Zm0-4 .3-.1h-.3Zm-1-1.5.1-.3-.1.3Zm-3.7 0-.2-.3.2.3Zm-1 1.5-.3-.1h.2Zm0 4-.3.1h.2Zm1 1.5.2-.2-.2.2Zm-20.2-3h-.3.3Zm3.4 4.8c-1 0-1.9-.2-2.6-.6l-.3.4c.8.5 1.8.8 2.9.8v-.6Zm-2.6-.6c-.7-.5-1.3-1-1.7-1.9l-.4.3a5 5 0 0 0 1.8 2l.3-.4ZM23.7 21c-.3-.8-.5-1.7-.5-2.8h-.6c0 1.2.2 2.2.7 3l.4-.2Zm-.5-2.8c0-1 .2-2 .5-2.8l-.4-.2a7 7 0 0 0-.7 3h.6Zm.5-2.8c.4-.8 1-1.4 1.7-1.9l-.3-.4a5 5 0 0 0-1.8 2l.4.3Zm1.7-1.9c.6-.4 1.5-.6 2.4-.6v-.6c-1 0-2 .3-2.7.8l.3.4Zm2.4-.6c.5 0 1 0 1.6.2l.2-.5-1.8-.3v.6Zm1.6.2c.5.2 1 .5 1.4.9l.4-.4a4 4 0 0 0-1.6-1l-.2.5Zm1.4.9c.4.4.8.9 1 1.5l.5-.2c-.3-.7-.6-1.3-1.1-1.7l-.4.4Zm1 1.5c.3.7.4 1.5.4 2.5h.5c0-1 0-2-.4-2.7l-.5.2Zm.4 2.5v.7h.5V18h-.5Zm-7.8.7v-1.4h-.6v1.4h.6Zm6.6-1.4c0-.7 0-1.3-.4-1.8l-.4.3c.2.4.3.9.3 1.5h.5Zm-.4-1.8a3 3 0 0 0-1-1.2l-.4.4 1 1 .4-.2Zm-1-1.2a4 4 0 0 0-1.8-.5v.5c.6 0 1 .2 1.4.4l.3-.4Zm-1.8-.5c-.7 0-1.4.2-1.9.5l.3.5a3 3 0 0 1 1.6-.5v-.5Zm-1.9.5a4 4 0 0 0-1.2 1.4l.5.3a3 3 0 0 1 1-1.2l-.3-.5Zm-1.6 3.2v1h.5v-1h-.5Zm.4 3.2c.4.6.8 1 1.3 1.4l.3-.5c-.4-.3-.8-.6-1-1.2l-.6.3ZM26 22c.6.3 1.2.5 2 .5V22a3 3 0 0 1-1.7-.4l-.3.5Zm2 .5 1.2-.2-.1-.6c-.4.2-.7.2-1.1.2v.6Zm1.2-.2c.4-.2.8-.4 1-.7l-.3-.4c-.2.3-.5.4-.8.5l.1.6Zm1-.7c.4-.3.6-.6.7-1l-.5-.2-.5.8.4.4Zm.4-.8 1.6.4.2-.5-1.6-.5-.2.6Zm1.4 0c-.1.6-.4 1-.8 1.4l.4.4c.5-.5.8-1 1-1.6H32Zm-.8 1.4a4 4 0 0 1-1.3.9l.2.5a4 4 0 0 0 1.5-1l-.4-.4Zm-1.3.9a6 6 0 0 1-2 .3v.6c.8 0 1.5-.2 2.2-.4l-.2-.5Zm5.8-14v14.4h.5V9h-.5Zm.2 14h-1.6v.6h1.6v-.5Zm-1.4.4V9H34v14.5h.5Zm-.2-14.2h1.6v-.6h-1.6v.6Zm5.3-.3v14.5h.6V9h-.6Zm.3 14.2h-1.7v.5H40v-.5Zm-1.4.3V9H38v14.5h.5Zm-.3-14.2H40v-.6h-1.7v.6Zm8.4 14.1c-1 0-1.7-.2-2.4-.7l-.3.5a5 5 0 0 0 2.7.8v-.6Zm-2.4-.7c-.7-.4-1.3-1-1.6-1.8l-.5.2a5 5 0 0 0 1.8 2.1l.3-.5ZM42.6 21a6 6 0 0 1-.6-2.8h-.6c0 1.1.2 2.2.7 3l.5-.2Zm-.6-2.8c0-1.1.2-2 .6-2.8L42 15a7 7 0 0 0-.7 3h.6Zm.6-2.8c.3-.8.9-1.5 1.6-1.9l-.3-.5a5 5 0 0 0-1.8 2.1l.5.3Zm1.6-1.9c.7-.4 1.5-.6 2.4-.6v-.6c-1 0-2 .3-2.7.7l.3.5Zm2.4-.6c1 0 1.8.2 2.5.6l.2-.5a5 5 0 0 0-2.7-.7v.6Zm2.5.6c.7.4 1.2 1 1.6 1.9l.5-.3a5 5 0 0 0-1.9-2l-.2.4Zm1.6 1.9c.4.8.6 1.7.6 2.8h.5c0-1.2-.2-2.2-.6-3l-.5.2Zm.6 2.8c0 1-.2 2-.6 2.8l.5.2a7 7 0 0 0 .6-3h-.5Zm-.6 2.8c-.4.8-1 1.4-1.6 1.8l.2.5a5 5 0 0 0 1.9-2l-.5-.3ZM49 22.8a4 4 0 0 1-2.5.7v.6c1 0 2-.3 2.7-.8l-.2-.5Zm-2.5-.2c.8 0 1.5-.2 2-.7l-.3-.4c-.4.3-1 .5-1.7.5v.6Zm2-.7c.6-.4 1-1 1.2-1.6l-.5-.2a3 3 0 0 1-1 1.4l.3.4Zm1.2-1.6a6 6 0 0 0 .4-2.1h-.6a7 7 0 0 1-.3 2l.5.1Zm.4-2.1a6 6 0 0 0-.4-2.1l-.5.2c.2.6.3 1.2.3 1.9h.6Zm-.4-2.1a4 4 0 0 0-1.2-1.7l-.3.5c.4.3.8.8 1 1.4l.5-.2Zm-1.2-1.7c-.5-.4-1.2-.6-2-.6v.5c.7 0 1.3.2 1.7.6l.3-.5Zm-2-.6c-.8 0-1.4.2-2 .6l.4.5c.4-.4 1-.6 1.6-.6v-.5Zm-2 .6c-.5.5-.9 1-1.1 1.7l.5.2c.2-.6.5-1 1-1.4l-.4-.5Zm-1.1 1.7a6 6 0 0 0-.4 2h.5c0-.6.1-1.2.4-1.8l-.5-.2Zm-.4 2c0 .8.1 1.6.4 2.2l.5-.2c-.3-.6-.4-1.2-.4-2H43Zm.4 2.2a3 3 0 0 0 1.1 1.6l.4-.4c-.5-.3-.8-.8-1-1.4l-.5.2Zm1.1 1.6c.6.5 1.2.7 2 .7V22c-.7 0-1.2-.2-1.6-.5l-.4.4Zm-19.8-4.4v-.2h-.5v.2h.5Zm-.2-.5H24v.5h.5V17Zm-.5 2h.5v-.6H24v.6Zm.7-.3v-.2h-.5v.2h.5Zm-.5 0c0 .8.2 1.4.4 2l.5-.3a6 6 0 0 1-.4-1.7h-.5Zm8.2-.3h-8v.6h8v-.6Zm-7.8-2.7a4 4 0 0 0-.4 1.5h.5c0-.4.2-.8.4-1.2l-.5-.3Zm-.1 1.8h6.2V17h-6.2v.5Zm-.3 1.2h.5-.5Z" fill="#FF6B00" mask="url(#a)"/>
-            <path d="M28 23.3c-.9 0-1.7-.2-2.3-.6a5 5 0 0 1-1.6-1.9 6 6 0 0 1-.5-2.6c0-1 .1-1.8.5-2.6.4-.7.9-1.3 1.5-1.8.7-.4 1.4-.7 2.2-.7a4 4 0 0 1 3 1.4l.8 1.5c.2.6.4 1.2.4 1.8v.4h-8.2v-.4h7.7c0-.8-.1-1.5-.5-2.2a4 4 0 0 0-1.3-1.5 3.3 3.3 0 0 0-3.8 0c-.6.4-1 1-1.4 1.7a6 6 0 0 0 0 4.8c.3.7.7 1.2 1.3 1.7.6.4 1.3.6 2.2.6a3.5 3.5 0 0 0 2.6-1l.6-.7.3.2-.6.8a4 4 0 0 1-2.9 1.1ZM35.4 10v13.1H35V10h.4Zm4 0v13.1H39V10h.4Zm7.3 13.3a4 4 0 0 1-2.2-.6c-.6-.5-1.1-1-1.5-1.9a6 6 0 0 1-.6-2.6 5.5 5.5 0 0 1 2.1-4.4c.6-.4 1.4-.7 2.2-.7.8 0 1.5.3 2.1.7.7.4 1.2 1 1.5 1.8.4.8.6 1.7.6 2.6a6 6 0 0 1-.6 2.6 4 4 0 0 1-1.5 1.9c-.6.4-1.3.6-2.1.6Zm0-.4c.7 0 1.3-.2 1.9-.6.6-.4 1-1 1.4-1.7a6 6 0 0 0 0-4.8c-.4-.7-.8-1.2-1.4-1.6-.6-.5-1.2-.7-2-.7-.7 0-1.3.2-1.9.7-.6.4-1 1-1.3 1.6-.4.7-.5 1.5-.5 2.4 0 1 .1 1.7.5 2.4.3.7.7 1.3 1.3 1.7.6.4 1.2.6 2 .6Z" fill="#fff"/>
-          </svg>          
-        </a>
-        <nav>
-          <button id="menu-btn" class="menu-btn" type="button" aria-label="menu button"> </button>
-          <ul id="mobile-menu" class="flex menu text-light">
-            <li><button id="close-btn" class="close-btn" type="button" aria-label="menu button"> </button></li>
-            <li><a href="#portfolio"> Portfolio </a></li>
-            <li><a href="https://blog.tbello.tech/"> Blog </a></li>
-            <li><a href="#about"> About </a></li>
-            <li><a href="#contact"> Contact </a></li>
-            <li><a href="mailto:bello4aus@outlook.com" class="btn-contact mail"><span class="sr-only">Bello Mail</span> </a></li>
-          </ul>
-        </nav>
+  <body>
+    <div class="body-container">
+      <header class="bg-gray nav-header">
+        <div class="flex header">
+          <a href="/" class="text-light"> <span class="sr-only">  Bello Tomi Portfolio</span>
+            <svg width="52" height="25" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 0c4 .1 7.3 3.3 7.3 7.1 0 2-1 4-2.4 5.2a7 7 0 0 1 2.4 5.2c0 4-3.4 7.2-7.6 7.2-1.3 0-3.3-.7-3.3-.7v.7H6.7V3.9H0V0h14.5Zm-.3 10.3A3.3 3.3 0 0 1 11 7.1C11 5.4 12.5 4 14.3 4c1.9 0 3.4 1.4 3.4 3.1 0 1.8-1.5 3.2-3.4 3.2Zm0 10.4a3.3 3.3 0 0 1-3.3-3.2c0-1.7 1.5-3.1 3.3-3.1 1.9 0 3.4 1.4 3.4 3.1 0 1.8-1.5 3.2-3.4 3.2Z" fill="#FF6B00"/>
+              <path fill="#fff" d="M0 1.8h14.2v.7H0zm8.6 22.8v-6.9h.6v7z"/>
+              <path d="M19.8 7.1c0 3-2.5 5.3-5.6 5.3a5.5 5.5 0 0 1-5.6-5.3c0-3 2.5-5.3 5.6-5.3 3.1 0 5.6 2.4 5.6 5.3Zm-10.4 0c0 2.5 2.1 4.6 4.8 4.6 2.6 0 4.8-2 4.8-4.6 0-2.5-2.2-4.5-4.8-4.5-2.7 0-4.8 2-4.8 4.5Z" fill="#fff"/>
+              <path d="M19.8 17.8c0 3-2.5 5.3-5.6 5.3a5.5 5.5 0 0 1-5.6-5.3c0-3 2.5-5.4 5.6-5.4 3.1 0 5.6 2.4 5.6 5.4Zm-10.4 0c0 2.5 2.1 4.5 4.8 4.5 2.6 0 4.8-2 4.8-4.5s-2.2-4.6-4.8-4.6c-2.7 0-4.8 2-4.8 4.6Z" fill="#fff"/>
+              <mask id="a" maskUnits="userSpaceOnUse" x="21.9" y="8.1" width="30" height="16" fill="#000">
+                <path fill="#fff" d="M21.9 8.1h30v16h-30z"/>
+                <path d="M36 9.1v14.5h-1.7V9h1.6Zm3.9 0v14.5h-1.7V9H40Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M46.6 23.8c-1 0-1.8-.3-2.6-.7a4.7 4.7 0 0 1-1.7-2c-.4-.8-.6-1.8-.6-3 0-1 .2-2 .6-2.9.4-.8 1-1.5 1.7-2 .8-.4 1.6-.6 2.6-.6s1.9.2 2.6.7c.7.4 1.3 1.1 1.7 2a6.5 6.5 0 0 1 0 5.9c-.4.8-1 1.4-1.7 1.9-.7.4-1.6.7-2.6.7Zm1.9-2c-.5.3-1.1.5-1.9.5-.7 0-1.3-.2-1.8-.6-.5-.4-.9-.9-1-1.5a5.8 5.8 0 0 1 0-4 2 2 0 0 1 1-1.5c.5-.4 1-.6 1.8-.6a2.9 2.9 0 0 1 2.9 2.1 5.7 5.7 0 0 1 0 4 4 4 0 0 1-1 1.5Z"/>
+                <path d="M25.2 23a5.5 5.5 0 0 0 4.7.4 3 3 0 0 0 1.5-1c.4-.3.7-.8.9-1.4l-1.6-.4-.6 1-1 .5-1.1.2c-.7 0-1.3-.2-1.8-.5a3 3 0 0 1-1.2-1.2 4 4 0 0 1-.4-1.9H24v-1.4h.5c0-.5.1-1 .4-1.5.2-.5.6-1 1-1.2a3 3 0 0 1 1.8-.5 2.8 2.8 0 0 1 2.6 1.6c.2.4.4 1 .4 1.6h-6.2v1.4h7.9V18a7 7 0 0 0-.4-2.6c-.3-.6-.7-1.2-1.1-1.6l-1.5-1-1.7-.2a4.6 4.6 0 0 0-4.3 2.7c-.4.8-.6 1.8-.6 3 0 1 .2 2 .6 2.8.4.9 1 1.5 1.7 2Z"/>
+              </mask>
+              <path d="M36 9.1v14.5h-1.7V9h1.6Zm3.9 0v14.5h-1.7V9H40Z" fill="#FF6B00"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M46.6 23.8c-1 0-1.8-.3-2.6-.7a4.7 4.7 0 0 1-1.7-2c-.4-.8-.6-1.8-.6-3 0-1 .2-2 .6-2.9.4-.8 1-1.5 1.7-2 .8-.4 1.6-.6 2.6-.6s1.9.2 2.6.7c.7.4 1.3 1.1 1.7 2a6.5 6.5 0 0 1 0 5.9c-.4.8-1 1.4-1.7 1.9-.7.4-1.6.7-2.6.7Zm1.9-2c-.5.3-1.1.5-1.9.5-.7 0-1.3-.2-1.8-.6-.5-.4-.9-.9-1-1.5a5.8 5.8 0 0 1 0-4 2 2 0 0 1 1-1.5c.5-.4 1-.6 1.8-.6a2.9 2.9 0 0 1 2.9 2.1 5.7 5.7 0 0 1 0 4 4 4 0 0 1-1 1.5Z" fill="#FF6B00"/>
+              <path d="M25.2 23a5.5 5.5 0 0 0 4.7.4 3 3 0 0 0 1.5-1c.4-.3.7-.8.9-1.4l-1.6-.4-.6 1-1 .5-1.1.2c-.7 0-1.3-.2-1.8-.5a3 3 0 0 1-1.2-1.2 4 4 0 0 1-.4-1.9H24v-1.4h.5c0-.5.1-1 .4-1.5.2-.5.6-1 1-1.2a3 3 0 0 1 1.8-.5 2.8 2.8 0 0 1 2.6 1.6c.2.4.4 1 .4 1.6h-6.2v1.4h7.9V18a7 7 0 0 0-.4-2.6c-.3-.6-.7-1.2-1.1-1.6l-1.5-1-1.7-.2a4.6 4.6 0 0 0-4.3 2.7c-.4.8-.6 1.8-.6 3 0 1 .2 2 .6 2.8.4.9 1 1.5 1.7 2Z" fill="#FF6B00"/>
+              <path d="M24.7 18.7h-.3.3Zm.5 4.4v.2-.2Zm-1.7-2-.2.2.2-.2Zm0-5.8-.2-.1h.2Zm1.7-2 .2.2-.2-.2Zm4.3-.4v-.3.3Zm1.5.9-.2.2.2-.2Zm1 1.6h.3-.2Zm.5 3.3v.3h.2v-.3h-.2Zm-8.4 0h-.3v.3h.3v-.3Zm0-1.4V17h-.3v.3h.3Zm6.7 0v.2h.2v-.2h-.2Zm-.4-1.7-.2.1h.2Zm-1-1.1-.2.2.2-.2Zm-3.3 0 .1.3-.1-.2ZM25 15.9h-.3.3Zm0 4.8h-.3.3Zm1.2 1.2-.2.3.2-.3Zm3 .3v.3-.3Zm.9-.6.2.2-.2-.2Zm.6-1v-.2h-.2v.2h.2Zm1.6.5.3.1V21l-.2-.1-.1.2Zm-.9 1.5.2.2-.2-.2Zm-1.4 1v.2-.3ZM36 9h.2v-.3h-.3V9Zm0 14.5v.2h.2v-.2h-.3Zm-1.7 0H34v.2h.3v-.2Zm0-14.5v-.3H34V9h.3Zm5.6 0h.3v-.3h-.3V9Zm0 14.5v.2h.3v-.2h-.3Zm-1.7 0H38v.2h.2v-.2Zm0-14.5v-.3H38V9h.2ZM44 23l-.1.2.1-.2Zm-1.7-2-.2.1h.2Zm0-5.9h-.2.2Zm1.7-2V13l.1.3Zm5.2 0-.1.3.1-.2Zm1.7 2-.2.2.2-.2Zm0 6-.2-.2.2.1ZM49.2 23l-.1-.3.1.3Zm-.7-1.4-.2-.2.2.2Zm1-1.5.3.1h-.3Zm0-4 .3-.1h-.3Zm-1-1.5.1-.3-.1.3Zm-3.7 0-.2-.3.2.3Zm-1 1.5-.3-.1h.2Zm0 4-.3.1h.2Zm1 1.5.2-.2-.2.2Zm-20.2-3h-.3.3Zm3.4 4.8c-1 0-1.9-.2-2.6-.6l-.3.4c.8.5 1.8.8 2.9.8v-.6Zm-2.6-.6c-.7-.5-1.3-1-1.7-1.9l-.4.3a5 5 0 0 0 1.8 2l.3-.4ZM23.7 21c-.3-.8-.5-1.7-.5-2.8h-.6c0 1.2.2 2.2.7 3l.4-.2Zm-.5-2.8c0-1 .2-2 .5-2.8l-.4-.2a7 7 0 0 0-.7 3h.6Zm.5-2.8c.4-.8 1-1.4 1.7-1.9l-.3-.4a5 5 0 0 0-1.8 2l.4.3Zm1.7-1.9c.6-.4 1.5-.6 2.4-.6v-.6c-1 0-2 .3-2.7.8l.3.4Zm2.4-.6c.5 0 1 0 1.6.2l.2-.5-1.8-.3v.6Zm1.6.2c.5.2 1 .5 1.4.9l.4-.4a4 4 0 0 0-1.6-1l-.2.5Zm1.4.9c.4.4.8.9 1 1.5l.5-.2c-.3-.7-.6-1.3-1.1-1.7l-.4.4Zm1 1.5c.3.7.4 1.5.4 2.5h.5c0-1 0-2-.4-2.7l-.5.2Zm.4 2.5v.7h.5V18h-.5Zm-7.8.7v-1.4h-.6v1.4h.6Zm6.6-1.4c0-.7 0-1.3-.4-1.8l-.4.3c.2.4.3.9.3 1.5h.5Zm-.4-1.8a3 3 0 0 0-1-1.2l-.4.4 1 1 .4-.2Zm-1-1.2a4 4 0 0 0-1.8-.5v.5c.6 0 1 .2 1.4.4l.3-.4Zm-1.8-.5c-.7 0-1.4.2-1.9.5l.3.5a3 3 0 0 1 1.6-.5v-.5Zm-1.9.5a4 4 0 0 0-1.2 1.4l.5.3a3 3 0 0 1 1-1.2l-.3-.5Zm-1.6 3.2v1h.5v-1h-.5Zm.4 3.2c.4.6.8 1 1.3 1.4l.3-.5c-.4-.3-.8-.6-1-1.2l-.6.3ZM26 22c.6.3 1.2.5 2 .5V22a3 3 0 0 1-1.7-.4l-.3.5Zm2 .5 1.2-.2-.1-.6c-.4.2-.7.2-1.1.2v.6Zm1.2-.2c.4-.2.8-.4 1-.7l-.3-.4c-.2.3-.5.4-.8.5l.1.6Zm1-.7c.4-.3.6-.6.7-1l-.5-.2-.5.8.4.4Zm.4-.8 1.6.4.2-.5-1.6-.5-.2.6Zm1.4 0c-.1.6-.4 1-.8 1.4l.4.4c.5-.5.8-1 1-1.6H32Zm-.8 1.4a4 4 0 0 1-1.3.9l.2.5a4 4 0 0 0 1.5-1l-.4-.4Zm-1.3.9a6 6 0 0 1-2 .3v.6c.8 0 1.5-.2 2.2-.4l-.2-.5Zm5.8-14v14.4h.5V9h-.5Zm.2 14h-1.6v.6h1.6v-.5Zm-1.4.4V9H34v14.5h.5Zm-.2-14.2h1.6v-.6h-1.6v.6Zm5.3-.3v14.5h.6V9h-.6Zm.3 14.2h-1.7v.5H40v-.5Zm-1.4.3V9H38v14.5h.5Zm-.3-14.2H40v-.6h-1.7v.6Zm8.4 14.1c-1 0-1.7-.2-2.4-.7l-.3.5a5 5 0 0 0 2.7.8v-.6Zm-2.4-.7c-.7-.4-1.3-1-1.6-1.8l-.5.2a5 5 0 0 0 1.8 2.1l.3-.5ZM42.6 21a6 6 0 0 1-.6-2.8h-.6c0 1.1.2 2.2.7 3l.5-.2Zm-.6-2.8c0-1.1.2-2 .6-2.8L42 15a7 7 0 0 0-.7 3h.6Zm.6-2.8c.3-.8.9-1.5 1.6-1.9l-.3-.5a5 5 0 0 0-1.8 2.1l.5.3Zm1.6-1.9c.7-.4 1.5-.6 2.4-.6v-.6c-1 0-2 .3-2.7.7l.3.5Zm2.4-.6c1 0 1.8.2 2.5.6l.2-.5a5 5 0 0 0-2.7-.7v.6Zm2.5.6c.7.4 1.2 1 1.6 1.9l.5-.3a5 5 0 0 0-1.9-2l-.2.4Zm1.6 1.9c.4.8.6 1.7.6 2.8h.5c0-1.2-.2-2.2-.6-3l-.5.2Zm.6 2.8c0 1-.2 2-.6 2.8l.5.2a7 7 0 0 0 .6-3h-.5Zm-.6 2.8c-.4.8-1 1.4-1.6 1.8l.2.5a5 5 0 0 0 1.9-2l-.5-.3ZM49 22.8a4 4 0 0 1-2.5.7v.6c1 0 2-.3 2.7-.8l-.2-.5Zm-2.5-.2c.8 0 1.5-.2 2-.7l-.3-.4c-.4.3-1 .5-1.7.5v.6Zm2-.7c.6-.4 1-1 1.2-1.6l-.5-.2a3 3 0 0 1-1 1.4l.3.4Zm1.2-1.6a6 6 0 0 0 .4-2.1h-.6a7 7 0 0 1-.3 2l.5.1Zm.4-2.1a6 6 0 0 0-.4-2.1l-.5.2c.2.6.3 1.2.3 1.9h.6Zm-.4-2.1a4 4 0 0 0-1.2-1.7l-.3.5c.4.3.8.8 1 1.4l.5-.2Zm-1.2-1.7c-.5-.4-1.2-.6-2-.6v.5c.7 0 1.3.2 1.7.6l.3-.5Zm-2-.6c-.8 0-1.4.2-2 .6l.4.5c.4-.4 1-.6 1.6-.6v-.5Zm-2 .6c-.5.5-.9 1-1.1 1.7l.5.2c.2-.6.5-1 1-1.4l-.4-.5Zm-1.1 1.7a6 6 0 0 0-.4 2h.5c0-.6.1-1.2.4-1.8l-.5-.2Zm-.4 2c0 .8.1 1.6.4 2.2l.5-.2c-.3-.6-.4-1.2-.4-2H43Zm.4 2.2a3 3 0 0 0 1.1 1.6l.4-.4c-.5-.3-.8-.8-1-1.4l-.5.2Zm1.1 1.6c.6.5 1.2.7 2 .7V22c-.7 0-1.2-.2-1.6-.5l-.4.4Zm-19.8-4.4v-.2h-.5v.2h.5Zm-.2-.5H24v.5h.5V17Zm-.5 2h.5v-.6H24v.6Zm.7-.3v-.2h-.5v.2h.5Zm-.5 0c0 .8.2 1.4.4 2l.5-.3a6 6 0 0 1-.4-1.7h-.5Zm8.2-.3h-8v.6h8v-.6Zm-7.8-2.7a4 4 0 0 0-.4 1.5h.5c0-.4.2-.8.4-1.2l-.5-.3Zm-.1 1.8h6.2V17h-6.2v.5Zm-.3 1.2h.5-.5Z" fill="#FF6B00" mask="url(#a)"/>
+              <path d="M28 23.3c-.9 0-1.7-.2-2.3-.6a5 5 0 0 1-1.6-1.9 6 6 0 0 1-.5-2.6c0-1 .1-1.8.5-2.6.4-.7.9-1.3 1.5-1.8.7-.4 1.4-.7 2.2-.7a4 4 0 0 1 3 1.4l.8 1.5c.2.6.4 1.2.4 1.8v.4h-8.2v-.4h7.7c0-.8-.1-1.5-.5-2.2a4 4 0 0 0-1.3-1.5 3.3 3.3 0 0 0-3.8 0c-.6.4-1 1-1.4 1.7a6 6 0 0 0 0 4.8c.3.7.7 1.2 1.3 1.7.6.4 1.3.6 2.2.6a3.5 3.5 0 0 0 2.6-1l.6-.7.3.2-.6.8a4 4 0 0 1-2.9 1.1ZM35.4 10v13.1H35V10h.4Zm4 0v13.1H39V10h.4Zm7.3 13.3a4 4 0 0 1-2.2-.6c-.6-.5-1.1-1-1.5-1.9a6 6 0 0 1-.6-2.6 5.5 5.5 0 0 1 2.1-4.4c.6-.4 1.4-.7 2.2-.7.8 0 1.5.3 2.1.7.7.4 1.2 1 1.5 1.8.4.8.6 1.7.6 2.6a6 6 0 0 1-.6 2.6 4 4 0 0 1-1.5 1.9c-.6.4-1.3.6-2.1.6Zm0-.4c.7 0 1.3-.2 1.9-.6.6-.4 1-1 1.4-1.7a6 6 0 0 0 0-4.8c-.4-.7-.8-1.2-1.4-1.6-.6-.5-1.2-.7-2-.7-.7 0-1.3.2-1.9.7-.6.4-1 1-1.3 1.6-.4.7-.5 1.5-.5 2.4 0 1 .1 1.7.5 2.4.3.7.7 1.3 1.3 1.7.6.4 1.2.6 2 .6Z" fill="#fff"/>
+            </svg>          
+          </a>
+          <nav>
+            <button id="menu-btn" class="menu-btn" type="button" aria-label="menu button"> </button>
+            <ul id="mobile-menu" class="flex menu text-light">
+              <li><button id="close-btn" class="close-btn" type="button" aria-label="menu button"> </button></li>
+              <li><a href="https://blog.tbello.tech/"> Blog </a></li>
+              <li><a href="#projects"> Projects </a></li>
+              <li><a href="#about"> About </a></li>
+              <li><a href="#contact"> Contact </a></li>
+              <li><a href="mailto:bello4aus@outlook.com" class="btn-contact mail"><span class="sr-only">Bello Mail</span> </a></li>
+            </ul>
+          </nav>
 
-      </div>
-    </header>
+        </div>
+      </header>
 
-    <main id="home" class="grid-container home bg-dark">
-      <div class="bio">
-        <h1 class="text-primary-3 ff-crete line-height-1">
-          Hey There. <br />
-          I'm Tomi
-        </h1>
-        <span class="text-primary-2 ff-roboto mg-1"
-          >I'm a Software Developer</span
-        >
-        <p class="text-light line-height-2 ff-poppins mg-1">
-          I can help you build a product, feature or website. Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don't hestitate to contact me.
-        </p>
-      </div>
-      <ul class="flex contact-link mg-1">
-        <li><a href="https://github.com/t-bello7" class="btn-contact github"> <span class="sr-only bg-light">Bello Github Profile</span> </a></li>
-        <li><a href="https://medium.com/@bellotomi" class="btn-contact medium"> <span class="sr-only bg-light">Bello Medium Profile</span></a></li>
-        <li><a href="https://angel.co/u/tbello" class="btn-contact thumbs"> <span class="sr-only bg-light">Bello Angel List Profile</span> </a></li>
-        <li><a href="https://twitter.com/__tbello" class="btn-contact twitter"> <span class="sr-only bg-light">Bello Twitter Profile</span> </a></li>
-        <li><a href="https://www.linkedin.com/in/tbello7/" class="btn-contact linkedin"> <span class="sr-only bg-light">Bello linkedins Profile</span> </a></li>
-      </ul>
-    </main>
+      <main id="home" class="grid-container home bg-dark">
+        <div class="bio" data-aos="zoom-in-right">
+          <h1 class="text-primary-3 ff-crete line-height-1">
+            Hey There. <br />
+            I'm Tomi
+          </h1>
+          <span class="text-primary-2 ff-roboto mg-1"
+            >I'm a Software Developer</span
+          >
+          <p class="text-light line-height-2 ff-poppins mg-1">
+            A Javascript Developer & Linux enthusiast with 2 years of industrial experience and proven know-how to combine creative and usability viewpoints resulting in world-class web applications. I have experience working with Vue, React & Node.js & currently working on article writing and video creation.
+          </p>
+        </div>
+        <ul class="flex contact-link mg-1" data-aos="fade-up">
+          <li><a href="https://github.com/t-bello7" class="btn-contact github"> <span class="sr-only bg-light">Bello Github Profile</span> </a></li>
+          <li><a href="https://angel.co/u/tbello" class="btn-contact thumbs"> <span class="sr-only bg-light">Bello Angel List Profile</span> </a></li>
+          <li><a href="https://twitter.com/__tbello" class="btn-contact twitter"> <span class="sr-only bg-light">Bello Twitter Profile</span> </a></li>
+          <li><a href="https://www.linkedin.com/in/tbello7/" class="btn-contact linkedin"> <span class="sr-only bg-light">Bello linkedins Profile</span> </a></li>
+        </ul>
+      </main>
 
-    <section id ="portfolio" class="container work-section bg-light grid">
-      <div class="pd-10 work-header flex">
-        <h2 class="ff-crete center">My Recent Works</h2>
-        <hr />
-      </div>
-      
-    </section>
+      <section id ="projects" class="work-section bg-light grid" data-aos="fade-up">
+        <div class="pd-4 work-header flex">
+          <h2 class="ff-crete center">My Recent Works</h2>
+          <hr />
+        </div>
+      </section>
     
-    <section id="about" class="bg-dark container about">
-      <div class="pd-10 about-bio">
-        <h2 class="text-primary-3 ff-crete">About Me</h2>
-        <p class="mg-2 ff-inter text-light">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <a class="btn" href="https://drive.google.com/file/d/1sHSLLpIFALxI1jv5jU2Fcw8AICFqB1R0/view?usp=sharing" target="_blank"> Get my Resume</a>
-      </div>
-      <hr class="mob-hr" />
-      <div class="flex skill bg-dark">
-        <div>
-          <h3 class="text-light ff-inai">
-            <span class="skill-icon"></span> Language
-          </h3>
-          <ul class="center ff-inter">
-            <li class="text-light mg-1"><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">Javascript</a></li>
-            <li class="text-light mg-1"><a href="https://www.python.org/"> Python </a></li>
-            <li class="text-light mg-1"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"> HTML </a></li>
-            <li class="text-light mg-1"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"> CSS </a></li>
-          </ul>
+      <section id="about" class="bg-dark mg-1 container about" data-aos="fade-up">
+        <div class="about-bio pd-4"  data-aos="zoom-in-right">
+          <h2 class="text-primary-3 ff-crete">About Me</h2>
+          <p class="mg-2 ff-inter text-light">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If you
+            like what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+          <a class="btn" href="https://drive.google.com/file/d/1sHSLLpIFALxI1jv5jU2Fcw8AICFqB1R0/view?usp=sharing" target="_blank"> Get my Resume</a>
         </div>
-        <div>
-          <h3 class="text-light ff-inai">
-            <span class="skill-icon skill-icon-kite"></span> Frameworks
-          </h3>
-          <ul class="center ff-inter">
-            <li class="text-light mg-1"><a href="https://getbootstrap.com/">Bootstrap</a></li>
-            <li class="text-light mg-1"><a href="https://www.ruby-lang.org/en/"> React </a></li>
-            <li class="text-light mg-1"><a href="https://www.djangoproject.com/">Django</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-light ff-inai">
-            <span class="skill-icon skill-icon-circle"></span> Skills
-          </h3>
-          <ul class="center ff-inter">
-            <li class="text-light mg-1"><a href="https://github.com/t-bello7"> Github</a></li>
-            <li class="text-light mg-1"><a href="https://codepen.io/t-bello7"> Codepen </a></li>
-            <li class="text-light mg-1"><a href="#"> Terminal </a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <footer id="contact">
-      <div class="contact-form container mg-8 flex">
-        <h2 class="center ff-inter">
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </h2>
-        <form
-          id="contact-form"
-          class="flex contact"
-          onsubmit=" return setAction(this)"
-          method="post"
-        >
-          <label class="sr-only" for="name">Username</label>
-          <input
-            id="name"
-            name="name"
-            class="contact-form__input ff-inter"
-            type="text"
-            placeholder="Full name"
-            maxlength="30"
-            required
-          />
-          <label class="sr-only" for="email">Email</label>
-          <input
-            id="email"
-            name="email"
-            class="mg-1 contact-form__input ff-inter"
-            type="email"
-            placeholder="Email address"
-            required
-          />
-          <label class="sr-only" for="description">Message</label>
-          <textarea
-            class="mg-1 contact-form__textarea bg-neutral-1"
-            name="description"
-            id="description"
-            cols="27"
-            rows="10"
-            maxlength="500"
-            placeholder="Enter text here"
-            required
-          ></textarea>
-          <label class="ohnohoney" for="coolname"></label>
-          <input class="ohnohoney" autocomplete="off" type="text" id="coolname" name="coolname" placeholder="Your name here">
-          <label class="ohnohoney" for="coolemail"></label>
-          <input class="ohnohoney" autocomplete="off" type="email" id="coolemail" name="coolemail" placeholder="Your e-mail here">
-          <div class="error-msg center ff-inter">
-
+        <hr class="mob-hr" />
+        <div class="flex skill bg-dark pd-4">
+          <div>
+            <h3 class="text-light ff-inai">
+              <span class="skill-icon"></span> Language
+            </h3>
+            <ul class="center ff-inter">
+              <li class="text-light mg-1"><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">Javascript</a></li>
+              <li class="text-light mg-1"><a href="https://www.python.org/"> Python </a></li>
+              <li class="text-light mg-1"><a href="https://www.rubyguides.com/"> Ruby </a></li>
+              <li class="text-light mg-1"><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"> HTML </a></li>
+              <li class="text-light mg-1"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"> CSS </a></li>
+            </ul>
           </div>
-          <button class="center btn" type="submit">Get in touch</button>
-        </form>
-      </div>
-      <hr />
+          <div>
+            <h3 class="text-light ff-inai">
+              <span class="skill-icon skill-icon-kite"></span> Frameworks & Tools
+            </h3>
+            <ul class="center ff-inter">
+              <li class="text-light mg-1"><a href="https://getbootstrap.com/">Bootstrap</a></li>
+              <li class="text-light mg-1"><a href="https://getbootstrap.com/">TailwindCSS</a></li>
+              <li class="text-light mg-1"><a href="https://getbootstrap.com/">Chakra UI</a></li>
+              <li class="text-light mg-1"><a href="https://www.ruby-lang.org/en/"> Material UI</a></li>
+              <li class="text-light mg-1"><a href="https://getbootstrap.com/">Ruby on Rails</a></li>
+              <li class="text-light mg-1"><a href="https://www.djangoproject.com/">Django</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-light ff-inai">
+              <span class="skill-icon skill-icon-circle"></span> Skills
+            </h3>
+            <ul class="center ff-inter">
+              <li class="text-light mg-1"><a href="#"> Collaborative Programming</a></li>
+              <li class="text-light mg-1"><a href="#"> System Design </a></li>
+              <li class="text-light mg-1"><a href="#"> UI/UX Development</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-      <ul class="social-media flex mg-4">
-        <li><a href="https://github.com/t-bello7" class="btn-contact github-dark"><span class="sr-only">Bello Github Profile</span></a></li>
-        <li><a href="https://medium.com/@bellotomi" class="btn-contact medium-dark"><span class="sr-only">Bello Medium Profile</span> </a></li>
-        <li><a href="https://angel.co/u/tbello" class="btn-contact thumbs-dark" > <span class="sr-only">Bello AngelList Profile</span></a></li>
-        <li><a href="https://twitter.com/__tbello" class="btn-contact twitter-dark"><span class="sr-only">Bello Twitter Profile</span> </a></li>
-        <li><a href="https://www.linkedin.com/in/tbello7/" class="btn-contact linkedin-dark"><span class="sr-only">Bello Linkedin Profile</span> </a></li>
-      </ul>
-    </footer>
+      <footer id="contact" data-aos="fade-up">
+        <div class="contact-form container pd-4 flex">
+          <h2 class="center ff-inter">
+            I'm always interested in hearing about new projects, so if you'd like
+            to chat please get in touch.
+          </h2>
+          <form
+            id="contact-form"
+            class="flex contact"
+            onsubmit=" return setAction(this)"
+            method="post"
+          >
+            <label class="sr-only" for="name">Username</label>
+            <input
+              id="name"
+              name="name"
+              class="contact-form__input ff-inter"
+              type="text"
+              placeholder="Full name"
+              maxlength="30"
+              required
+            />
+            <label class="sr-only" for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              class="mg-1 contact-form__input ff-inter"
+              type="email"
+              placeholder="Email address"
+              required
+            />
+            <label class="sr-only" for="description">Message</label>
+            <textarea
+              class="mg-1 contact-form__textarea bg-neutral-1"
+              name="description"
+              id="description"
+              cols="27"
+              rows="10"
+              maxlength="500"
+              placeholder="Enter text here"
+              required
+            ></textarea>
+            <label class="ohnohoney" for="coolname"></label>
+            <input class="ohnohoney" autocomplete="off" type="text" id="coolname" name="coolname" placeholder="Your name here">
+            <label class="ohnohoney" for="coolemail"></label>
+            <input class="ohnohoney" autocomplete="off" type="email" id="coolemail" name="coolemail" placeholder="Your e-mail here">
+            <div class="error-msg center ff-inter">
 
+            </div>
+            <button class="center btn" type="submit">Get in touch</button>
+          </form>
+        </div>
+        <hr />
+
+        <ul class="social-media flex mg-2">
+          <li><a href="https://github.com/t-bello7" class="btn-contact github-dark"><span class="sr-only">Bello Github Profile</span></a></li>
+          <li><a href="https://medium.com/@bellotomi" class="btn-contact medium-dark"><span class="sr-only">Bello Medium Profile</span> </a></li>
+          <li><a href="https://angel.co/u/tbello" class="btn-contact thumbs-dark" > <span class="sr-only">Bello AngelList Profile</span></a></li>
+          <li><a href="https://twitter.com/__tbello" class="btn-contact twitter-dark"><span class="sr-only">Bello Twitter Profile</span> </a></li>
+          <li><a href="https://www.linkedin.com/in/tbello7/" class="btn-contact linkedin-dark"><span class="sr-only">Bello Linkedin Profile</span> </a></li>
+        </ul>
+      </footer>
+    </div>
+    <div class="modal-outer">
+      <div class="modal-inner">
+      </div> 
+    </div>
     <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

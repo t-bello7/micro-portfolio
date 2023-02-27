@@ -8,6 +8,8 @@ const emailInput = document.querySelector('#email');
 const descInput = document.querySelector('#description');
 const projectContainer = document.querySelector('.work-section');
 const bodyContainer = document.querySelector('.body-container');
+const modalInner = document.querySelector('.modal-inner');
+const modalOuter = document.querySelector('.modal-outer');
 
 const works = [
   {
@@ -114,6 +116,16 @@ contactForm.addEventListener('submit', (e) => {
   }
 });
 
+const setAction = (form) => {
+  form.action = 'https://formspree.io/f/mwkywooe';
+  if (form.coolname.value || form.coolemail.value) {
+    return false;
+  }
+  return true;
+};
+
+setAction(contactForm);
+
 const renderDocuments = (arr, container) => {
   arr.forEach((element) => {
     if (element.featured === true) {
@@ -134,33 +146,11 @@ const renderDocuments = (arr, container) => {
               <button class="btn open-btn"  data-id=${element.id} type="button">See Project</button>
             </div>
         </div>
-        <div class = "modal" role="dialog"> 
-          <div class = "modal-header flex">
-            <h3 class="mg-1 ff-crete">${element.header}</h3>
-            <img id="close-btn" src="./assets/img/close-icon.png" alt="close-icon">
-          </div>
-
-          <ul class="mg-2 mg-inline flex tag tag-featured">
-            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"> ${element.tags[0]} </a></li>
-            <li><a href="https://getbootstrap.com/">  ${element.tags[1]} </a></li>
-            <li><a href="https://www.ruby-lang.org/en/">  ${element.tags[2]} </a></li>
-          </ul>
-          <div class="flex modal-content">
-            <img class="mg-2" src="${element.img_dir}" alt="modal-image">
-            <div>
-              <p class="ff-inter">${element.content}</p>
-              <div class = " buttons mg-2 flex">
-                <button class="btn flex btn-modal btn-source" onclick="window.open('${element.liveLink}')">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
-                <button class="btn flex btn-modal btn-source" onclick="window.open('${element.source}')">See Source <img src="./assets/img/github.png" alt="github"> </button>
-              </div>
-            </div>
-          </div>
-        </div>
         `;
     } else {
       (
         container.innerHTML += `
-        <div style="background-image:url(${element.img_dir})" class="mg-2 text-light project">
+        <div style="background-image:url(${element.img_dir})" class=" text-light project">
           <h2 class="mg-inline bg-text">${element.header}</h2>
           <p class="mg-1 mg-inline bg-text">
                 ${element.description}
@@ -172,67 +162,71 @@ const renderDocuments = (arr, container) => {
           </ul>
           <button class="btn btn-project open-btn" data-id=${element.id} type="button">See Project</button>
         </div>
-        <div class = "modal" role="dialog"> 
-          <div class = "modal-header flex">
-            <h3 class="ff-crete">${element.header}</h3>
-            <img id="close-btn" src="./assets/img/close-icon.png" alt="close-icon">
-          </div>
-
-          <ul class="mg-4 flex tag tag-featured">
-            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"> ${element.tags[0]} </a></li>
-            <li><a href="https://getbootstrap.com/">  ${element.tags[1]} </a></li>
-            <li><a href="https://www.ruby-lang.org/en/">  ${element.tags[2]} </a></li>
-          </ul>
-
-          <div class="flex modal-content">
-            <img class="mg-2" src="${element.img_dir}" alt="modal-image">
-            <div class="">
-              <p class="ff-inter">${element.content}</p>
-              <div class = " buttons mg-2 flex">
-                <a class="btn flex btn-modal btn-live"  onclick="window.open('${element.liveLink}')" type="button">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </a>
-                <button class="btn flex btn-modal btn-source" onclick="window.open('${element.source}')">See Source <img src="./assets/img/github.png" alt="github"> </button>
-              </div>
-            </div>
-          </div>
-      </div>
         `);
     }
   });
 };
 renderDocuments(works, projectContainer);
 
-projectContainer.addEventListener('click', (e) => {
-  e.preventDefault();
+const closeModal = () => {
+  modalOuter.classList.remove('open');
+  modalInner.innerHTML = '';
+  bodyContainer.classList.remove('modalBlur');
+  bodyContainer.classList.remove('disable-scroll');
+};
 
-  const modalBtn = e.target.closest('.open-btn');
+window.addEventListener('load', () => {
+  const buttons = projectContainer.querySelectorAll('.open-btn');
 
-  if (!modalBtn) return;
+  const handleCardButtonClick = (e) => {
+    const buttonId = e.currentTarget.dataset.id;
+    const [data] = works.filter((item) => item.id === buttonId);
+    modalInner.innerHTML += `
+      <div class = "modal-header flex">
+        <h3 class="mg-1 ff-crete"> ${data.header}</h3>
+        <img id="close-btn" src="./assets/img/close-icon.png" alt="close-icon">
+      </div>
 
-  let modal = modalBtn.parentNode.nextElementSibling;
+      <ul class="mg-2 mg-inline flex tag tag-featured">
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">${data.tags[0]}</a></li>
+        <li><a href="https://getbootstrap.com/"> ${data.tags[1]}</a></li>
+        <li><a href="https://www.ruby-lang.org/en/"> ${data.tags[2]}</a></li>
+      </ul>
+      <div class="flex modal-content">
+        <img class="mg-2" src="${data.img_dir}" alt="modal-image">
+        <div>
+          <p class="ff-inter">${data.content}</p>
+          <div class="buttons mg-2 flex">
+            <button class="btn flex btn-modal btn-source" onclick="window.open(${data.liveLink})">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
+            <button class="btn flex btn-modal btn-source" onclick="window.open('${data.source}')">See Source <img src="./assets/img/github.png" alt="github"> </button>
+          </div>
+        </div>
+      </div>
+    `;
+    bodyContainer.classList.add('disable-scroll');
 
-  if (modal == null) {
-    modal = modalBtn.parentNode.parentNode.nextElementSibling;
-  }
+    bodyContainer.classList.add('modalBlur');
+    modalOuter.classList.add('open');
+  };
 
-  bodyContainer.classList.add('modalBlur');
-  bodyContainer.classList.add('disable-scroll');
-  projectContainer.classList.add('modalBlur');
-  modal.classList.add('is-open');
-  const closeBtn = modal.querySelector('#close-btn');
+  modalOuter.addEventListener('click', (e) => {
+    const isOutside = e.target.closest('.modal-inner');
+    if (!isOutside) {
+      closeModal();
+    }
+    const closeBtn = e.target;
+    if (closeBtn.id === 'close-btn') {
+      closeModal();
+    }
+  });
 
-  closeBtn.addEventListener('click', () => {
-    modal.classList.remove('is-open');
-    bodyContainer.classList.remove('modalBlur');
-    bodyContainer.classList.remove('disable-scroll');
-    projectContainer.classList.remove('modalBlur');
+  buttons.forEach((button) => {
+    button.addEventListener('click', handleCardButtonClick);
   });
 });
 
-
-const setAction = (form) => {
-  form.action = "https://formspree.io/f/mwkywooe";
-  if (form.coolname.value || form.coolemail.value) {
-    return false;
+window.addEventListener('keydown', (event) => {
+  if ((Object.values(modalOuter.classList).includes('open')) && (event.key === 'Escape')) {
+    closeModal();
   }
-  return true;
-};
+});

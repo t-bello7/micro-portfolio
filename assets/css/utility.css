@@ -110,6 +110,10 @@
   margin-block: 7.5rem;
 }
 
+.pd-4 {
+  padding-block: 4rem;
+}
+
 .pd-10 {
   padding-block: 10rem;
 }
