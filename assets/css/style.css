@@ -17,6 +17,7 @@
   background-color: var(--clr-gray);
   height: 100vh;
   width: 100%;
+  top: 0;
   min-width: var(--mobile-w);
   transform: translateX(200%);
   flex-direction: column;
@@ -115,6 +116,11 @@
   font-size: 32px;
   color: var(--clr-neutral);
 }
+.work-section {
+  justify-items: center;
+  gap: 2rem;
+  text-align: center;
+}
 
 .work-section > :first-child > h2 {
   width: 327px;
@@ -128,6 +134,8 @@ footer hr {
 .work-section hr {
   width: 100%;
   align-self: center;
+  text-align: center;
+  gap: 1rem;
 }
 
 .tag > * {
@@ -137,6 +145,7 @@ footer hr {
 
 .tag-feature {
   flex-wrap: wrap;
+  padding-inline: 32px;
 }
 
 .tag-project > * {
@@ -241,15 +250,13 @@ footer hr {
 }
 
 .modal-inner > .modal-content > img {
-  width: 40vw;
+  /* width: 100%; */
   height: 20vh;
 }
 
 .modal-inner > .modal-header {
   place-items: center;
   justify-content: space-between;
-
-  /* margin-bottom: 2rem; */
 }
 
 .modal-inner > .tag-featured {
@@ -271,7 +278,7 @@ footer hr {
 }
 
 .disable-scroll {
-  /* margin: 0; */
+  margin: 0;
   height: 100vh;
   overflow: hidden;
 }
@@ -483,6 +490,9 @@ footer hr {
       "work-featured work-featured ";
     justify-items: center;
     gap: 2rem;
+    align-self: center;
+    text-align: center;
+    gap: 1rem;
   }
 
   .work-section > :first-child > h2 {

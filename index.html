@@ -38,11 +38,11 @@
             <button id="menu-btn" class="menu-btn" type="button" aria-label="menu button"> </button>
             <ul id="mobile-menu" class="flex menu text-light">
               <li><button id="close-btn" class="close-btn" type="button" aria-label="menu button"> </button></li>
-              <li><a href="https://blog.tbello.tech/"> Blog </a></li>
-              <li><a href="#projects"> Projects </a></li>
-              <li><a href="#about"> About </a></li>
-              <li><a href="#contact"> Contact </a></li>
-              <li><a href="mailto:bello4aus@outlook.com" class="btn-contact mail"><span class="sr-only">Bello Mail</span> </a></li>
+              <li class="nav-item"><a href="https://blog.tbello.tech/"> Blog </a></li>
+              <li class="nav-item"><a href="#projects"> Projects </a></li>
+              <li class="nav-item"><a href="#about"> About </a></li>
+              <li class="nav-item"><a href="#contact"> Contact </a></li>
+              <li class="nav-item"><a href="mailto:bello4aus@outlook.com" class="btn-contact mail"><span class="sr-only">Bello Mail</span> </a></li>
             </ul>
           </nav>
 
@@ -59,7 +59,9 @@
             >I'm a Software Developer</span
           >
           <p class="text-light line-height-2 ff-poppins mg-1">
-            A Javascript Developer & Linux enthusiast with 2 years of industrial experience and proven know-how to combine creative and usability viewpoints resulting in world-class web applications. I have experience working with Vue, React & Node.js & currently working on article writing and video creation.
+            With 2 years of industrial experience, I am a skilled Full Stack Developer and Linux enthusiast who excels at fusing creative and usability perspectives to produce top-notch web applications.
+            My expertise includes working with Vue, React, and Node.js.
+            At present, I am focused on honing my writing and user experience development abilities.
           </p>
         </div>
         <ul class="flex contact-link mg-1" data-aos="fade-up">
@@ -80,13 +82,12 @@
       <section id="about" class="bg-dark mg-1 container about" data-aos="fade-up">
         <div class="about-bio pd-4"  data-aos="zoom-in-right">
           <h2 class="text-primary-3 ff-crete">About Me</h2>
-          <p class="mg-2 ff-inter text-light">
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If you
-            like what you see and have a project you need coded, don’t hestiate to
-            contact me.
+          <p class="mg-2 ff-poppins text-light">
+            As a Full Stack Developer, I am driven by my passion for creating valuable software solutions and
+            cultivating a thriving career in software development.
+            My skillset and experience encompass crafting dependable, user-friendly code, and possessing expertise in the technology stack of Ruby on Rails and React JS.
           </p>
-          <a class="btn" href="https://drive.google.com/file/d/1sHSLLpIFALxI1jv5jU2Fcw8AICFqB1R0/view?usp=sharing" target="_blank"> Get my Resume</a>
+          <a class="btn" href="https://drive.google.com/file/d/106gNCSI1x-tWyp-NTw56uNM0O6soeKEF/view?usp=share_link" target="_blank"> Get my Resume</a>
         </div>
         <hr class="mob-hr" />
         <div class="flex skill bg-dark pd-4">
@@ -137,7 +138,6 @@
           <form
             id="contact-form"
             class="flex contact"
-            onsubmit=" return setAction(this)"
             method="post"
           >
             <label class="sr-only" for="name">Username</label>

@@ -1,6 +1,7 @@
 const openBtn = document.querySelector('#menu-btn');
 const mobileMenu = document.querySelector('#mobile-menu');
 const closeBtn = document.querySelector('#close-btn');
+const navItems = document.querySelectorAll('.nav-item');
 const contactForm = document.querySelector('#contact-form');
 const errorMsg = document.querySelector('.error-msg');
 const nameInput = document.querySelector('#name');
@@ -46,7 +47,7 @@ const works = [
   },
   {
     id: '004',
-    img_dir: './assets/img/formula-one.png',
+    img_dir: './assets/img/formula-two.jpeg',
     header: 'Formula One FanPage',
     description: 'A landing page for formula one fans',
     tags: ['CSS', 'HTML', 'Javascript'],
@@ -72,7 +73,14 @@ openBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('visible');
-});
+})
+
+navItems.forEach(item => (
+  item.addEventListener('click', () => {
+    mobileMenu.classList.toggle('visible');
+  })
+))
+
 let contactDict = {};
 
 if (JSON.parse(localStorage.getItem('contactDict')) === null) {
@@ -104,6 +112,7 @@ descInput.addEventListener('change', (e) => {
 });
 
 contactForm.addEventListener('submit', (e) => {
+  e.preventDefault()
   const errorMsgs = [];
 
   if (emailInput.value !== emailInput.value.toLowerCase()) {
@@ -113,18 +122,16 @@ contactForm.addEventListener('submit', (e) => {
   if (errorMsgs.length > 0) {
     e.preventDefault();
     errorMsg.innerText = errorMsgs.join('');
+    return
   }
-});
-
-const setAction = (form) => {
-  form.action = 'https://formspree.io/f/mwkywooe';
-  if (form.coolname.value || form.coolemail.value) {
+  if (contactForm.coolname.value || contactForm.coolemail.value) {
     return false;
   }
-  return true;
-};
 
-setAction(contactForm);
+  console.log('hey')
+  contactForm.action = 'https://formspree.io/f/mwkywooe';
+  contactForm.submit();
+});
 
 const renderDocuments = (arr, container) => {
   arr.forEach((element) => {
@@ -197,7 +204,7 @@ window.addEventListener('load', () => {
         <div>
           <p class="ff-inter">${data.content}</p>
           <div class="buttons mg-2 flex">
-            <button class="btn flex btn-modal btn-source" onclick="window.open(${data.liveLink})">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
+            <button class="btn flex btn-modal btn-source" onclick="window.open('${data.liveLink}')">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
             <button class="btn flex btn-modal btn-source" onclick="window.open('${data.source}')">See Source <img src="./assets/img/github.png" alt="github"> </button>
           </div>
         </div>
