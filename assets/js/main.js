@@ -65,6 +65,26 @@ const works = [
     liveLink: 'https://t-bello7.github.io/space-travel/',
     source: 'https://github.com/t-bello7/space-travel',
   },
+  {
+    id: '006',
+    img_dir: '../assets/img/hotel.png',
+    header: 'Hotel Booking Application',
+    description: 'Hotel is a website for booking hotels.',
+    tags: ['CSS', 'HTML', 'React','JavaScript', 'Ruby', 'Ruby on Rails'],
+    content: ' Hotel rooms are listed as available and can be reserved by users. Admin users are allowed to add and remove hotels from the database developers to build out the User Interface.',
+    liveLink: 'https://hotel-frontend-rosy.vercel.app/',
+    source: 'https://github.com/t-bello7/hotel-frontend',
+  },
+  {
+    id: '007',
+    img_dir: '../assets/img/sendchamp.png',
+    header: 'SendChamp Pricing Page',
+    description: 'A clone of the Sendchamp pricing page',
+    content: 'SendChamp Pricig Page is a clone of the official SendChamp Pricing Page',
+    tags: ['Typescript','React', 'Chakra UI'],
+    source: 'https://github.com/t-bello7/sendchamp-page',
+    liveLink: 'https://sendchamp-page.vercel.app',
+  }
 ];
 
 openBtn.addEventListener('click', () => {
