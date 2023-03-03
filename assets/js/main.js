@@ -119,7 +119,7 @@ const works = [
     img_dir: '../assets/img/hotel.png',
     featured: true,
     header: 'Hotel Booking Application',
-    description: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels. The website provides a range of hotels that users can choose from different locations. Once a room of an hotel has been booked the application is updated to show the rooms available for booking. Admin users which would be hotel managers can save or delete hotels or rooms. This feature is designed by allowing the system to have users permission and authorizations.',
+    content: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels. The website provides a range of hotels that users can choose from different locations. Once a room of an hotel has been booked the application is updated to show the rooms available for booking. Admin users which would be hotel managers can save or delete hotels or rooms. This feature is designed by allowing the system to have users permission and authorizations.',
     tags: [{
       name: 'React',
       link: ""
@@ -136,7 +136,7 @@ const works = [
         name: 'Ruby on Rails',
       }
     ],
-    content: ' Hotel rooms are listed as available and can be reserved by users. Admin users are allowed to add and remove hotels from the database developers to build out the User Interface.',
+    description: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels.',
     liveLink: 'https://hotel-frontend-rosy.vercel.app/',
     source: 'https://github.com/t-bello7/hotel-frontend',
   },
