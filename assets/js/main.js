@@ -17,46 +17,45 @@ const works = [
     id: '001',
     img_dir: '../assets/img/hotel.png',
     featured: true,
-    header: 'Hotel Booking Application',
-    content: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels. The website provides a range of hotels that users can choose from different locations. Once a room of an hotel has been booked the application is updated to show the rooms available for booking. Admin users which would be hotel managers can save or delete hotels or rooms. This feature is designed by allowing the system to have users permission and authorizations.',
+    private: true,
+    img_dir: './assets/img/space-hub.png',
+    header: "Space Travellers' Hub",
+    description: "The Space Travellers' Hub consists of Rockets, Missions, and the My Profile section. The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
     tags: [{
-      name: 'React',
-      link: ""
+      name: 'Bootstrap5',
+      link: 'https://getbootstrap.com/',
     }, {
-      name: 'CSS',
-      link: ""
+      name: 'ReactJS',
+      link: '',
     }, {
-      name:'Ruby',
-      link: "https://www.ruby-lang.org/en/"
-      },{
-        name: 'JavaScript'
-        
-      }, {
-        name: 'Ruby on Rails',
-      }
-    ],
-    description: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels.',
-    liveLink: 'https://hotel-frontend-rosy.vercel.app/',
-    source: 'https://github.com/t-bello7/hotel-frontend',
+      name: 'Redux',
+      link: '',
+    }, {
+      name: 'React-Router',
+      link: '',
+    }],
+    content: "The Space Travellers' Hub consists of Rockets, Missions, and the My Profile section. The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
+    liveLink: 'https://super-space-hub.netlify.app/',
+    source: 'https://github.com/t-bello7/Micro-Space-Hub',
   },
   {
     id: '002',
     img_dir: './assets/img/finconnect-img.png',
     header: 'Finconnect',
-    description: 'Finconnect is a listing web application for financial services.',
+    description: 'A listing web application for financial services',
     tags: [{
       name: 'Django',
-      link: ""
-      }, {
-        name: 'HTML',
-        link: ""
-      }, {
-        name: 'CSS',
-        link: ''
-      }, {
-        name: 'Python',
-        link: ''
-      }],
+      link: '',
+    }, {
+      name: 'HTML',
+      link: '',
+    }, {
+      name: 'CSS',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    }, {
+      name: 'Python',
+      link: '',
+    }],
     content: ' A full-stack web application to list financial services allowing the company to have a better record of financial partners and a platform for customers to easily access these financial services',
     liveLink: 'https://finconnect.herokuapp.com/',
     source: 'https://github.com/t-bello7/finconnect',
@@ -68,13 +67,14 @@ const works = [
     description: 'A minimal todo list application for keeping track of your tasks',
     tags: [{
       name: 'HTML',
-      link: ''}, {
-        name: 'CSS',
-        link: '' 
-      }, {
-        name: 'JavaScript',
-        link: ''
-      }],
+      link: '',
+    }, {
+      name: 'CSS',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    }, {
+      name: 'JavaScript',
+      link: '',
+    }],
     content: 'A minimalist Todo list app that\'s everywhere you are. "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     liveLink: 'https://t-bello7.github.io/micro-todo/',
     source: 'https://github.com/t-bello7/micro-todo',
@@ -86,15 +86,15 @@ const works = [
     description: 'A landing page for formula one fans',
     tags: [{
       name: 'CSS',
-      link: ''
+      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     }, {
       name: 'HTML',
       link: '',
     }, {
       name: 'Javascript',
-      link: ''
+      link: '',
     }],
-    content: 'Formula one fanpage is a website for formula one fans to get updates about formula one racing events and its players',
+    content: 'A landing page for formula one fans',
     liveLink: 'https://t-bello7.github.io/micro-capstone-1/',
     source: 'https://github.com/t-bello7/micro-capstone-1',
   },
@@ -105,13 +105,13 @@ const works = [
     description: 'A landing page for space travel and tourism.',
     tags: [{
       name: 'html',
-      link: ''
+      link: '',
     }, {
       name: 'CSS',
-      link: ''
+      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     }, {
       name: 'Javascript',
-      link: ''
+      link: '',
     }],
     content: 'In a distant future humans would going on tours to the vast space. Ever felt the like travelling space, this is a landing page for space travel and toursim.',
     liveLink: 'https://t-bello7.github.io/space-travel/',
@@ -119,26 +119,28 @@ const works = [
   },
   {
     id: '006',
-    private: true,
-    img_dir: './assets/img/space-hub.png',
-    header: "Space Travellers' Hub",
-    description: "The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
-    tags: [{ 
-        name: 'Bootstrap5',
-        link: "https://getbootstrap.com/"
-      }, {
-        name: 'ReactJS',
-        link: ""
-      }, {
-        name: 'Redux',
-        link: ""
+    img_dir: '../assets/img/hotel.png',
+    header: 'Hotel Booking Application',
+    description: 'Hotel is a website for booking hotels.',
+    tags: [{
+      name: 'React',
+      link: '',
     }, {
-      name: 'React-Router', 
-      link: ""
-    }],
-    content: "The Space Travellers' Hub consists of Rockets, Missions, and the My Profile section. The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
-    liveLink: 'https://super-space-hub.netlify.app/',
-    source: 'https://github.com/t-bello7/Micro-Space-Hub',
+      name: 'CSS',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    }, {
+      name: 'Ruby',
+      link: 'https://www.ruby-lang.org/en/',
+    }, {
+      name: 'JavaScript',
+
+    }, {
+      name: 'Ruby on Rails',
+    },
+    ],
+    content: ' Hotel rooms are listed as available and can be reserved by users. Admin users are allowed to add and remove hotels from the database developers to build out the User Interface.',
+    liveLink: 'https://hotel-frontend-rosy.vercel.app/',
+    source: 'https://github.com/t-bello7/hotel-frontend',
   },
   {
     id: '007',
@@ -148,16 +150,17 @@ const works = [
     content: 'SendChamp Pricig Page is a clone of the official SendChamp Pricing Page',
     tags: [{
       name: 'Typescript',
-      link: ''
-    },{
+      link: '',
+    }, {
       name: 'React',
-      link:"" }, {
-        name: 'Chakra UI',
-        link: ''
-      }],
+      link: '',
+    }, {
+      name: 'Chakra UI',
+      link: '',
+    }],
     source: 'https://github.com/t-bello7/sendchamp-page',
     liveLink: 'https://sendchamp-page.vercel.app',
-  }
+  },
 ];
 
 openBtn.addEventListener('click', () => {
@@ -166,13 +169,13 @@ openBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('visible');
-})
+});
 
-navItems.forEach(item => (
+navItems.forEach((item) => (
   item.addEventListener('click', () => {
     mobileMenu.classList.toggle('visible');
   })
-))
+));
 
 let contactDict = {};
 
@@ -205,7 +208,7 @@ descInput.addEventListener('change', (e) => {
 });
 
 contactForm.addEventListener('submit', (e) => {
-  e.preventDefault()
+  e.preventDefault();
   const errorMsgs = [];
 
   if (emailInput.value !== emailInput.value.toLowerCase()) {
@@ -215,13 +218,12 @@ contactForm.addEventListener('submit', (e) => {
   if (errorMsgs.length > 0) {
     e.preventDefault();
     errorMsg.innerText = errorMsgs.join('');
-    return
+    return;
   }
   if (contactForm.coolname.value || contactForm.coolemail.value) {
-    return false;
+    return;
   }
 
-  console.log('hey')
   contactForm.action = 'https://formspree.io/f/mwkywooe';
   contactForm.submit();
 });
@@ -238,7 +240,7 @@ const renderDocuments = (arr, container) => {
                 ${element.description}
               </p>
               <ul class="tag tag-feature mg-1 ff-poppins flex">
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">  ${element.tags[0].name}  </a></li>
+                <li><a href="">  ${element.tags[0].name}  </a></li>
                 <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">  ${element.tags[1].name}  </a></li>
                 <li><a href="">  ${element.tags[2].name}  </a></li>
                 <li><a href=""> ${element.tags[3].name}  </a></li>
@@ -291,9 +293,9 @@ window.addEventListener('load', () => {
         <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">${data.tags[0].name}</a></li>
         <li><a href="https://getbootstrap.com/"> ${data?.tags[1].name}</a></li>
         <li><a href="https://www.ruby-lang.org/en/"> ${data?.tags[2].name}</a></li>
-        ${data?.tags[3] ? `<li><a href="https://www.ruby-lang.org/en/"> ${data?.tags[3].name} </a></li> `: ""}
-        ${data?.tags[4] ? `<li><a href="https://www.ruby-lang.org/en/"> ${data?.tags[4].name} </a></li> `: ""}
-         ${data.tags[5] ? `<li><a href="https://www.ruby-lang.org/en/"> ${data.tags[5].name} </a></li> `: ""}
+        ${data?.tags[3] ? `<li><a href="https://www.ruby-lang.org/en/"> ${data?.tags[3].name} </a></li> ` : ''}
+        ${data?.tags[4] ? `<li><a href="https://www.ruby-lang.org/en/"> ${data?.tags[4].name} </a></li> ` : ''}
+         ${data.tags[5] ? `<li><a href="https://www.ruby-lang.org/en/"> ${data.tags[5].name} </a></li> ` : ''}
       </ul>
       <div class="flex modal-content">
         <img class="mg-2" src="${data.img_dir}" alt="modal-image">
