@@ -13,28 +13,31 @@ const modalInner = document.querySelector('.modal-inner');
 const modalOuter = document.querySelector('.modal-outer');
 
 const works = [
-  {
+{
     id: '001',
-    private: true,
-    img_dir: './assets/img/space-hub.png',
-    header: "Space Travellers' Hub",
-    description: "The Space Travellers' Hub consists of Rockets, Missions, and the My Profile section. The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
-    tags: [{ 
-        name: 'Bootstrap5',
-        link: "https://getbootstrap.com/"
-      }, {
-        name: 'ReactJS',
-        link: ""
-      }, {
-        name: 'Redux',
-        link: ""
-    }, {
-      name: 'React-Router', 
+    img_dir: '../assets/img/hotel.png',
+    featured: true,
+    header: 'Hotel Booking Application',
+    content: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels. The website provides a range of hotels that users can choose from different locations. Once a room of an hotel has been booked the application is updated to show the rooms available for booking. Admin users which would be hotel managers can save or delete hotels or rooms. This feature is designed by allowing the system to have users permission and authorizations.',
+    tags: [{
+      name: 'React',
       link: ""
-    }],
-    content: "The Space Travellers' Hub consists of Rockets, Missions, and the My Profile section. The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
-    liveLink: 'https://super-space-hub.netlify.app/',
-    source: 'https://github.com/t-bello7/Micro-Space-Hub',
+    }, {
+      name: 'CSS',
+      link: ""
+    }, {
+      name:'Ruby',
+      link: "https://www.ruby-lang.org/en/"
+      },{
+        name: 'JavaScript'
+        
+      }, {
+        name: 'Ruby on Rails',
+      }
+    ],
+    description: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels.',
+    liveLink: 'https://hotel-frontend-rosy.vercel.app/',
+    source: 'https://github.com/t-bello7/hotel-frontend',
   },
   {
     id: '002',
@@ -116,29 +119,26 @@ const works = [
   },
   {
     id: '006',
-    img_dir: '../assets/img/hotel.png',
-    featured: true,
-    header: 'Hotel Booking Application',
-    content: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels. The website provides a range of hotels that users can choose from different locations. Once a room of an hotel has been booked the application is updated to show the rooms available for booking. Admin users which would be hotel managers can save or delete hotels or rooms. This feature is designed by allowing the system to have users permission and authorizations.',
-    tags: [{
-      name: 'React',
-      link: ""
-    }, {
-      name: 'CSS',
-      link: ""
-    }, {
-      name:'Ruby',
-      link: "https://www.ruby-lang.org/en/"
-      },{
-        name: 'JavaScript'
-        
+    private: true,
+    img_dir: './assets/img/space-hub.png',
+    header: "Space Travellers' Hub",
+    description: "The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
+    tags: [{ 
+        name: 'Bootstrap5',
+        link: "https://getbootstrap.com/"
       }, {
-        name: 'Ruby on Rails',
-      }
-    ],
-    description: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels.',
-    liveLink: 'https://hotel-frontend-rosy.vercel.app/',
-    source: 'https://github.com/t-bello7/hotel-frontend',
+        name: 'ReactJS',
+        link: ""
+      }, {
+        name: 'Redux',
+        link: ""
+    }, {
+      name: 'React-Router', 
+      link: ""
+    }],
+    content: "The Space Travellers' Hub consists of Rockets, Missions, and the My Profile section. The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
+    liveLink: 'https://super-space-hub.netlify.app/',
+    source: 'https://github.com/t-bello7/Micro-Space-Hub',
   },
   {
     id: '007',
