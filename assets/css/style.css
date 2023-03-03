@@ -137,7 +137,10 @@ footer hr {
   text-align: center;
   gap: 1rem;
 }
-
+.tag {
+  font-size: 10px;
+  width: fit-content;
+}
 .tag > * {
   padding: 10px 12px;
   border: 1px solid var(--clr-gray-2);
@@ -157,6 +160,8 @@ footer hr {
   cursor: pointer;
   background-color: var(--clr-primary-1);
   color: var(--clr-light);
+  font-family: var(--ff-roboto);
+  font-weight: normal;
   border: 1px solid var(--clr-primary-1);
   padding: var(--gap);
   transition: background-color 250ms ease-in;
@@ -492,7 +497,6 @@ footer hr {
     gap: 2rem;
     align-self: center;
     text-align: center;
-    gap: 1rem;
   }
 
   .work-section > :first-child > h2 {
