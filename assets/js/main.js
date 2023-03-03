@@ -15,7 +15,6 @@ const modalOuter = document.querySelector('.modal-outer');
 const works = [
   {
     id: '001',
-    featured: true,
     private: true,
     img_dir: './assets/img/space-hub.png',
     header: "Space Travellers' Hub",
@@ -41,7 +40,7 @@ const works = [
     id: '002',
     img_dir: './assets/img/finconnect-img.png',
     header: 'Finconnect',
-    description: 'A listing web application for financial services',
+    description: 'Finconnect is a listing web application for financial services.',
     tags: [{
       name: 'Django',
       link: ""
@@ -92,7 +91,7 @@ const works = [
       name: 'Javascript',
       link: ''
     }],
-    content: 'A landing page for formula one fans',
+    content: 'Formula one fanpage is a website for formula one fans to get updates about formula one racing events and its players',
     liveLink: 'https://t-bello7.github.io/micro-capstone-1/',
     source: 'https://github.com/t-bello7/micro-capstone-1',
   },
@@ -118,8 +117,9 @@ const works = [
   {
     id: '006',
     img_dir: '../assets/img/hotel.png',
+    featured: true,
     header: 'Hotel Booking Application',
-    description: 'Hotel is a website for booking hotels.',
+    description: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels. The website provides a range of hotels that users can choose from different locations. Once a room of an hotel has been booked the application is updated to show the rooms available for booking. Admin users which would be hotel managers can save or delete hotels or rooms. This feature is designed by allowing the system to have users permission and authorizations.',
     tags: [{
       name: 'React',
       link: ""
