@@ -182,6 +182,7 @@ footer hr {
 
 .featured {
   flex-direction: column;
+  padding-inline: 32px;
 }
 
 .featured > .featured-img {

@@ -40,10 +40,11 @@ const works = [
     liveLink: 'https://hotel-frontend-rosy.vercel.app/',
     source: 'https://github.com/t-bello7/hotel-frontend',
   },
-  {
+/*
+	{
     id: '002',
     img_dir: './assets/img/finconnect-img.png',
-    header: 'Finconnect',
+   header: 'Finconnect',
     description: 'A listing web application for financial services',
     tags: [{
       name: 'Django',
@@ -61,9 +62,9 @@ const works = [
     content: ' A full-stack web application to list financial services allowing the company to have a better record of financial partners and a platform for customers to easily access these financial services',
     liveLink: 'https://finconnect.herokuapp.com/',
     source: 'https://github.com/t-bello7/finconnect',
-  },
+  }, */
   {
-    id: '003',
+    id: '002',
     img_dir: './assets/img/todolist-img.png',
     header: 'Minimal Todo List',
     description: 'A minimal todo list application for keeping track of your tasks',
@@ -82,7 +83,7 @@ const works = [
     source: 'https://github.com/t-bello7/micro-todo',
   },
   {
-    id: '004',
+    id: '003',
     img_dir: './assets/img/formula-two.jpeg',
     header: 'Formula One FanPage',
     description: 'A landing page for formula one fans',
@@ -101,10 +102,10 @@ const works = [
     source: 'https://github.com/t-bello7/micro-capstone-1',
   },
   {
-    id: '005',
+    id: '004',
     img_dir: './assets/img/space-img.png',
     header: 'Space travel',
-    description: 'A landing page for space travel and tourism.',
+    description: 'A landing page for space travel and tourism',
     tags: [{
       name: 'html',
       link: '',
@@ -120,7 +121,7 @@ const works = [
     source: 'https://github.com/t-bello7/space-travel',
   },
   {
-    id: '006',
+    id: '005',
     img_dir: './assets/img/space-hub.png',
     header: "Space Travellers' Hub",
     description: "The application is a booking platform for space travel enthusiasts",
@@ -141,8 +142,8 @@ const works = [
     liveLink: 'https://super-space-hub.netlify.app/',
     source: 'https://github.com/t-bello7/Micro-Space-Hub',
   },
-  {
-    id: '007',
+ /* {
+    id: '006',
     img_dir: '../assets/img/sendchamp.png',
     header: 'SendChamp Pricing Page',
     description: 'A clone of the Sendchamp pricing page',
@@ -159,7 +160,8 @@ const works = [
     }],
     source: 'https://github.com/t-bello7/sendchamp-page',
     liveLink: 'https://sendchamp-page.vercel.app',
-  },
+  }, */
+
 ];
 
 openBtn.addEventListener('click', () => {
