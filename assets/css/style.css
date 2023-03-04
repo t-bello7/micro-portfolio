@@ -304,7 +304,7 @@ footer hr {
 }
 
 .about > :first-child > h2 {
-  width: 327px;
+  padding-top: 1rem;
   font-size: 72px;
   height: 88px;
 }
