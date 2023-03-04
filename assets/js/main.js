@@ -19,7 +19,7 @@ const works = [
     private: true,
     img_dir: '../assets/img/hotel.png',
     header: 'Hotel Booking Application',
-    description: 'Hotel is a website for booking hotels.',
+    description: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels.',
     tags: [{
       name: 'React',
       link: '',
@@ -36,7 +36,7 @@ const works = [
       name: 'Ruby on Rails',
     },
     ],
-    content: ' Hotel rooms are listed as available and can be reserved by users. Admin users are allowed to add and remove hotels from the database developers to build out the User Interface.',
+    content: 'Hotel Booking is an online platform that offers a user-friendly and efficient way for customers to book hotels. The website provides a range of hotels that users can choose from different locations. Once a room of an hotel has been booked the application is updated to show the rooms available for booking. Admin users which would be hotel managers can save or delete hotels or rooms. This feature is designed by allowing the system to have users permission and authorizations.',
     liveLink: 'https://hotel-frontend-rosy.vercel.app/',
     source: 'https://github.com/t-bello7/hotel-frontend',
   },
@@ -123,7 +123,7 @@ const works = [
     id: '006',
     img_dir: './assets/img/space-hub.png',
     header: "Space Travellers' Hub",
-    description: "The application allows users to book rockets and join selected space missions.",
+    description: "The application is a booking platform for space travel enthusiasts",
     tags: [{
       name: 'Bootstrap5',
       link: 'https://getbootstrap.com/',
