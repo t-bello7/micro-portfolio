@@ -67,7 +67,7 @@ const works = [
     id: '002',
     img_dir: './assets/img/todolist-img.png',
     header: 'Minimal Todo List',
-    description: 'A minimal todo list application for keeping track of your tasks',
+    description: 'The minimal todo list is an application for keeping track of your tasks',
     tags: [{
       name: 'HTML',
       link: '',
@@ -78,15 +78,15 @@ const works = [
       name: 'JavaScript',
       link: '',
     }],
-    content: 'A minimalist Todo list app that\'s everywhere you are. "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
+    content: 'The minimalist Todo list is an application that\'s everywhere you are. It is a tool that helps to organize your day. It allows you to create tasks, reorder tasks based on priority and allows you to mark them as complete or incomplete.',
     liveLink: 'https://t-bello7.github.io/micro-todo/',
     source: 'https://github.com/t-bello7/micro-todo',
   },
   {
     id: '003',
-    img_dir: './assets/img/formula-two.jpeg',
+    img_dir: './assets/img/formula_one.png',
     header: 'Formula One FanPage',
-    description: 'A landing page for formula one fans',
+    description: 'Formula one fanpage is a website for formula one fans to get updates about formula one racing events and its players',
     tags: [{
       name: 'CSS',
       link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
@@ -97,7 +97,7 @@ const works = [
       name: 'Javascript',
       link: '',
     }],
-    content: 'A landing page for formula one fans',
+    content: 'Formula one fanpage is a website for formula one fans to get updates about formula one racing events and its players.',
     liveLink: 'https://t-bello7.github.io/micro-capstone-1/',
     source: 'https://github.com/t-bello7/micro-capstone-1',
   },
@@ -105,7 +105,7 @@ const works = [
     id: '004',
     img_dir: './assets/img/space-img.png',
     header: 'Space travel',
-    description: 'A landing page for space travel and tourism',
+    description: 'A landing page for a space travel and tourism company',
     tags: [{
       name: 'html',
       link: '',
@@ -116,7 +116,7 @@ const works = [
       name: 'Javascript',
       link: '',
     }],
-    content: 'In a distant future humans would going on tours to the vast space. Ever felt the like travelling space, this is a landing page for space travel and toursim.',
+    content: 'This is a landing page for a space travel and toursim company displaying information about space.',
     liveLink: 'https://t-bello7.github.io/space-travel/',
     source: 'https://github.com/t-bello7/space-travel',
   },
@@ -124,7 +124,7 @@ const works = [
     id: '005',
     img_dir: './assets/img/space-hub.png',
     header: "Space Travellers' Hub",
-    description: "The application is a booking platform for space travel enthusiasts",
+    description: "The Space Travellers' Hub is an application for space travel enthusiasts to to book rockets and join selected space missions",
     tags: [{
       name: 'Bootstrap5',
       link: 'https://getbootstrap.com/',
@@ -255,7 +255,7 @@ const renderDocuments = (arr, container) => {
         container.innerHTML += `
         <div style="background-image:url(${element.img_dir})" class=" text-light project">
           <h2 class="mg-inline bg-gray p-1 ff-roboto">${element.header}</h2>
-          <p class="mg-1 mg-inline ff-poppins p-1 bg-gray ">
+          <p class="mg-1 mg-inline ff-poppins p-1 bg-gray desc-project">
                 ${element.description}
           </p>
           <ul class="mg-1 mg-inline flex ff-poppins tag tag-project p-1 bg-gray">
@@ -301,7 +301,7 @@ window.addEventListener('load', () => {
       <div class="flex modal-content">
         <img class="mg-2" src="${data.img_dir}" alt="modal-image">
         <div>
-          <p class="ff-poppins">${data.content}</p>
+          <p class="ff-poppins desc-project">${data.content}</p>
           <div class="buttons mg-2 flex">
             <button class="btn flex btn-modal btn-source" onclick="window.open('${data.liveLink}')">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
             <button class="btn flex btn-modal btn-source" onclick="window.open('${data.source}')">See Source <img src="./assets/img/github.png" alt="github"> </button>

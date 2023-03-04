@@ -186,7 +186,6 @@ footer hr {
 }
 
 .featured > .featured-img {
-  height: 440px;
   width: 200ch;
 }
 
@@ -215,6 +214,9 @@ footer hr {
   z-index: 2;
 }
 
+.desc-project {
+  font-size: 12px;
+}
 .modal-outer {
   display: grid;
   position: fixed;
@@ -466,6 +468,11 @@ footer hr {
     grid-area: work-featured;
   }
 
+  .featured > .featured-img {
+    height: 440px;
+    width: 200ch;
+  }
+  
   .project > .btn-project {
     display: none;
   }
