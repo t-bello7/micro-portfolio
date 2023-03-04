@@ -15,28 +15,30 @@ const modalOuter = document.querySelector('.modal-outer');
 const works = [
 {
     id: '001',
-    img_dir: '../assets/img/hotel.png',
     featured: true,
     private: true,
-    img_dir: './assets/img/space-hub.png',
-    header: "Space Travellers' Hub",
-    description: "The Space Travellers' Hub consists of Rockets, Missions, and the My Profile section. The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
+    img_dir: '../assets/img/hotel.png',
+    header: 'Hotel Booking Application',
+    description: 'Hotel is a website for booking hotels.',
     tags: [{
-      name: 'Bootstrap5',
-      link: 'https://getbootstrap.com/',
-    }, {
-      name: 'ReactJS',
+      name: 'React',
       link: '',
     }, {
-      name: 'Redux',
-      link: '',
+      name: 'CSS',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     }, {
-      name: 'React-Router',
-      link: '',
-    }],
-    content: "The Space Travellers' Hub consists of Rockets, Missions, and the My Profile section. The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
-    liveLink: 'https://super-space-hub.netlify.app/',
-    source: 'https://github.com/t-bello7/Micro-Space-Hub',
+      name: 'Ruby',
+      link: 'https://www.ruby-lang.org/en/',
+    }, {
+      name: 'JavaScript',
+
+    }, {
+      name: 'Ruby on Rails',
+    },
+    ],
+    content: ' Hotel rooms are listed as available and can be reserved by users. Admin users are allowed to add and remove hotels from the database developers to build out the User Interface.',
+    liveLink: 'https://hotel-frontend-rosy.vercel.app/',
+    source: 'https://github.com/t-bello7/hotel-frontend',
   },
   {
     id: '002',
@@ -119,28 +121,25 @@ const works = [
   },
   {
     id: '006',
-    img_dir: '../assets/img/hotel.png',
-    header: 'Hotel Booking Application',
-    description: 'Hotel is a website for booking hotels.',
+    img_dir: './assets/img/space-hub.png',
+    header: "Space Travellers' Hub",
+    description: "The application allows users to book rockets and join selected space missions.",
     tags: [{
-      name: 'React',
+      name: 'Bootstrap5',
+      link: 'https://getbootstrap.com/',
+    }, {
+      name: 'ReactJS',
       link: '',
     }, {
-      name: 'CSS',
-      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+      name: 'Redux',
+      link: '',
     }, {
-      name: 'Ruby',
-      link: 'https://www.ruby-lang.org/en/',
-    }, {
-      name: 'JavaScript',
-
-    }, {
-      name: 'Ruby on Rails',
-    },
-    ],
-    content: ' Hotel rooms are listed as available and can be reserved by users. Admin users are allowed to add and remove hotels from the database developers to build out the User Interface.',
-    liveLink: 'https://hotel-frontend-rosy.vercel.app/',
-    source: 'https://github.com/t-bello7/hotel-frontend',
+      name: 'React-Router',
+      link: '',
+    }],
+    content: "The Space Travellers' Hub consists of Rockets, Missions, and the My Profile section. The application provides commercial and scientific space travel services by allowing users to book rockets and join selected space missions.",
+    liveLink: 'https://super-space-hub.netlify.app/',
+    source: 'https://github.com/t-bello7/Micro-Space-Hub',
   },
   {
     id: '007',
