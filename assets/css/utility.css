@@ -82,9 +82,10 @@
   border: 0;
 }
 
-.container > * {
-  max-width: var(--mobile-w);
-  margin: 0 auto;
+.container {
+  /* max-width: var(--mobile-w); */
+  /* margin: 0 auto; */
+  padding-inline: 1rem;
 }
 
 .grid-container {

@@ -70,7 +70,7 @@
 
 .home {
   min-height: 100vh;
-  background-image: url("../img/header-mobile.png");
+  /* background-image: url("../img/header-mobile.png"); */
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -112,10 +112,6 @@
   flex-direction: column;
 }
 
-.contact-form > h2 {
-  font-size: 32px;
-  color: var(--clr-neutral);
-}
 .work-section {
   justify-items: center;
   gap: 2rem;
@@ -286,8 +282,7 @@ footer hr {
 }
 
 .disable-scroll {
-  margin: 0;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -300,12 +295,12 @@ footer hr {
   min-height: 100vh;
   background-image: url("../img/about-me-mobile.png");
   background-repeat: no-repeat;
-  background-position: right top 30%;
+  background-position: right -36% top 23%;
 }
 
 .about > :first-child > h2 {
   padding-top: 1rem;
-  font-size: 72px;
+  font-size: 48px;
   height: 88px;
 }
 
@@ -315,7 +310,7 @@ footer hr {
 }
 
 .skill > * > h3 {
-  font-size: 32px;
+  font-size: 1.5rem;
   line-height: 44px;
 }
 
@@ -352,10 +347,19 @@ footer hr {
 
 .contact-form__textarea {
   padding: 1rem;
-  color: var(--clr-gray);
   background-size: contain;
 }
 
+.contact-form > h2 {
+  font-size: 20px;
+  color: var(--clr-neutral);
+}
+
+.contact-form__textarea::placeholder {
+  /* margin-inline: 2rem; */
+  color: var(--clr-gray);
+  font-family: var(--ff-roboto);
+}
 .contact-form__textarea:focus {
   outline: 1px solid var(--clr-gray-2);
 }
@@ -513,23 +517,38 @@ footer hr {
 
   .about {
     background-image: url("../img/about-me-desktop.png");
+    /* background-position: ; */
+    background-position: right top 5%;
   }
 
   .about-bio {
     width: calc(100vw / 2);
   }
 
+  .about > :first-child > h2 {
+    font-size: 72px;
+  }
+  
   .skill {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
 
+  .skill > * > h3 {
+    font-size: 2rem;
+    line-height: 44px;
+  }
+  
   .contact-form {
     flex-direction: row;
     align-items: start;
   }
 
+  .contact-form > h2 {
+    font-size: 32px;
+  }
+  
   .contact-form > .contact {
     flex-grow: 1;
     flex-shrink: 0;

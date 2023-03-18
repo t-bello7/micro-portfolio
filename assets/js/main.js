@@ -276,6 +276,7 @@ const closeModal = () => {
   modalInner.innerHTML = '';
   bodyContainer.classList.remove('modalBlur');
   bodyContainer.classList.remove('disable-scroll');
+  window.onscroll = function() {};
 };
 
 window.addEventListener('load', () => {
@@ -303,14 +304,20 @@ window.addEventListener('load', () => {
         <div>
           <p class="ff-poppins desc-project">${data.content}</p>
           <div class="buttons mg-2 flex">
-            <button class="btn flex btn-modal btn-source" onclick="window.open('${data.liveLink}')">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
-            <button class="btn flex btn-modal btn-source" onclick="window.open('${data.source}')">See Source <img src="./assets/img/github.png" alt="github"> </button>
+            <button class="btn center flex btn-modal btn-source" onclick="window.open('${data.liveLink}')">See Live <img src="./assets/img/see-live-icon.png" alt="see-live-icon"> </button>
+            <button class="btn center flex btn-modal btn-source" onclick="window.open('${data.source}')">See Source <img src="./assets/img/github.png" alt="github"> </button>
           </div>
         </div>
       </div>
     `;
     bodyContainer.classList.add('disable-scroll');
 
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+     
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    window.onscroll = function() {
+      window.scrollTo(scrollLeft, scrollTop);
+    };
     bodyContainer.classList.add('modalBlur');
     modalOuter.classList.add('open');
   };
