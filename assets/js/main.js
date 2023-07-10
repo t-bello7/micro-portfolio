@@ -13,7 +13,7 @@ const modalInner = document.querySelector('.modal-inner');
 const modalOuter = document.querySelector('.modal-outer');
 
 const works = [
-{
+  {
     id: '001',
     featured: true,
     private: true,
@@ -40,29 +40,29 @@ const works = [
     liveLink: 'https://hotel-frontend-rosy.vercel.app/',
     source: 'https://github.com/t-bello7/hotel-frontend',
   },
-/*
-	{
-    id: '002',
-    img_dir: './assets/img/finconnect-img.png',
-   header: 'Finconnect',
-    description: 'A listing web application for financial services',
-    tags: [{
-      name: 'Django',
-      link: '',
-    }, {
-      name: 'HTML',
-      link: '',
-    }, {
-      name: 'CSS',
-      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    }, {
-      name: 'Python',
-      link: '',
-    }],
-    content: ' A full-stack web application to list financial services allowing the company to have a better record of financial partners and a platform for customers to easily access these financial services',
-    liveLink: 'https://finconnect.herokuapp.com/',
-    source: 'https://github.com/t-bello7/finconnect',
-  }, */
+  /*
+    {
+      id: '002',
+      img_dir: './assets/img/finconnect-img.png',
+     header: 'Finconnect',
+      description: 'A listing web application for financial services',
+      tags: [{
+        name: 'Django',
+        link: '',
+      }, {
+        name: 'HTML',
+        link: '',
+      }, {
+        name: 'CSS',
+        link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+      }, {
+        name: 'Python',
+        link: '',
+      }],
+      content: ' A full-stack web application to list financial services allowing the company to have a better record of financial partners and a platform for customers to easily access these financial services',
+      liveLink: 'https://finconnect.herokuapp.com/',
+      source: 'https://github.com/t-bello7/finconnect',
+    }, */
   {
     id: '002',
     img_dir: './assets/img/todolist-img.png',
@@ -105,7 +105,7 @@ const works = [
     id: '004',
     img_dir: './assets/img/space-img.png',
     header: 'Space travel',
-    description: 'A landing page for a space travel and tourism company',
+    description: 'Space travel is a landing page for a space travel and tourism company',
     tags: [{
       name: 'html',
       link: '',
@@ -116,7 +116,7 @@ const works = [
       name: 'Javascript',
       link: '',
     }],
-    content: 'This is a landing page for a space travel and toursim company displaying information about space.',
+    content: 'Space travel is a landing page for a space travel and tourism company displaying information about space.',
     liveLink: 'https://t-bello7.github.io/space-travel/',
     source: 'https://github.com/t-bello7/space-travel',
   },
@@ -142,25 +142,25 @@ const works = [
     liveLink: 'https://super-space-hub.netlify.app/',
     source: 'https://github.com/t-bello7/Micro-Space-Hub',
   },
- /* {
-    id: '006',
-    img_dir: '../assets/img/sendchamp.png',
-    header: 'SendChamp Pricing Page',
-    description: 'A clone of the Sendchamp pricing page',
-    content: 'SendChamp Pricig Page is a clone of the official SendChamp Pricing Page',
-    tags: [{
-      name: 'Typescript',
-      link: '',
-    }, {
-      name: 'React',
-      link: '',
-    }, {
-      name: 'Chakra UI',
-      link: '',
-    }],
-    source: 'https://github.com/t-bello7/sendchamp-page',
-    liveLink: 'https://sendchamp-page.vercel.app',
-  }, */
+  /* {
+     id: '006',
+     img_dir: '../assets/img/sendchamp.png',
+     header: 'SendChamp Pricing Page',
+     description: 'A clone of the Sendchamp pricing page',
+     content: 'SendChamp Pricig Page is a clone of the official SendChamp Pricing Page',
+     tags: [{
+       name: 'Typescript',
+       link: '',
+     }, {
+       name: 'React',
+       link: '',
+     }, {
+       name: 'Chakra UI',
+       link: '',
+     }],
+     source: 'https://github.com/t-bello7/sendchamp-page',
+     liveLink: 'https://sendchamp-page.vercel.app',
+   }, */
 
 ];
 
@@ -276,7 +276,7 @@ const closeModal = () => {
   modalInner.innerHTML = '';
   bodyContainer.classList.remove('modalBlur');
   bodyContainer.classList.remove('disable-scroll');
-  window.onscroll = function() {};
+  window.onscroll = function () { };
 };
 
 window.addEventListener('load', () => {
@@ -313,9 +313,9 @@ window.addEventListener('load', () => {
     bodyContainer.classList.add('disable-scroll');
 
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-     
+
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-    window.onscroll = function() {
+    window.onscroll = function () {
       window.scrollTo(scrollLeft, scrollTop);
     };
     bodyContainer.classList.add('modalBlur');
